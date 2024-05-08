@@ -1,0 +1,28 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+import "~/styles/index.css"
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+        <meta name="description" content="Asesoramiento y contratación de pólizas de seguros y productos financieros. Trabajamos con varias compañías de Seguros. Hogar, vida, decesos, pymes...">
+		<meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+
+		 <!-- --FONTAWESOME-- -->
+		 <script src="https://kit.fontawesome.com/e044e0c03c.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>

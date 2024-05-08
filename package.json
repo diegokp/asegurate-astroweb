@@ -1,0 +1,18 @@
+{
+  "name": "aseguratte-atroweb",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.10",
+    "animate.css": "^4.1.1",
+    "astro": "^4.7.0",
+    "typescript": "^5.4.5"
+  }
+}

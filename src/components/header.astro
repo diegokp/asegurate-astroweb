@@ -1,0 +1,74 @@
+---
+import 'animate.css';
+
+---
+
+<header>
+    <div>
+        <img src="images/asegurate_logo.png" alt="Asegurate logo" id="logo">
+    </div>
+    <div id="line" onclick="clickin()">
+        <div class="rotate"></div>
+        <div class="rotate"></div>
+    </div>
+    <nav>
+        <div class="boton_menu" onclick="clickproClose()">Inicio</div>
+        <a href="#nosotros" class="GoTo"><div class="boton_menu" onclick="clickproClose()">Nosotros</div></a>
+        <div class="boton_menu" onclick="clickproOpen()">Productos</div>
+        <a href="#preguntas" class="GoTo"><div class="boton_menu" onclick="clickproClose()">Preguntas frecuentes</div></a>
+        <a href="#contacto" class="GoTo"><div class="boton_menu" onclick="clickproClose()">Contacto</div></a>
+    </nav>
+</header>
+<main class="custom_main">
+    <div id="productsNav" class="overlayProducts">
+        <span onclick="clickpar()">PARTICULARES <i class="fa-solid fa-angle-down angle"></i></span>
+        <span onclick="clickemp()">EMPRESAS <i class="fa-solid fa-angle-down angle"></i></span>
+        <span onclick="clickvid()">VIDA, AHORRO E INVERSIÓN <i class="fa-solid fa-angle-down angle"></i></span>
+        <a href="./landings/salud.html"><span>SALUD</span></a>
+        <a href="./landings/contacto.php"><span>VIAJES</span></a>
+        <div id="productList">
+            <div id="particulares" class="overlayParticulares">
+                <a href="/hogar.html"><i class="fa-solid fa-angle-right"></i> Hogar</a>
+                <a href="/decesos.html"><i class="fa-solid fa-angle-right"></i> Decesos</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> Accidentes individual</a>
+                <a href="/autos.html"><i class="fa-solid fa-angle-right"></i> Autos</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> Vehículos clásicos</a>
+                <a href="/motos.html"><i class="fa-solid fa-angle-right"></i> Motos</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> Ciclomotores</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> Seguros de baja laboral</a>
+                <a href="https://seguropordias.com/?c=fb40a60f501e42d0b3c0e7492439d783" target="_blank"><i class="fa-solid fa-angle-right"></i> Seguros por día</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> Mascotas</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> Defensa jurídica</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> Embarcaciones</a>
+            </div>
+            <div id="empresas" class="overlayEmpresas">
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> Responsabilidad civil</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> Flotas</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> Accidentes de convenios</a>
+                <a href="/comercios.html"><i class="fa-solid fa-angle-right"></i> Comercios</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> Oficinas</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> Pymes</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> Defensa jurídica de la empresa</a>
+            </div>
+            <div id="vida" class="overlayVida">
+                <a href="/vida.html"><i class="fa-solid fa-angle-right"></i> Vida Riesgo</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> Planes de Pensiones</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> PIAS</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> SIALP</a>
+                <a href="/contacto.php"><i class="fa-solid fa-angle-right"></i> United Linked</a>
+            </div>
+        </div>
+    </div>
+    <!-- banner -->
+</main>
+
+<script is:inline>
+const navbar = document.getElementById("navbar");
+const special = document.getElementById("special");
+
+function clickin(){
+    navbar.classList.toggle("openSpecial");
+    special.classList.remove("openSpecial");
+    window.addEventListener('scroll', disableScroll);
+};
+</script>
