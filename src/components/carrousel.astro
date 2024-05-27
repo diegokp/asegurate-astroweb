@@ -1,0 +1,176 @@
+---
+import Link from "./ui/link.astro";
+
+---
+
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" id="slide1">
+        <div class="bannerContent">
+            <div>
+              <h1>Correduría de SEGUROS en Las Palmas</h1>
+              <p>Protege lo que más importa con Asegura-Te. Expertos en seguros en Las Palmas, ofrecemos tranquilidad y seguridad.</p>
+            </div>
+          <Link
+          href="./landings/decesos.html"
+          className="botonGenerico"
+          >Escoge tu seguro ahora
+        </Link>
+        </div>
+          <img src="images/decesos.jpg" alt="decesos banner">
+      </div>
+      <div class="swiper-slide" id="slide2">
+        <div class="bannerContent">
+            <div>
+              <span>Seguros para <strong>MASCOTAS</strong> completos:</span>
+              <p>Te ofrecemos un seguro de calidad, con las mejores coberturas y atención personalizada. Contrata nuestro seguro para mascotas y disfruta de la tranquilidad que necesitas.</p>
+            </div>
+          <Link
+          href="./landings/contacto.html"
+          className="botonGenerico"
+          >Calcula tu seguro
+        </Link>
+        </div>
+        <img src="images/mascotas.jpg" alt="mascotas banner">
+    </div>
+      <div class="swiper-slide" id="slide3">
+        <div class="bannerContent">
+            <div>
+              <span>Tu Seguro de <strong>SALUD</strong> con las máximas coberturas.</span>
+              <p>Seguros sin copagos. Cubre tus gastos médicos.</p>
+            </div>
+            <Link
+            href="./landings/salud.html"
+            className="botonGenerico"
+            >Calcula tu seguro
+          </Link>
+        </div>
+        <img src="images/salud.jpg" alt="salud banner">
+      </div>
+    <div class="swiper-slide" id="slide4">
+        <div class="bannerContent">
+            <div>
+              <span>Seguros de patinetes eléctricos y bicicletas: Tu Seguro de movilidad más completo.</span>
+              <p>Muévete con tranquilidad con un seguro adaptado a tus necesidades.</p>
+            </div>
+            <Link
+            href="./landings/contacto.php"
+            className="botonGenerico"
+            >Calcula tu seguro
+          </Link>
+        </div>
+        <img src="images/patinetes.jpg" alt="patinetes banner">
+    </div>
+    <div class="swiper-slide" id="slide5">
+        <div class="bannerContent">
+            <div>
+              <span>Rotura de <strong>LUNAS</strong>.</span>
+              <p>Si tienes un impacto o luna rota...</p>
+            </div>
+            <Link
+            href="https://www.clubcarglass.es/landings.php?c=34bc89f9622fbc37f5c4"
+            className="botonGenerico"
+            target="_blank"
+            >Pide cita aquí
+          </Link>
+        </div>
+        <img src="images/luna.jpg" alt="luna banner">
+    </div>
+    <div class="swiper-slide" id="slide6">
+        <div class="bannerContent">
+            <div>
+              <span>Seguro por <strong>DÍAS</strong>.</span>
+              <p>Coches, motos, autocaravanas, etc...</p>
+            </div>
+            <Link
+            href="https://seguropordias.com/?c=fb40a60f501e42d0b3c0e7492439d783"
+            className="botonGenerico"
+            target="_blank"
+            >Calcula tu seguro
+          </Link>
+        </div>
+        <img src="images/segurodias.jpg" alt="seguros días banner">
+    </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<script>
+    // Core de Swiper y estilos
+    import Swiper from 'swiper';
+    import 'swiper/css';
+    // Módulo Navigation de Swiper y estilos
+    import { Navigation, Autoplay, Pagination } from "swiper/modules";
+    import "swiper/css/navigation";
+  
+    // Configurar Swiper
+    const swiper = new Swiper(".swiper", {
+      modules: [Navigation, Autoplay, Pagination], // definir los módulos a usar
+      spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+  </script>
+
+
+<style>
+    .swiper {
+        width: 100%;
+        height: 90%;
+    }
+    .swiper-slide {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-slide p{
+        font-size: 1.4rem;
+    }
+    .swiper-button-next,  .swiper-button-prev{
+        color: aliceblue !important;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .bannerContent{
+        width: 60%;
+        min-width: 300px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin-left: 10%;
+        margin-top: 5%;
+        text-align: left;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 30px;
+        border-radius:10px;
+    }
+    .bannerContent > div:nth-child(1){
+        margin-bottom: 30px; 
+    }
+</style>

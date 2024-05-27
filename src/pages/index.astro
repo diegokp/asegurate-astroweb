@@ -3,13 +3,16 @@ import Layout from '../layouts/Layout.astro';
 import HeaderTop from '../components/headerTop.astro';
 import Header from '../components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
+import AboutUs from '~/components/aboutUs.astro';
+import Productos from '~/components/productos.astro';
 ---
 
-<Layout title="Asegura-Te | Correduría de seguros">
+<Layout title="Correduría de Seguros en Las Palmas - Asegura-Te">
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />
-		<Header client:load/>
+		<Header />
 	</section>
-
+	<AboutUs />
+	<Productos />
 </Layout>

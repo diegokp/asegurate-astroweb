@@ -1,0 +1,52 @@
+---
+interface Props {
+    href:string;
+    className:string;
+    target?:string
+    id?:string
+}
+
+const { href, className, target, id } = Astro.props
+
+---
+
+<a 
+href={href} 
+class={className}
+target={target}
+id={id}
+>
+<slot />
+<i class="fa-solid fa-angle-right"></i>
+</a>
+
+<style>
+    .botonGenerico{
+    background-color: var(--yellow);
+    font-family: bayan;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-color: var(--yellow);
+    transition: 0.5s;
+    cursor: pointer;
+    max-width: 300px;
+    color: var(--blue);
+    padding: 12px 4px;
+    /* padding-top: 5px; */
+}
+
+
+.botonGenerico > i{
+    color: #ffff;
+    font-size: 1.6rem;
+    padding-left:10px;
+}
+
+.botonGenerico:hover{
+    background: var(--back);
+}
+</style>
