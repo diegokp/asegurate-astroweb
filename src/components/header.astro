@@ -1,30 +1,29 @@
 ---
 import 'animate.css';
-import Carrousel from '~/components/carrousel.astro';
 ---
 
 <header>
     <div>
-        <img src="images/asegurate_logo.png" alt="Asegurate logo" id="logo">
+        <img src="/images/asegurate_logo.png" alt="Asegurate logo" id="logo">
     </div>
     <div id="line" onclick="clickin()">
         <div class="rotate"></div>
         <div class="rotate"></div>
     </div>
     <nav>
-        <div class="boton_menu" onclick="clickproClose()">Inicio</div>
-        <a href="#nosotros" class="GoTo"><div class="boton_menu" onclick="clickproClose()">Nosotros</div></a>
+        <a  href="/index.html" class="boton_menu" onclick="clickproClose()">Inicio</a>
+        <a href="/index.html#nosotros" class="GoTo"><div class="boton_menu" onclick="clickproClose()">Nosotros</div></a>
         <div class="boton_menu" onclick="clickproOpen()">Productos</div>
-        <a href="#preguntas" class="GoTo"><div class="boton_menu" onclick="clickproClose()">Preguntas frecuentes</div></a>
+        <a href="/index.htm#preguntas" class="GoTo"><div class="boton_menu" onclick="clickproClose()">Preguntas frecuentes</div></a>
         <a href="#contacto" class="GoTo"><div class="boton_menu" onclick="clickproClose()">Contacto</div></a>
     </nav>
 </header>
-<main class="custom_main">
+<main>
     <div id="productsNav" class="overlayProducts">
         <span onclick="clickpar()">PARTICULARES <i class="fa-solid fa-angle-down angle"></i></span>
         <span onclick="clickemp()">EMPRESAS <i class="fa-solid fa-angle-down angle"></i></span>
         <span onclick="clickvid()">VIDA, AHORRO E INVERSIÓN <i class="fa-solid fa-angle-down angle"></i></span>
-        <a href="./landings/salud.html"><span>SALUD</span></a>
+        <a href="/seguro-las-palmas/salud.html"><span>SALUD</span></a>
         <a href="./landings/contacto.php"><span>VIAJES</span></a>
         <div id="productList">
             <div id="particulares" class="overlayParticulares">
@@ -59,7 +58,6 @@ import Carrousel from '~/components/carrousel.astro';
             </div>
         </div>
     </div>
-    <Carrousel />
 </main>
 
 <script is:inline>
@@ -70,5 +68,72 @@ function clickin(){
     navbar.classList.toggle("openSpecial");
     special.classList.remove("openSpecial");
     window.addEventListener('scroll', disableScroll);
+};
+
+const productsNav = document.getElementById("productsNav");
+const productsPart = document.getElementById("particulares");
+const productsEmpre = document.getElementById("empresas");
+const productsVida = document.getElementById("vida");
+
+const angle = document.getElementsByClassName("angle");
+
+function clickproOpen(){
+    productsNav.classList.toggle("open_products");
+    productsPart.classList.remove("open_ListProduct");
+    productsEmpre.classList.remove("open_ListProduct");
+    productsVida.classList.remove("open_ListProduct");
+};
+
+function clickproClose(){
+    productsNav.classList.remove("open_products");
+    productsPart.classList.remove("open_ListProduct");
+    productsEmpre.classList.remove("open_ListProduct");
+    productsVida.classList.remove("open_ListProduct");
+    angle[0].classList.remove("anglerotate");
+    angle[1].classList.remove("anglerotate");
+    angle[2].classList.remove("anglerotate");
+};
+
+const specialParticulares = document.getElementById("specialParticulares");
+
+function sectionParticulares(){
+    specialParticulares.classList.toggle("openSpecial");
+};
+
+const specialEmpresas = document.getElementById("specialEmpresas")
+
+function sectionEmpresas(){
+    specialEmpresas.classList.toggle("openSpecial");
+};
+
+const specialVida = document.getElementById("specialVida")
+function sectionVida(){
+    specialVida.classList.toggle("openSpecial");
+};
+
+function clickpar(){
+    productsPart.classList.toggle("open_ListProduct");
+    productsEmpre.classList.remove("open_ListProduct");
+    productsVida.classList.remove("open_ListProduct");
+    angle[0].classList.toggle("anglerotate");
+    angle[1].classList.remove("anglerotate");
+    angle[2].classList.remove("anglerotate");
+};
+function clickemp(){
+    productsEmpre.classList.toggle("open_ListProduct");
+    productsPart.classList.remove("open_ListProduct");
+    productsVida.classList.remove("open_ListProduct");
+    angle[1].classList.toggle("anglerotate");
+    angle[0].classList.remove("anglerotate");
+    angle[2].classList.remove("anglerotate");
+};
+
+function clickvid(){
+    productsVida.classList.toggle("open_ListProduct");
+    productsPart.classList.remove("open_ListProduct");
+    productsEmpre.classList.remove("open_ListProduct");
+    angle[2].classList.toggle("anglerotate");
+    angle[0].classList.remove("anglerotate");
+    angle[1].classList.remove("anglerotate");
 };
 </script>

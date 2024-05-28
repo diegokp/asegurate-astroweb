@@ -1,5 +1,5 @@
 ---
-
+import "aos/dist/aos.css";
 ---
 
 <section id="nosotros">
@@ -20,6 +20,11 @@
         <p>En Asegura-Te, nuestro compromiso principal es asegurar la completa satisfacción de nuestros clientes en caso de siniestro. Además, nuestros servicios de asesoramiento y gestión no generan costes adicionales para nuestros asegurados, brindando así un valor añadido a nuestra relación.</p>
     </div>
 </section>
+
+<script>
+    import { aosInit } from "~/scripts/aos";
+    aosInit();
+</script>
 
 
 
@@ -72,5 +77,31 @@ p{
     font-size: 1.3rem;
     padding: 3px 20px;
     font-weight: bold;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 900px)  {
+
+    
+    .checkList{
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+
+    .checkList >span{
+        font-size: 1rem;
+        padding: 3px 10px;
+    }
+
+    #nosotros{
+        display: block;
+        padding-top: 40px;
+    }
+    #nosotros >div{
+        width: 100%;
+    }
+
+
 }
 </style>

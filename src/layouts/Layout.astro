@@ -1,12 +1,20 @@
 ---
+import "~/styles/index.css"
+
 interface Props {
 	title: string;
+	description:string
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 
-import "~/styles/index.css"
-import "aos/dist/aos.css";
+const makeTitle = title
+  ? title + " | Asegura-Te"
+  : "Correduría de Seguros en Las Palmas | Asegura-Te";
+
+const makeDescription = description
+  ? description
+  : "Descubre Asegura-Te, la correduría de Seguros en Las Palmas que te brinda confianza y seguridad. Protege lo que más importa. ¡Contáctanos hoy!"
 
 ---
 
@@ -14,21 +22,17 @@ import "aos/dist/aos.css";
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-        <meta name="description" content="Descubre Asegura-Te, la correduría de Seguros en Las Palmas que te brinda confianza y seguridad. Protege lo que más importa. ¡Contáctanos hoy!">
+        <meta name="description" content={makeDescription}>
 		<meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{makeTitle}</title>
 		 <!-- --FONTAWESOME-- -->
 		 <script src="https://kit.fontawesome.com/e044e0c03c.js" crossorigin="anonymous"></script>
 		 
 	</head>
 	<body>
 		<slot />
-		<script>
-			import { aosInit } from "~/scripts/aos";
-			aosInit();
-		</script>
 	</body>
 </html>
