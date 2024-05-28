@@ -6,6 +6,8 @@ interface Props {
 const { title } = Astro.props;
 
 import "~/styles/index.css"
+import "aos/dist/aos.css";
+
 ---
 
 <!doctype html>
@@ -18,13 +20,15 @@ import "~/styles/index.css"
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-
 		 <!-- --FONTAWESOME-- -->
 		 <script src="https://kit.fontawesome.com/e044e0c03c.js" crossorigin="anonymous"></script>
+		 
 	</head>
 	<body>
 		<slot />
-
-		<script src="/src/scripts/aos.js"></script>
+		<script>
+			import { aosInit } from "~/scripts/aos";
+			aosInit();
+		</script>
 	</body>
 </html>
