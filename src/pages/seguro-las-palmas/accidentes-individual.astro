@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguros de Accidentes Individual en Las Palmas"
+	description='Protección personalizada ante los imprevistos con nuestros seguros de accidentes en Las Palmas para todas las personas, con la gestión de Asegura-Te.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguros de Accidentes Individual en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros de Salud en Las Palmas"
+        href="#avantContainer"
+        subtitle='Protege tu salud y tu bolsillo con nuestros seguros'
+        subsubtitle="¿Por qué elegir nuestros seguros de accidentes en Las Palmas?"
+        >
+        <p slot="after-title">
+			En Asegura-Te entendemos que los accidentes pueden ocurrir en cualquier momento y lugar. Por eso, ofrecemos seguros de accidentes individuales en Las Palmas para protegerte a ti y a tus seres queridos cuando más lo necesitas. Nuestros planes de cobertura flexible están diseñados para adaptarse a tus necesidades específicas, brindándote la tranquilidad de saber que estás protegido en caso de lesión o incapacidad. Confía en nosotros para proporcionarte la seguridad y protección que necesitas para vivir la vida sin preocupaciones.
+        </p>
+        <p slot="after-subtitle">
+            En Asegura-Te nos preocupamos por tu bienestar y el de tu familia en todo momento. Nuestros seguros de accidentes individuales están diseñados para proporcionarte la protección que necesitas en caso de lesión o incapacidad. Con una amplia gama de opciones de cobertura y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los costos médicos y otros gastos asociados con un accidente. Protege a tus seres queridos y vive con la seguridad y tranquilidad que te mereces con Asegura-Te.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros seguros de accidentes individual están diseñados para brindarte tranquilidad y protección en caso de imprevistos. Confía en nosotros para cuidar de ti.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>

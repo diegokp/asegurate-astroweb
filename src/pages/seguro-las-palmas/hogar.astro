@@ -1,0 +1,44 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguros de Hogar en Las Palmas"
+	description='Protege tu hogar en con Asegura-Te, tu correduría de Seguros en Las Palmas. Seguros para todo tipo de viviendas en Gran Canaria'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+	<SegurosPage
+        title='Seguros de Hogar en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros de Hogar en Las Palmas"
+        href="#avantContainer"
+        subtitle='Protege tu hogar con nuestros seguros en Las Palmas'
+        subsubtitle="¿Por qué elegirnos para asegurar tu hogar?"
+        >
+        <p slot="after-title">
+            En Asegura-Te entendemos que tu hogar es tu refugio, por eso ofrecemos seguros de hogar personalizados en Las Palmas para protegerlo en todo momento. Nuestro equipo de expertos en seguros está dedicado a encontrar la mejor cobertura para ti, asegurando que tu hogar y tus pertenencias estén protegidos contra cualquier imprevisto. Con una amplia gama de opciones de cobertura y tarifas competitivas, puedes estar tranquilo sabiendo que estamos aquí para cuidar de tu hogar como si fuera el nuestro.
+        </p>
+        <p slot="after-subtitle">
+            En Asegura-Te nos preocupamos por tu seguridad y bienestar en el hogar. Nuestros seguros de hogar están diseñados para brindarte la protección que necesitas, desde daños por agua o incendio hasta robos o responsabilidad civil. Además, con nuestro equipo de profesionales a tu disposición, puedes estar seguro de que recibirás el mejor servicio y atención en caso de necesitar asistencia. No dejes nada al azar cuando se trata de la seguridad de tu hogar, confía en Asegura-Te para proteger lo que más importa.
+        </p>
+        <p slot="after-subsubtitle">
+            En Asegura-Te nos comprometemos a ofrecerte seguros de hogar adaptados a tus necesidades, con coberturas amplias y precios competitivos. Además, nuestro equipo de profesionales estará contigo en cada paso del proceso para brindarte el mejor servicio.
+        </p>
+        <div class="landing" slot="after-seguro">
+            <script id="scriptAvant"
+            src="https://pweblidiagonzalez.avant2.es/avant/configurador/hogar/dist/script.js" subdomain="pweblidiagonzalez"></script>
+        </div>
+    </SegurosPage>
+	<Footer />
+</Layout>

@@ -1,0 +1,45 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguros de Decesos en Las Palmas"
+	description='Protege a tu familia en momentos difíciles con nuestros seguros de decesos, somos tu mediador de segurso de decesos en Las Palmas.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguros de Decesos en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros de Decesos en Las Palmas"
+        href="#avantContainer"
+        subtitle='Tranquilidad y protección para tus seres queridos'
+        subsubtitle="¿Por qué elegirnos para asegurar a tu familia en momentos difíciles?"
+        >
+        <p slot="after-title">
+            En Asegura-Te entendemos la importancia de planificar el futuro y proteger a tus seres queridos. Nuestros seguros de decesos en Las Palmas están diseñados para ofrecerte tranquilidad y seguridad en momentos difíciles. Con una amplia gama de opciones de cobertura y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegiendo a tu familia de los costos inesperados asociados con un funeral. Confía en nosotros para proporcionarte la cobertura que necesitas para enfrentar cualquier eventualidad con tranquilidad y paz mental.
+        </p>
+        <p slot="after-subtitle">
+            En Asegura-Te nos preocupamos por aliviar el estrés financiero y emocional en momentos difíciles. Nuestros seguros de decesos están diseñados para brindarte a ti y a tu familia la seguridad y protección que necesitan en momentos de duelo. Con un equipo dedicado a proporcionarte el mejor servicio y atención al cliente, puedes confiar en nosotros para estar a tu lado en los momentos más difíciles. Protege a tus seres queridos y planifica tu futuro con Asegura-Te.
+        </p>
+        <p slot="after-subsubtitle">
+            En Asegura-Te nos comprometemos a brindarte la mejor protección para tu familia en momentos difíciles. Contamos con años de experiencia y un equipo dedicado para ofrecerte el apoyo que necesitas. Confía en nosotros para cuidar de los tuyos.
+        </p>
+        <div class="landing" slot="after-seguro">
+            <h3 id="avantContainer">Calcula tu seguro ahora</h3>
+            <script is:inline id="scriptAvant"
+            src="https://pweblidiagonzalez.avant2.es/avant/configurador/decesos/dist/script.js" subdomain="pweblidiagonzalez"></script>
+        </div>
+    </SegurosPage>
+	<Footer />
+</Layout>

@@ -10,7 +10,7 @@ import Link from "./ui/link.astro"
             <p id="productoTxt">Calcula online tu seguro de hogar. Encuentra el mejor precio para asegurar tu vivienda con todas las coberturas que necesitas.</p>
             <!-- <a href="./landings/hogar.html" class="botonGenerico" id="enlace">Calcula tu Seguro<i class="fa-solid fa-angle-right"></i></a> -->
             <Link
-            href="./landings/hogar.html"
+            href="/seguro-las-palmas/hogar.html"
             className="botonGenerico"
             id="enlace"
             >
@@ -68,7 +68,7 @@ function clickProduct(boton){
              productActive[0].classList.add("Active");
              productoTitle.innerHTML= "Seguros de Hogar en las palmas";
              productoTxt.innerHTML= "Calcula online tu seguro de hogar. Encuentra el mejor precio para asegurar tu vivienda con todas las coberturas que necesitas.";
-             enlace.href="./landings/hogar.html";
+             enlace.href="/seguro-las-palmas/hogar.html";
              Image.src="images/hogar_dest.jpg";
              break;
          case 2:
@@ -76,7 +76,7 @@ function clickProduct(boton){
              productActive[1].classList.add("Active");
              productoTitle.innerHTML= "Seguros Decesos en las palmas";
              productoTxt.innerHTML= "Calcula online tu seguro de decesos. Seguro de decesos completo. Hasta un 60% más barato.";
-             enlace.href="./landings/decesos.html";
+             enlace.href="/seguro-las-palmas/decesos.html";
              Image.src="images/decesos_dest.jpg";
              break;
          case 3:

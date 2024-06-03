@@ -3,7 +3,8 @@ import Layout from '~/layouts/Layout.astro';
 import HeaderTop from '~/components/headerTop.astro';
 import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
-import Footer from '~/components/footer.astro'
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
 
 
 ---
@@ -17,6 +18,28 @@ import Footer from '~/components/footer.astro'
 		<HeaderTop />
 		<Header />
 	</section>
-        <h1>salud</h1>
+    <SegurosPage
+        title='Seguros de Salud en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros de Salud en Las Palmas"
+        href="#avantContainer"
+        subtitle='Accede a la mejor atención médica con nuestros seguros de salud'
+        subsubtitle="¿Por qué elegir nuestros Seguros de Salud en Las Palmas?"
+        >
+        <p slot="after-title">
+			En Asegura-Te sabemos que tu salud es tu activo más valioso, por eso ofrecemos seguros de salud en Las Palmas diseñados para brindarte la protección y tranquilidad que necesitas para cuidarte a ti y a tu familia. Nuestros planes de cobertura flexible están diseñados para adaptarse a tus necesidades específicas, brindándote acceso a una amplia red de profesionales médicos y servicios de atención médica. Confía en nosotros para proteger tu bienestar y vivir la vida con total tranquilidad.
+        </p>
+        <p slot="after-subtitle">
+            En Asegura-Te nos preocupamos por tu salud tanto como tú, por eso nos dedicamos a proporcionarte la mejor protección en el mercado. Nuestros seguros de salud están diseñados para brindarte la cobertura que necesitas en caso de enfermedad, lesión o accidente. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los costos médicos y otros gastos asociados con la atención médica. Confía en nosotros para proteger tu bienestar y mantener la salud de tu familia en todo momento.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros seguros de salud están diseñados para ofrecerte tranquilidad y protección en momentos de enfermedad.
+        </p>
+        <div class="landing" slot="after-seguro">
+			<h3 id="avantContainer">Calcula tu seguro ahora</h3>
+            <script id="scriptAvant"
+            src="https://pweblidiagonzalez.avant2.es/avant/configurador/salud/dist/script.js" subdomain="pweblidiagonzalez"></script>
+        </div>
+    </SegurosPage>
 	<Footer />
 </Layout>

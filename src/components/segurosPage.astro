@@ -1,0 +1,73 @@
+---
+import Link from './ui/link.astro';
+
+interface Props {
+    title:string;
+    subtitle:string;
+    subsubtitle:string;
+    url:string;
+    alt:string;
+    href:string
+}
+
+const { title, subtitle, subsubtitle, url, alt, href } = Astro.props
+
+---
+<section>
+    <main>
+        <img src={url} alt={alt}>
+        <h1>{title}</h1>
+        <div>
+            <slot name="after-title" />
+        </div>
+        <Link
+          href={href}
+          className="botonGenerico"
+          >Calcula tu seguro ahora mismo
+        </Link>
+        <div>
+            <h2>{subtitle}</h2>
+            <slot name="after-subtitle" />
+        </div>
+        <div>
+            <h3>{subsubtitle}</h3>
+            <slot name="after-subsubtitle" />
+        </div>
+        <slot name="after-seguro" />
+    </main>
+</section>
+
+
+<style>
+    main{
+        width: 85%;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    main > div{
+        width: 100%;
+    }
+
+
+    main > img{
+        width: 80%;
+        max-width: 900px;
+    }
+
+    #avantContainer{
+        margin-top: 20px;
+    }
+
+
+    @media only screen and (max-width: 900px)  {
+        main > img{
+            width: 100%;
+        }
+    }
+
+</style>
+
