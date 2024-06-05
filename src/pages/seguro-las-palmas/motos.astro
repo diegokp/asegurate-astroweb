@@ -1,0 +1,42 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+import Tarificador from '~/components/tarificador.astro';
+
+
+---
+
+<Layout
+	title="Seguros de Motos en Las Palmas"
+	description='Protege tu moto con nuestros seguros de motos en Las Palmas. Confía en Asegura-Te, tu correduría de seguros que está en Las Palmas.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+	<SegurosPage
+        title='Seguros de Motos en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros de Motos en Las Palmas"
+        href="#avantContainer"
+        subtitle='Disfruta de la carretera con nuestros seguros para motocicletas en Las Palmas'
+        subsubtitle="¿Por qué elegir nuestros seguros de moto?"
+        >
+        <p slot="after-title">
+            En Asegura-Te entendemos tu pasión por las motocicletas, por eso ofrecemos seguros de motos en Las Palmas diseñados para brindarte la protección que necesitas en la carretera. Ya sea que seas un conductor experimentado o un principiante, nuestros planes de cobertura flexible están diseñados para adaptarse a tus necesidades específicas, brindándote tranquilidad y seguridad en cada viaje. Confía en nosotros para proteger tu moto y disfrutar de la libertad de la carretera con total tranquilidad.
+        </p>
+        <p slot="after-subtitle">
+            Nos apasionan las motocicletas tanto como a ti, por eso nos dedicamos a proporcionarte la mejor protección en la carretera. Nuestros seguros de motos están diseñados para brindarte la cobertura que necesitas en caso de accidente, robo o daño. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los imprevistos mientras disfrutas de la emoción de conducir tu moto. Confía en nosotros para proteger tu pasión y vivir la vida al máximo.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros seguros de motos están diseñados pensando en tu seguridad y tranquilidad. Confía en nosotros para proteger tu pasión por conducir.
+        </p>
+    </SegurosPage>
+    <Tarificador name="motos"/>
+	<Footer />
+</Layout>

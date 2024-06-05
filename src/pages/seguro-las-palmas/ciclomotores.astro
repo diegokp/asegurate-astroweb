@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguros para Ciclomotores en Las Palmas"
+	description='Seguros para ciclomotor en Las Palmas. Asegura-Te: tu correduría de seguros en Las Palmas de Gran Canaria. Contactanos ahora o visítanos.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguros para Ciclomotores en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros para Ciclomotores en Las Palmas"
+        href="/contacto.html"
+        subtitle='Seguros de Accidentes Individual en Las Palmas'
+        subsubtitle="¿Por qué elegir nuestros seguros para ciclomotores?"
+        >
+        <p slot="after-title">
+			En Asegura-Te entendemos que tu ciclomotor es tu medio de transporte personal, por eso ofrecemos seguros para ciclomotores en Las Palmas diseñados para brindarte protección y tranquilidad en la carretera. Nuestros planes de cobertura flexible están diseñados para adaptarse a tus necesidades específicas, brindándote la tranquilidad de saber que estás protegido contra los riesgos asociados con la conducción de un ciclomotor. Confía en nosotros para proteger tu medio de transporte y disfrutar de la libertad de la carretera sin preocupaciones.
+        </p>
+        <p slot="after-subtitle">
+            Nos preocupamos por tu seguridad en la carretera, por eso nos dedicamos a proporcionarte la mejor protección para tu ciclomotor. Nuestros seguros para ciclomotores están diseñados para brindarte la cobertura que necesitas en caso de accidente, robo o daño. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los imprevistos mientras disfrutas de la comodidad y la economía de tu ciclomotor. Confía en nosotros para proteger tu medio de transporte y disfrutar de la libertad de la carretera con total tranquilidad.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros seguros para ciclomotores están diseñados pensando en tu protección y comodidad al conducir. Confía en nosotros para cuidar de ti y de tu vehículo.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>

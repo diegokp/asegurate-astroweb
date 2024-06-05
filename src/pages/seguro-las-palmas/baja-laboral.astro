@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguro de Baja Laboral en Las Palmas"
+	description='Protege tus ingresos con nuestro seguro de baja laboral en Las Palmas. Asegura-Te: tu correduría de Seguros. Llámanos ahora.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguro de Baja Laboral en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguro de Baja Laboral en Las Palmas"
+        href="/contacto.html"
+        subtitle='Tranquilidad financiera en caso de baja laboral'
+        subsubtitle="¿Por qué elegir nuestro seguro de baja laboral?"
+        >
+        <p slot="after-title">
+			En Asegura-Te entendemos que estar fuera del trabajo debido a una enfermedad o lesión puede ser una experiencia estresante, por eso ofrecemos seguros de baja laboral en Las Palmas diseñados para brindarte protección financiera cuando más lo necesitas. Nuestros planes de cobertura flexible están diseñados para adaptarse a tus necesidades específicas, brindándote la tranquilidad de saber que estás protegido contra la pérdida de ingresos durante un período de inactividad laboral. Confía en nosotros para protegerte a ti y a tu familia en tiempos difíciles.
+        </p>
+        <p slot="after-subtitle">
+            En Asegura-Te nos preocupamos por tu bienestar financiero en todo momento, por eso nos dedicamos a proporcionarte la mejor protección en caso de baja laboral. Nuestros seguros de baja laboral están diseñados para brindarte la cobertura que necesitas en caso de enfermedad o lesión que te impida trabajar. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los riesgos financieros asociados con la pérdida de ingresos. Confía en nosotros para proteger tu estabilidad financiera y mantener la tranquilidad en tiempos difíciles.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestro seguro de baja laboral te ofrece protección y seguridad financiera en momentos difíciles. Confía en nosotros para cuidar de ti.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>

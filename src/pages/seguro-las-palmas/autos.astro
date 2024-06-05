@@ -1,0 +1,42 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+import Tarificador from '~/components/tarificador.astro';
+
+
+---
+
+<Layout
+	title="Seguros de Autos en Las Palmas"
+	description='Seguros de coche en Las Palmas con las mejores garantías. Asegura-Te es tu correduría de seguros de confianza. Te asesoramos y estamos para ayudarte.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+	<SegurosPage
+        title='Seguro de Coche en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguro de Coche en Las Palmas"
+        href="#avantContainer"
+        subtitle='Conduce con tranquilidad y seguridad con nuestros seguros de coche en Las Palmas'
+        subsubtitle="¿Por qué elegir nuestros seguros de coches en Las Palmas?"
+        >
+        <p slot="after-title">
+            En Asegura-Te comprendemos lo importante que es tu vehículo para ti, por eso ofrecemos seguros de autos en Las Palmas diseñados para brindarte tranquilidad y protección en la carretera. Nuestros planes de cobertura flexible están diseñados para adaptarse a tus necesidades específicas, desde la cobertura básica hasta opciones más completas que incluyen asistencia en carretera y cobertura de accidentes. Confía en nosotros para proteger tu vehículo y disfrutar de la tranquilidad de saber que estás cubierto en caso de imprevistos.
+        </p>
+        <p slot="after-subtitle">
+            Nos comprometemos a proteger lo que más valoras, incluido tu vehículo. Nuestros seguros de autos están diseñados para brindarte la protección que necesitas en la carretera, ya sea que conduzcas un automóvil, una camioneta o una motocicleta. Con una amplia gama de opciones de cobertura y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los riesgos asociados con la conducción. Confía en nosotros para proteger tu vehículo y disfrutar de la libertad de la carretera sin preocupaciones.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros seguros de autos están diseñados para brindarte la mejor protección y tranquilidad al conducir. Confía en nosotros para cuidar de ti y de tu vehículo.
+        </p>
+    </SegurosPage>
+    <Tarificador name="autos"/>
+	<Footer />
+</Layout>

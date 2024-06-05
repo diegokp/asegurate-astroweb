@@ -1,0 +1,42 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+import Tarificador from '~/components/tarificador.astro';
+
+
+---
+
+<Layout
+	title="Seguros para Comercios en Las Palmas"
+	description='Seguro para tu negocio con al confianza de Asegura-Te. Te ayudmos a elegir el mejor seguro de comercios en Las Palmas.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+	<SegurosPage
+        title='Seguros para Comercios en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros para Comercios en Las Palmas"
+        href="#avantContainer"
+        subtitle='Disfruta de la carretera con nuestros seguros para motocicletas en Las Palmas'
+        subsubtitle="¿Por qué elegir nuestros seguros de moto?"
+        >
+        <p slot="after-title">
+            En Asegura-Te entendemos que tu negocio es tu sustento, por eso ofrecemos seguros para comercios en Las Palmas diseñados para proteger tu empresa contra los riesgos cotidianos. Nuestros planes de cobertura flexible están diseñados para adaptarse a las necesidades específicas de tu negocio, brindándote la tranquilidad de saber que estás protegido contra incendios, robos, daños por agua y otros imprevistos. Confía en nosotros para proteger tu negocio y seguir adelante con total confianza.
+        </p>
+        <p slot="after-subtitle">
+            En Asegura-Te nos preocupamos por el éxito de tu negocio tanto como tú, por eso nos dedicamos a proporcionarte la mejor protección en el mercado. Nuestros seguros para comercios están diseñados para brindarte la cobertura que necesitas en caso de accidente, robo o daño. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los imprevistos mientras te enfocas en hacer crecer tu empresa. Confía en nosotros para proteger tu negocio y alcanzar tus objetivos con seguridad.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros seguros para comercios están diseñados para brindarte la mejor protección y tranquilidad para tu negocio. Confía en nosotros para proteger lo que más te importa.
+        </p>
+    </SegurosPage>
+    <Tarificador name="comercios"/>
+	<Footer />
+</Layout>
