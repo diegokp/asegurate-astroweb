@@ -33,7 +33,6 @@ const { title, subtitle, subsubtitle, url, alt, href } = Astro.props
             <h3>{subsubtitle}</h3>
             <slot name="after-subsubtitle" />
         </div>
-        <slot name="after-seguro" />
     </main>
 </section>
 
@@ -58,9 +57,6 @@ const { title, subtitle, subsubtitle, url, alt, href } = Astro.props
         max-width: 900px;
     }
 
-    #avantContainer{
-        margin-top: 20px;
-    }
 
 
     @media only screen and (max-width: 900px)  {

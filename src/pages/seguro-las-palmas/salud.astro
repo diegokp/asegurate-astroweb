@@ -5,6 +5,7 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
+import Tarificador from '~/components/tarificador.astro';
 
 
 ---
@@ -35,11 +36,7 @@ import SegurosPage from '~/components/segurosPage.astro';
         <p slot="after-subsubtitle">
             Nuestros seguros de salud están diseñados para ofrecerte tranquilidad y protección en momentos de enfermedad.
         </p>
-        <div class="landing" slot="after-seguro">
-			<h3 id="avantContainer">Calcula tu seguro ahora</h3>
-            <script id="scriptAvant"
-            src="https://pweblidiagonzalez.avant2.es/avant/configurador/salud/dist/script.js" subdomain="pweblidiagonzalez"></script>
-        </div>
     </SegurosPage>
+    <Tarificador name="salud"/>
 	<Footer />
 </Layout>

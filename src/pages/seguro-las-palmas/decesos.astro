@@ -5,6 +5,7 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
+import Tarificador from '~/components/tarificador.astro';
 
 
 ---
@@ -35,11 +36,7 @@ import SegurosPage from '~/components/segurosPage.astro';
         <p slot="after-subsubtitle">
             En Asegura-Te nos comprometemos a brindarte la mejor protección para tu familia en momentos difíciles. Contamos con años de experiencia y un equipo dedicado para ofrecerte el apoyo que necesitas. Confía en nosotros para cuidar de los tuyos.
         </p>
-        <div class="landing" slot="after-seguro">
-            <h3 id="avantContainer">Calcula tu seguro ahora</h3>
-            <script is:inline id="scriptAvant"
-            src="https://pweblidiagonzalez.avant2.es/avant/configurador/decesos/dist/script.js" subdomain="pweblidiagonzalez"></script>
-        </div>
     </SegurosPage>
+    <Tarificador name="decesos"/>
 	<Footer />
 </Layout>

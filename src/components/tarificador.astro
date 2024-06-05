@@ -1,0 +1,29 @@
+---
+interface Props {
+    name:string
+}
+
+const {name} = Astro.props
+---
+
+<section>
+    <div class="landing">
+        <h3 id="avantContainer">Calcula tu seguro ahora</h3>
+        <script is:inline id="scriptAvant"
+        src=`https://pweblidiagonzalez.avant2.es/avant/configurador/${name}/dist/script.js` subdomain="pweblidiagonzalez"></script>
+    </div>
+</section>
+
+
+<style>
+    #avantContainer{
+    margin-top: 20px;
+    }
+
+    .landing{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+</style>

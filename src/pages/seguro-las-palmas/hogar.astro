@@ -5,6 +5,7 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
+import Tarificador from '~/components/tarificador.astro';
 
 
 ---
@@ -35,10 +36,7 @@ import SegurosPage from '~/components/segurosPage.astro';
         <p slot="after-subsubtitle">
             En Asegura-Te nos comprometemos a ofrecerte seguros de hogar adaptados a tus necesidades, con coberturas amplias y precios competitivos. Además, nuestro equipo de profesionales estará contigo en cada paso del proceso para brindarte el mejor servicio.
         </p>
-        <div class="landing" slot="after-seguro">
-            <script id="scriptAvant"
-            src="https://pweblidiagonzalez.avant2.es/avant/configurador/hogar/dist/script.js" subdomain="pweblidiagonzalez"></script>
-        </div>
     </SegurosPage>
+    <Tarificador name="hogar"/>
 	<Footer />
 </Layout>
