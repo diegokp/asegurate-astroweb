@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguro de Responsabilidad Civil en Las Palmas"
+	description='Contrata tu seguro de responsabilidad civil en Las Palmas con Asegura-Te. Mas de 20 años al servicio de nuestros clientes.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguro de Responsabilidad Civil en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguro de Responsabilidad Civil en Las Palmas"
+        href="/contacto.html"
+        subtitle='Cobertura completa para tus responsabilidades'
+        subsubtitle="¿Por qué elegir nuestro seguro responsabilidad civil?"
+        >
+        <p slot="after-title">
+			La responsabilidad civil es una parte importante de proteger tus activos y tu futuro financiero, por eso ofrecemos seguros de responsabilidad civil en Las Palmas diseñados para brindarte la protección y tranquilidad que necesitas en caso de reclamaciones legales. Nuestros planes de cobertura flexible están diseñados para adaptarse a tus necesidades específicas, brindándote la tranquilidad de saber que estás protegido contra los costos asociados con demandas por lesiones personales, daños a la propiedad y otros problemas de responsabilidad civil. Confía en nosotros para proteger tus intereses y mantener la tranquilidad en situaciones legales complicadas.
+        </p>
+        <p slot="after-subtitle">
+            En Asegura-Te nos preocupamos por tu protección legal y bienestar en todo momento, por eso nos dedicamos a proporcionarte la mejor protección en caso de problemas de responsabilidad civil. Nuestros seguros de responsabilidad civil están diseñados para brindarte la cobertura que necesitas en caso de demandas por lesiones personales, daños a la propiedad o otros problemas de responsabilidad civil. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los costos legales y otros gastos asociados con reclamaciones por responsabilidad civil. Confía en nosotros para proteger tus activos y mantener la tranquilidad en situaciones legales complicadas.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestro seguro de responsabilidad civil te ofrece protección y tranquilidad en situaciones imprevistas. Confía en nosotros para cuidar de tus responsabilidades.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>

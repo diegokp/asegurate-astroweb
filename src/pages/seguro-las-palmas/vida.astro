@@ -1,0 +1,42 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+import Tarificador from '~/components/tarificador.astro';
+
+
+---
+
+<Layout
+	title="Seguros de Vida Riesgo en Las Palmas"
+	description='Asegura-Te: Correduría de Seguros de Salud en Las Palmas. Protege el futuro de tus seres queridos con nuestra gaa de seguros adaptados a tus necesidades.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguros de Vida Riesgo en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros de Vida Riesgo en Las Palmas"
+        href="#avantContainer"
+        subtitle='Protege el futuro de tus seres queridos con nuestros seguros de vida'
+        subsubtitle="¿Por qué elegir nuestros seguros de vida?"
+        >
+        <p slot="after-title">
+            En Asegura-Te sabemos que tu familia es tu prioridad número uno, por eso ofrecemos seguros de vida riesgo en Las Palmas diseñados para brindarte la protección y tranquilidad que necesitas para su futuro financiero. Nuestros planes de cobertura flexible están diseñados para adaptarse a las necesidades específicas de tu familia, brindándote la tranquilidad de saber que estás protegido contra los riesgos asociados con la vida cotidiana. Confía en nosotros para proteger a tus seres queridos y mantener su seguridad financiera en caso de tragedia.
+        </p>
+        <p slot="after-subtitle">
+            En Asegura-Te nos preocupamos por el bienestar de tu familia tanto como tú, por eso nos dedicamos a proporcionarte la mejor protección en el mercado. Nuestros seguros de vida riesgo están diseñados para brindarte la cobertura que necesitas en caso de fallecimiento prematuro, incapacidad o enfermedad grave. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los riesgos financieros asociados con la vida cotidiana. Confía en nosotros para proteger a tus seres queridos y mantener su seguridad financiera en todo momento.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros seguros de vida riesgo están diseñados pensando en la protección y seguridad de tu familia. Confía en nosotros para cuidar de ellos.
+        </p>
+    </SegurosPage>
+    <Tarificador name="vida"/>
+	<Footer />
+</Layout>

@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguros para Oficinas en Las Palmas"
+	description='Asegura tu oficina con nuestros diferentes seguros para oficinas en Las Palmas. Asegura-Te: +20 años a tu servicio en Las Palmas.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguros para Oficinas en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros para Oficinas en Las Palmas"
+        href="/contacto.html"
+        subtitle='Protección para el espacio de trabajo'
+        subsubtitle="¿Por qué elegir nuestros seguros para oficinas en Las Palmas?"
+        >
+        <p slot="after-title">
+			Entendemos que tu oficina es el corazón de tu negocio, por eso ofrecemos seguros para oficinas en Las Palmas diseñados para brindarte protección y tranquilidad en el lugar de trabajo. Nuestros planes de cobertura flexible están diseñados para adaptarse a las necesidades específicas de tu empresa, brindándote la tranquilidad de saber que estás protegido contra los riesgos asociados con daños a la propiedad, robo y otros problemas relacionados con la oficina. Confía en nosotros para proteger tu espacio de trabajo y mantener tu negocio en funcionamiento con total seguridad.
+        </p>
+        <p slot="after-subtitle">
+            Nuestros seguros para oficinas están diseñados para brindarte la cobertura que necesitas en caso de daños, robos o accidentes en el lugar de trabajo. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los imprevistos mientras mantienes tu negocio en funcionamiento. Confía en nosotros para proteger tu espacio de trabajo y mantener la seguridad de tu empresa en todo momento.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros seguros para oficinas están diseñados pensando en la protección y bienestar de tu negocio. Confía en nosotros para cuidar de tu espacio de trabajo.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>

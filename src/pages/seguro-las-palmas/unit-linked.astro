@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguros Unit Linked en Las Palmas"
+	description='Invierte con seguridad con nuestros Unit Linked en Las Palmas. Dejate guiar por Asegura-Te.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguros Unit Linked en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros Unit Linked en Las Palmas"
+        href="/contacto.html"
+        subtitle='Maximiza tus inversiones con nuestros United Linked'
+        subsubtitle="¿Por qué elegir nuestros Unit Linked?"
+        >
+        <p slot="after-title">
+			Invertir en el mercado financiero puede ser un desafío, por eso ofrecemos Unit Linked en Las Palmas diseñados para brindarte la seguridad y tranquilidad que necesitas para tus inversiones. Nuestros Unit Linked están diseñados para adaptarse a tus necesidades específicas y objetivos financieros, brindándote la tranquilidad de saber que estás invirtiendo de manera inteligente para el futuro. Confía en nosotros para proteger tu patrimonio y vivir la vida que siempre has soñado.
+        </p>
+        <p slot="after-subtitle">
+            Con opciones de inversión personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los riesgos financieros asociados con la jubilación. Confía en nosotros para proteger tu futuro y vivir la vida que siempre has soñado.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros Unit Linked están diseñados para ofrecerte un plan de inversión seguro y rentable a largo plazo. Confía en nosotros para asegurar tu futuro financiero.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>

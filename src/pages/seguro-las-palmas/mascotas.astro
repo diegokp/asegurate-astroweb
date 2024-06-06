@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguros para Mascotas en Las Palmas"
+	description='En Asegura-Te te ayudamos y guiamos padra que tengas el seguro de mascotas adecuado en en Las Palmas. Cuida de lo que más quieres.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguros para Mascotas en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros para Mascotas en Las Palmas"
+        href="/contacto.html"
+        subtitle='Cuida a tus mascotas con nuestros seguros'
+        subsubtitle="¿Por qué elegir nuestros seguros de mascotas en Las Palmas?"
+        >
+        <p slot="after-title">
+			Sabemos que tus mascotas son parte de tu familia, por eso ofrecemos seguros para mascotas en Las Palmas diseñados para brindarte la tranquilidad y protección que necesitas para su cuidado. Nuestros planes de cobertura flexible están diseñados para adaptarse a las necesidades específicas de tu mascota, brindándote la tranquilidad de saber que estás protegido contra los costos asociados con la atención veterinaria y otros gastos inesperados. Confía en nosotros para proteger a tus mascotas y disfrutar de su compañía con total tranquilidad
+        </p>
+        <p slot="after-subtitle">
+            En Asegura-Te nos preocupamos por la salud y el bienestar de tus mascotas tanto como tú, por eso nos dedicamos a proporcionarte la mejor protección en el mercado. Nuestros seguros para mascotas están diseñados para brindarte la cobertura que necesitas en caso de enfermedad, lesión o accidente. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los gastos veterinarios y otros costos asociados con el cuidado de tus mascotas. Confía en nosotros para proteger a tus compañeros peludos y mantener su salud y felicidad en todo momento.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros seguros para mascotas están diseñados pensando en su salud y bienestar. Confía en nosotros para cuidar de tus compañeros peludos.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>

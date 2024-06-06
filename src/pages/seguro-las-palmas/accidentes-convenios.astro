@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguros para Accidentes de Convenios en Las Palmas"
+	description='Protege a tus empleados con nuestros seguros para accidentes de convenios en Las Palmas. Te asesoramos y ayudamos de forma personalizada.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguros para Accidentes de Convenios en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros para Accidentes de Convenios en Las Palmas"
+        href="/contacto.html"
+        subtitle='Seguridad en el entorno laboral con nuestros seguros'
+        subsubtitle="¿Por qué elegir nuestros seguros de convenio laboral?"
+        >
+        <p slot="after-title">
+			En Asegura-Te entendemos que los accidentes pueden ocurrir en cualquier momento y lugar, incluso en el trabajo, por eso ofrecemos seguros para accidentes de convenios en Las Palmas diseñados para brindarte protección y tranquilidad cuando más lo necesitas. Nuestros planes de cobertura flexible están diseñados para adaptarse a las necesidades específicas de tu sector y empresa, brindándote la tranquilidad de saber que estás protegido contra los riesgos asociados con accidentes laborales. Confía en nosotros para proteger a tus empleados y tu negocio en todo momento.
+        </p>
+        <p slot="after-subtitle">
+            Nos preocupamos por la seguridad y el bienestar de tus empleados tanto como tú, por eso nos dedicamos a proporcionarte la mejor protección en el mercado. Nuestros seguros para accidentes de convenios están diseñados para brindarte la cobertura que necesitas en caso de lesiones o accidentes en el lugar de trabajo. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los imprevistos mientras cumples con tus obligaciones laborales. Confía en nosotros para proteger a tus empleados y tu negocio en todo momento.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros seguros para accidentes de convenios están diseñados pensando en la protección y bienestar de tus empleados. Confía en nosotros para cuidar de ellos.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>

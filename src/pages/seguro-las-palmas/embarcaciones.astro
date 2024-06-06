@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguros para Embarcaciones en Las Palmas"
+	description='Seguros para barcos en Las Palmas. Protege tu embarcación con nuestros amplia gama seguros en Las Palmas con Asegura-Te.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguros para Embarcaciones en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros para Embarcaciones en Las Palmas"
+        href="/contacto.html"
+        subtitle='Seguros para navegar con total seguridad'
+        subsubtitle="¿Por qué elegir nuestros seguros para embarcaciones en Las Palmas?"
+        >
+        <p slot="after-title">
+			Entendemos tu amor por la navegación, por eso ofrecemos seguros para embarcaciones en Las Palmas diseñados para brindarte protección y tranquilidad en el agua. Nuestros planes de cobertura flexible están diseñados para adaptarse a las necesidades específicas de tu embarcación, brindándote la tranquilidad de saber que estás protegido contra los riesgos asociados con la navegación. Confía en nosotros para proteger tu embarcación y disfrutar de la libertad y la emoción de navegar con total tranquilidad.
+        </p>
+        <p slot="after-subtitle">
+            Entendemos tu amor por la navegación, por eso ofrecemos seguros para embarcaciones en Las Palmas diseñados para brindarte protección y tranquilidad en el agua. Nuestros planes de cobertura flexible están diseñados para adaptarse a las necesidades específicas de tu embarcación, brindándote la tranquilidad de saber que estás protegido contra los riesgos asociados con la navegación. Confía en nosotros para proteger tu embarcación y disfrutar de la libertad y la emoción de navegar con total tranquilidad.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros seguros para embarcaciones están diseñados pensando en tu seguridad y tranquilidad en el mar. Confía en nosotros para cuidar de tu embarcación.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>

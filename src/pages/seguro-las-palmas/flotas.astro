@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguros para Flotas en Las Palmas"
+	description='Asegura tu flota de vehículos con nuestros variedad seguros para flotas en Las Palmas. Asegura-Te, tiene el seguro indicado para tu empresa.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguros para Flotas en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros para Flotas en Las Palmas"
+        href="/contacto.html"
+        subtitle='Protección integral para tus flotas de vehículos'
+        subsubtitle="¿Por qué elegir nuestros seguros para flotas de vehículos?"
+        >
+        <p slot="after-title">
+			Gestionar una flota de vehículos puede ser un desafío, por eso ofrecemos seguros para flotas en Las Palmas diseñados para brindarte la protección y tranquilidad que necesitas para tu negocio. Nuestros planes de cobertura flexible están diseñados para adaptarse a las necesidades específicas de tu flota, brindándote la tranquilidad de saber que estás protegido contra los riesgos asociados con la conducción y el mantenimiento de múltiples vehículos. Confía en nosotros para proteger tu flota y mantener tu negocio en movimiento con total seguridad.
+        </p>
+        <p slot="after-subtitle">
+            Nos dedicamos a proporcionarte la mejor protección para tu flota de vehículos. Nuestros seguros para flotas están diseñados para brindarte la cobertura que necesitas en caso de accidente, robo o daño en la carretera. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los imprevistos mientras mantienes tu flota en movimiento. Confía en nosotros para proteger tus activos y mantener la seguridad de tu negocio en todo momento.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros seguros para flotas están diseñados pensando en tu seguridad y tranquilidad al conducir. Confía en nosotros para proteger tu flota.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>

@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguros para Pymes en Las Palmas"
+	description='Asegura tu empresa con nuestros seguros  para PYMES en Las Palmas. Despreocupate, Asegura-Te te ayuda a gestinarlo. '
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguros para Pymes en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros para Pymes en Las Palmas"
+        href="/contacto.html"
+        subtitle='Protección personalizada para tu pequeña empresa'
+        subsubtitle="¿Por qué elegir nuestros seguros para Pymes de Las Palmas?"
+        >
+        <p slot="after-title">
+			En Asegura-Te sabemos que tu pequeña o mediana empresa es tu orgullo y alegría, por eso ofrecemos seguros para pymes en Las Palmas diseñados para brindarte protección y tranquilidad en cada paso del camino. Nuestros planes de cobertura flexible están diseñados para adaptarse a las necesidades específicas de tu negocio, brindándote la tranquilidad de saber que estás protegido contra los riesgos asociados con la propiedad, el personal y la responsabilidad civil. Confía en nosotros para proteger tu empresa y mantenerla en crecimiento con total seguridad.
+        </p>
+        <p slot="after-subtitle">
+            Nos preocupamos por el éxito de tu empresa tanto como tú, por eso nos dedicamos a proporcionarte la mejor protección en el mercado. Nuestros seguros para pymes están diseñados para brindarte la cobertura que necesitas en caso de daños, robos o accidentes en el lugar de trabajo. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los imprevistos mientras mantienes tu negocio en funcionamiento. Confía en nosotros para proteger tu empresa y alcanzar tus objetivos empresariales con total seguridad.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros seguros para pymes están diseñados pensando en la protección y crecimiento de tu negocio. Confía en nosotros para cuidar de tu empresa.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>

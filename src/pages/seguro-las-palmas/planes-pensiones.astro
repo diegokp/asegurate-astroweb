@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Planes de Pensiones en Las Palmas"
+	description='Planifica tu futuro financiero con nuestros planes de pensiones en Las Palmas. Asegura-Te: tu correduría de confianza.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Planes de Pensiones en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Planes de Pensiones en Las Palmas"
+        href="/contacto.html"
+        subtitle='Asegura tu futuro financiero con nuestros planes'
+        subsubtitle="¿Por qué elegir nuestros planes de pensiones en Las Palmas?"
+        >
+        <p slot="after-title">
+			Sabemos que planificar tu jubilación es una parte importante de asegurar tu futuro financiero, por eso ofrecemos planes de pensiones en Las Palmas diseñados para brindarte la seguridad y tranquilidad que necesitas en tus años dorados. Nuestros planes de pensiones están diseñados para adaptarse a tus necesidades específicas y objetivos financieros, brindándote la tranquilidad de saber que estás preparado para enfrentar la jubilación con confianza. Confía en nosotros para proteger tu futuro y vivir la vida que siempre has soñado.
+        </p>
+        <p slot="after-subtitle">
+            Nuestros planes de pensiones están diseñados para brindarte la cobertura que necesitas en tus años dorados, desde el ahorro para la jubilación hasta la gestión de inversiones. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los riesgos financieros asociados con la jubilación. Confía en nosotros para proteger tu futuro y vivir la vida que siempre has soñado.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros planes de pensiones están diseñados para ofrecerte seguridad y estabilidad financiera en la jubilación. Confía en nosotros para planificar tu futuro.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>

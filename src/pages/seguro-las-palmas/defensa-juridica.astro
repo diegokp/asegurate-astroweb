@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguro de Defensa Jurídica en Las Palmas"
+	description='Asegura-Te: Protege tus derechos legales con nuestro seguro de defensa jurídica en Las Palmas. Llamanos, escríbenos o visitanos.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguro de Defensa Jurídica en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguro de Defensa Jurídica en Las Palmas"
+        href="/contacto.html"
+        subtitle='Seguro de Defensa Jurídica en Las Palmas'
+        subsubtitle="¿Por qué elegir nuestro seguro de defensa juridica?"
+        >
+        <p slot="after-title">
+			En Asegura-Te sabemos que estar involucrado en asuntos legales puede ser estresante y costoso, por eso ofrecemos seguros de defensa jurídica en Las Palmas diseñados para brindarte la protección y asistencia legal que necesitas cuando más lo necesitas. Nuestros planes de cobertura flexible están diseñados para adaptarse a tus necesidades específicas, brindándote la tranquilidad de saber que estás protegido contra los costos legales asociados con disputas legales, multas y otros problemas legales. Confía en nosotros para protegerte a ti y a tus intereses legales en todo momento.
+        </p>
+        <p slot="after-subtitle">
+            En Asegura-Te nos preocupamos por tu protección legal y bienestar en todo momento, por eso nos dedicamos a proporcionarte la mejor protección en caso de problemas legales. Nuestros seguros de defensa jurídica están diseñados para brindarte la cobertura que necesitas en caso de disputas legales, multas o problemas legales. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los costos legales y otros gastos asociados con asuntos legales. Confía en nosotros para proteger tus derechos y mantener la tranquilidad en situaciones legales complicadas.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestro seguro de defensa jurídica te ofrece tranquilidad y protección legal en momentos difíciles. Confía en nosotros para cuidar de tus derechos.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>

@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguro de Defensa Jurídica para Empresas en Las Palmas"
+	description='Protege los intereses legales de tu empresa con nuestros Seguros en Las Palmas. Dejate asesorar por Asegura-Te, más de 20 años ayudando a empresas.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguro de Defensa Jurídica de la Empresa en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros para Pymes en Las Palmas"
+        href="/contacto.html"
+        subtitle='Asesoramiento legal especializado para empresas'
+        subsubtitle="¿Por qué elegir nuestro seguro de defensa jurídica para empresas?"
+        >
+        <p slot="after-title">
+			Sabemos que tu empresa enfrenta desafíos legales todos los días, por eso ofrecemos seguros de defensa jurídica para empresas en Las Palmas diseñados para brindarte protección y asistencia legal cuando más lo necesitas. Nuestros planes de cobertura flexible están diseñados para adaptarse a las necesidades específicas de tu negocio, brindándote la tranquilidad de saber que estás protegido contra los costos legales asociados con disputas comerciales, litigios laborales y otros problemas legales. Confía en nosotros para proteger tu empresa y tus intereses legales en todo momento.
+        </p>
+        <p slot="after-subtitle">
+            Nuestros seguros de defensa jurídica para empresas están diseñados para brindarte la cobertura que necesitas en caso de disputas comerciales, litigios laborales o problemas legales relacionados con tu actividad empresarial. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los costos legales y otros gastos asociados con asuntos legales. Confía en nosotros para proteger tus intereses comerciales y mantener la tranquilidad en situaciones legales complicadas.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestro seguro de defensa jurídica para empresas te ofrece protección y asesoramiento legal integral. Confía en nosotros para cuidar de tus intereses.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>

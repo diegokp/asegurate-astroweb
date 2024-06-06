@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguros de Viaje en Las Palmas"
+	description='Seguros de Viaje en Las Palmas. Disfruta de tus viajes con seguridad con nuestra oferta de seguros de viaje personalizados y adaptados a lo que necesitas.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguros de Viaje en Las Palmas'
+        url="/images/imagen1.webp"
+        alt="Seguros de Viaje en Las Palmas"
+        href="/contacto.html"
+        subtitle='Disfruta de tus aventuras con seguridad gracias a nuestros seguros de viaje'
+        subsubtitle="¿Por qué elegir nuestros seguros de viaje?"
+        >
+        <p slot="after-title">
+			Tus viajes son una parte importante de tu vida, por eso ofrecemos seguros de viaje en Las Palmas diseñados para brindarte la protección y tranquilidad que necesitas mientras exploras el mundo. Nuestros planes de cobertura flexible están diseñados para adaptarse a tus necesidades específicas, brindándote la tranquilidad de saber que estás protegido contra los riesgos asociados con los viajes, como cancelaciones de vuelos, pérdida de equipaje y emergencias médicas. Confía en nosotros para proteger tus aventuras y vivir la vida con total libertad.
+        </p>
+        <p slot="after-subtitle">
+            Nuestros seguros de viaje están diseñados para brindarte la cobertura que necesitas en caso de imprevistos durante tus aventuras, desde problemas de salud hasta emergencias médicas en el extranjero. Con opciones de cobertura personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los riesgos asociados con los viajes. Confía en nosotros para proteger tus vacaciones y disfrutar de la experiencia con total tranquilidad.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros seguros de viaje están diseñados para ofrecerte tranquilidad y protección en cada viaje. Confía en nosotros para cuidar de ti.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>
