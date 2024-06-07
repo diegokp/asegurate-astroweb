@@ -1,0 +1,100 @@
+---
+
+const dataCompanies = [
+    {
+        url:"https://www.caser.es/informacion-contacto",
+        img:"/images/company/caser.jpg",
+        alt:"seguros Caser"
+    },
+    {
+        url:"https://www.nortehispana.com/contactanos",
+        img:"/images/company/nortehispana.jpg"
+    },
+    {
+        url:"https://www.segurcaixaadeslas.es/listado-telefonos-atencion-cliente",
+        img:"/images/company/adeslas.jpg"
+    },
+    {
+        url:"https://www.allianz.es/contacto.htm",
+        img:"/images/company/allianz.jpg"
+    },
+    {
+        url:"https://www.caser.es/informacion-contacto",
+        img:"/images/company/caser.jpg"
+    },
+    {
+        url:"https://www.caser.es/informacion-contacto",
+        img:"/images/company/caser.jpg",
+        mov:"31223123"
+    }
+]
+
+---
+
+
+<div class="asistance">
+    <h1>Asistencia 24hs</h1>
+    <ul id="containAsistance">
+        {
+            dataCompanies.map((item, index) => (
+              <>
+                {item.mov && (
+                <li>
+                    <a href={item.url}>1
+                    </a>
+                  
+                  </li>
+
+                )}
+
+                {!item.mov && (
+                  <li>
+                    <a href={item.url}>2
+                    </a>
+                  
+                  </li>
+                )}
+              </>
+            ))
+          }
+    </ul>
+</div>
+
+
+<style>
+    .asistance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+#containAsistance{
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 240px);
+    grid-auto-rows: 140px;
+    gap: 20px;
+    padding: 30px 0;
+    border-top: 6px solid;
+    border-color: var(--blue);
+    background-color: #ffff;
+    box-shadow: 5px 5px 18px #adadad;
+}
+
+#containAsistance > ul{
+    text-align: center;
+    /* border: 2px solid green; */
+}
+
+#containAsistance >* a{
+    color: var(--blue)
+}
+
+#containAsistance >* img{
+    width: 100%;
+}
+
+</style>

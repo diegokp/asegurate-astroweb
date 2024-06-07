@@ -1,0 +1,23 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro'
+import Asistencia24 from '~/components/asistencia.astro';
+
+
+---
+
+<Layout
+	title="Asistencia 24hs"
+	description=""
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <Asistencia24 />
+	<Footer />
+</Layout>
