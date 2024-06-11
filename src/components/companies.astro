@@ -8,28 +8,28 @@ import Link from "./ui/link.astro"
         <p>Nuestra correduría de seguros en Las Palmas se enorgullece de trabajar en estrecha colaboración con las principales compañías aseguradoras. Esta colaboración nos permite ofrecer a nuestros clientes una amplia gama de opciones de seguro diseñadas para satisfacer sus necesidades. Al asociarnos con estas compañías líderes en el sector, garantizamos la calidad y la fiabilidad de los productos y servicios que ofrecemos. En Asegura-Te, nos comprometemos a proporcionar a nuestros clientes la tranquilidad y la protección que merecen, respaldados por la experiencia y la reputación de las mejores aseguradoras.</p>
     </div>
     <aside>
-        <div class="swiper2 mySwiper2">
+        <div class="swiper swiper2">
             <div class="swiper-wrapper">
-              <div class="swiper-slide2"><img src="images/company/allianz.jpg" alt="Allianz Logo"></div>
-              <div class="swiper-slide2"><img src="images/company/mapfre.jpg" alt="Mapfre Logo"></div>
-              <div class="swiper-slide2"><img src="images/company/tinerfenia.jpg" alt="Tinerfenia Logo"></div>
-              <div class="swiper-slide2"><img src="images/company/plusultra.jpg" alt="Plusultra Logo"></div>
-              <div class="swiper-slide2"><img src="images/company/axa.jpg" alt="Axa Logo"></div>                 
-              <div class="swiper-slide2"><img src="images/company/segurospordia.jpg" alt="Seguros por dia"></div>
-              <div class="swiper-slide2"><img src="images/company/adeslas.jpg" alt="Adeslas"></div>
-              <div class="swiper-slide2"><img src="images/company/caser.jpg" alt="Caser"></div>
-              <div class="swiper-slide2"><img src="images/company/nortehispana.jpg" alt="Norte Hispana"></div>
-              <div class="swiper-slide2"><img src="images/company/meridiano.jpg" alt="Meridiano Logo"></div>
-              <div class="swiper-slide2"><img src="images/company/reale.jpg" alt="Reale Logo"></div>
-              <div class="swiper-slide2"><img src="images/company/liberty.jpg" alt="Liberty Logo"></div>
-              <div class="swiper-slide2"><img src="images/company/santalucia.jpg" alt="Santa Lucia Logo"></div>
-              <div class="swiper-slide2"><img src="images/company/asisa.jpg" alt="Asisa Logo"></div>
-              <div class="swiper-slide2"><img src="images/company/sanitas.jpg" alt="Sanitas Logo"></div>
-              <div class="swiper-slide2"><img src="images/company/aura.jpg" alt="Aura Logo"></div>
-              <div class="swiper-slide2"><img src="images/company/senassur.jpg" alt="Senassur Logo"></div>
-              <div class="swiper-slide2"><img src="images/company/fiatc.jpg" alt="Fiatc Logo"></div>
-              <div class="swiper-slide2"><img src="images/company/arag.jpg" alt="Arag Logo"></div>
-              <div class="swiper-slide2"><img src="images/company/previsora.jpg" alt="Previsora Logo"></div>
+              <div class="swiper-slide"><img src="images/company/allianz.jpg" alt="Allianz Logo"></div>
+              <div class="swiper-slide"><img src="images/company/mapfre.jpg" alt="Mapfre Logo"></div>
+              <div class="swiper-slide"><img src="images/company/tinerfenia.jpg" alt="Tinerfenia Logo"></div>
+              <div class="swiper-slide"><img src="images/company/plusultra.jpg" alt="Plusultra Logo"></div>
+              <div class="swiper-slide"><img src="images/company/axa.jpg" alt="Axa Logo"></div>                 
+              <div class="swiper-slide"><img src="images/company/segurospordia.jpg" alt="Seguros por dia"></div>
+              <div class="swiper-slide"><img src="images/company/adeslas.jpg" alt="Adeslas"></div>
+              <div class="swiper-slide"><img src="images/company/caser.jpg" alt="Caser"></div>
+              <div class="swiper-slide"><img src="images/company/nortehispana.jpg" alt="Norte Hispana"></div>
+              <div class="swiper-slide"><img src="images/company/meridiano.jpg" alt="Meridiano Logo"></div>
+              <div class="swiper-slide"><img src="images/company/reale.jpg" alt="Reale Logo"></div>
+              <div class="swiper-slide"><img src="images/company/liberty.jpg" alt="Liberty Logo"></div>
+              <div class="swiper-slide"><img src="images/company/santalucia.jpg" alt="Santa Lucia Logo"></div>
+              <div class="swiper-slide"><img src="images/company/asisa.jpg" alt="Asisa Logo"></div>
+              <div class="swiper-slide"><img src="images/company/sanitas.jpg" alt="Sanitas Logo"></div>
+              <div class="swiper-slide"><img src="images/company/aura.jpg" alt="Aura Logo"></div>
+              <div class="swiper-slide"><img src="images/company/senassur.jpg" alt="Senassur Logo"></div>
+              <div class="swiper-slide"><img src="images/company/fiatc.jpg" alt="Fiatc Logo"></div>
+              <div class="swiper-slide"><img src="images/company/arag.jpg" alt="Arag Logo"></div>
+              <div class="swiper-slide"><img src="images/company/previsora.jpg" alt="Previsora Logo"></div>
             </div>
           </div>
     </aside>
@@ -43,19 +43,21 @@ import Link from "./ui/link.astro"
 
 <script>
     // Core de Swiper y estilos
-    import Swiper2 from 'swiper';
-    import { Autoplay} from "swiper/modules";
+    import Swiper from 'swiper';
+    import 'swiper/css';
+    import { Autoplay } from "swiper/modules";
  
   
     // Configurar Swiper
-    const mySwiper2 = new Swiper2(".mySwiper2", {
-        modules: [  Autoplay ],
-        slidesPerView: 5,
-        spaceBetween: 50,
-        autoplay: {
-          delay: 3000
-        },
-        breakpoints: {
+    const swiper2 = new Swiper(".swiper2", {  
+          modules: [ Autoplay ],
+          slidesPerView: 1,
+          spaceBetween: 10,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          breakpoints: {
             640: {
               slidesPerView: 2,
               spaceBetween: 20,
@@ -69,15 +71,35 @@ import Link from "./ui/link.astro"
               spaceBetween: 50,
             },
           },
-    });
+        });
   </script>
 
 <style>
-    .swiper2 {
+
+#slideCompany{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+#slideCompany > aside{
+    background-color: #ffff;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.swiper2 {
     width: 100%;
     height: 100%;
 }
-.swiper-slide2 {
+.swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -91,38 +113,21 @@ import Link from "./ui/link.astro"
   -webkit-align-items: center;
   align-items: center;
 }
-.swiper-slide2 img {
+
+.swiper-slide img {
   display: block;
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
+  height: 80%;
 }
-    h3{
-    font-size: 2rem;
-    font-family: noto;
-    font-weight: bold;
-    }
-    #slideCompany{
-    text-align: center;
-    margin: auto;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    }
-    #slideCompany > aside{
-    background-color: #ffff;
+
+/* h3{
+font-size: 2rem;
+font-family: noto;
+font-weight: bold;
+} */
+
+.boxContainer{
+    padding: 20px;
     width: 100%;
-    height: 150px;
-    display: flex;
-    margin-bottom: 20px;
-    align-items: center;
-    }
-    .boxContainer{
-        padding: 0 20px;
-        width: 100%;
-        max-width: 1600px;
-    }
+    max-width: 1600px;
+}
 </style>

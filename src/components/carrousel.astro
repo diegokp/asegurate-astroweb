@@ -3,7 +3,7 @@ import Link from "./ui/link.astro";
 
 ---
 
-<div class="swiper mySwiper">
+<div class="swiper swiper1">
     <div class="swiper-wrapper">
       <div class="swiper-slide" id="slide1">
         <div class="bannerContent">
@@ -94,7 +94,6 @@ import Link from "./ui/link.astro";
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
 </div>
 
 <script>
@@ -106,7 +105,7 @@ import Link from "./ui/link.astro";
     import "swiper/css/navigation";
   
     // Configurar Swiper
-    const swiper = new Swiper(".swiper", {
+    const swiper1 = new Swiper(".swiper1", {
       modules: [Navigation, Autoplay, Pagination], // definir los módulos a usar
       spaceBetween: 0,
         centeredSlides: true,
@@ -127,9 +126,11 @@ import Link from "./ui/link.astro";
 
 
 <style>
-  .swiper {
+  .swiper1 {
     width: 100%;
-    height: 90%;
+    min-height: 500px;
+    height: 70vh;
+    overflow: hidden;    
 }
 .swiper-slide {
   display: -webkit-box;
@@ -157,24 +158,21 @@ import Link from "./ui/link.astro";
   height: 100%;
   object-fit: cover;
 }
-  .mySwiper{
-    min-height: 500px;
-    height: 60vh;
-  }
-  .bannerContent{
-      width: 60%;
-      min-width: 300px;
-      position: absolute;
-      right: 0;
-      left: 0;
-      margin-left: 10%;
-      margin-top: 5%;
-      text-align: left;
-      background-color: rgba(255, 255, 255, 0.5);
-      padding: 30px;
-      border-radius:10px;
-  }
-  .bannerContent > div:nth-child(1){
-      margin-bottom: 30px; 
-  }
+
+.bannerContent{
+    width: 60%;
+    min-width: 300px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-left: 10%;
+    margin-top: 5%;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    border-radius:10px;
+}
+.bannerContent > div:nth-child(1){
+    margin-bottom: 30px; 
+}
 </style>

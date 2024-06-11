@@ -2,30 +2,97 @@
 
 const dataCompanies = [
     {
-        url:"https://www.caser.es/informacion-contacto",
-        img:"/images/company/caser.jpg",
-        alt:"seguros Caser"
+        href:"https://www.caser.es/informacion-contacto",
+        src:"/images/company/caser.jpg",
+        alt:"Seguros Caser"
     },
     {
-        url:"https://www.nortehispana.com/contactanos",
-        img:"/images/company/nortehispana.jpg"
+        href:"https://www.nortehispana.com/contactanos",
+        src:"/images/company/nortehispana.jpg",
+        alt:"Seguros Norte Hispana"
     },
     {
-        url:"https://www.segurcaixaadeslas.es/listado-telefonos-atencion-cliente",
-        img:"/images/company/adeslas.jpg"
+        href:"https://www.segurcaixaadeslas.es/listado-telefonos-atencion-cliente",
+        src:"/images/company/adeslas.jpg",
+        alt:"Seguros Adeslas"
     },
     {
-        url:"https://www.allianz.es/contacto.htm",
-        img:"/images/company/allianz.jpg"
+        href:"https://www.allianz.es/contacto.htm",
+        src:"/images/company/allianz.jpg",
+        alt:"Seguros Allianz"
     },
     {
-        url:"https://www.caser.es/informacion-contacto",
-        img:"/images/company/caser.jpg"
+        href:"https://www.reale.es/es/te-ayudamos/contacto",
+        src:"/images/company/reale.jpg",
+        alt:"Seguros Reale"
     },
     {
-        url:"https://www.caser.es/informacion-contacto",
-        img:"/images/company/caser.jpg",
-        mov:"31223123"
+        href:"https://www.plusultra.es/contactanos",
+        src:"/images/company/plusultra.jpg",
+        alt:"Seguros Plus Ultra"
+    },
+    {
+        href:"https://www.mapfre.es/particulares/contacto/atencion/",
+        src:"/images/company/mapfre.jpg",
+        alt:"Seguros Mapfre"
+    },
+    {
+        href:"https://www.fiatc.es/contactanos",
+        src:"/images/company/fiatc.jpg",
+        alt:"Seguros Fiatc"
+    },
+    {
+        href:"https://www.santalucia.es/contacto",
+        src:"/images/company/santalucia.jpg",
+        alt:"Seguros Santalucia"
+    },
+    {
+        href:"https://www.libertyseguros.es/contacto/telefono",
+        src:"/images/company/liberty.jpg",
+        alt:"Seguros Liberty Seguros"
+    },
+    {
+        href:"https://mutuatfe.es/telefonos-asistencia/",
+        src:"/images/company/tinerfenia.jpg",
+        alt:"Seguros Tinerfeña"
+    },
+    {
+        href:"https://www.senassur.es/#servicios",
+        src:"/images/company/senassur.jpg",
+        alt:"Seguros Senassur"
+    },
+    {
+        href:"https://www.axa.es/servicios-contacto-telefonos",
+        src:"/images/company/axa.jpg",
+        alt:"Seguros Axa"
+    },
+    {
+        href:"https://www.arag.es/contacto/",
+        src:"/images/company/arag.jpg",
+        alt:"Seguros Arag"
+    },
+    {
+        href:"https://www.segurosmeridiano.com/contacto",
+        src:"/images/company/meridiano.jpg",
+        alt:"Seguros Meridiano"
+    },
+    {
+        href:"tel:+34900922992",
+        src:"/images/company/asisa.jpg",
+        alt:"Seguros Asisa",
+        mov:"900 922 992"
+    },
+    {
+        href:"tel:+34933041600",
+        src:"/images/company/previsora.jpg",
+        alt:"Seguros Previsora",
+        mov:"933 041 600"
+    },
+    {
+        href:"tel:+34961134223",
+        src:"/images/company/aura.jpg",
+        alt:"Seguros Aura",
+        mov:"961 134 223"
     }
 ]
 
@@ -39,27 +106,25 @@ const dataCompanies = [
             dataCompanies.map((item, index) => (
               <>
                 {item.mov && (
-                <li>
-                    <a href={item.url}>1
-                    </a>
-                  
-                  </li>
-
+                    <li>
+                        <a href={item.href} target="_blank">
+                            <img src={item.src} alt={item.alt}>
+                            <i class="fa-solid fa-phone"></i> {item.mov}
+                        </a>
+                    </li>
                 )}
-
                 {!item.mov && (
-                  <li>
-                    <a href={item.url}>2
-                    </a>
-                  
-                  </li>
+                    <li>
+                        <a href={item.href} target="_blank">
+                            <img src={item.src} alt={item.alt}>
+                        </a>
+                    </li>
                 )}
               </>
             ))
-          }
+        }
     </ul>
 </div>
-
 
 <style>
     .asistance{
@@ -68,33 +133,28 @@ const dataCompanies = [
     align-items: center;
     justify-content: center;
     padding: 40px 0;
-}
-
-#containAsistance{
-    width: 80%;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, 240px);
-    grid-auto-rows: 140px;
-    gap: 20px;
-    padding: 30px 0;
-    border-top: 6px solid;
-    border-color: var(--blue);
-    background-color: #ffff;
-    box-shadow: 5px 5px 18px #adadad;
-}
-
-#containAsistance > ul{
-    text-align: center;
-    /* border: 2px solid green; */
-}
-
-#containAsistance >* a{
-    color: var(--blue)
-}
-
-#containAsistance >* img{
-    width: 100%;
-}
-
+    }
+    #containAsistance{
+        width: 80%;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, 240px);
+        grid-auto-rows: 140px;
+        gap: 20px;
+        padding: 30px 0;
+        border-top: 6px solid;
+        border-color: var(--blue);
+        background-color: #ffff;
+        box-shadow: 5px 5px 18px #adadad;
+    }
+    #containAsistance > li{
+        text-align: center;
+        list-style: none;
+    }
+    #containAsistance >* a{
+        color: var(--blue)
+    }
+    #containAsistance >* img{
+        width: 100%;
+    }
 </style>
