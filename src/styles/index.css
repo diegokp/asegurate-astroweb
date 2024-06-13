@@ -45,9 +45,13 @@ body{
     background-color: var(--back);
 }
 
+
 section{
+    margin: auto;
     max-width: 1600px;
 }
+
+
 
 body *> p{
     font-family: nunito fina;
@@ -57,7 +61,7 @@ h1, .bannerContent *> span{
     font-size: 3rem !important;
     font-family: noto;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 
@@ -65,7 +69,7 @@ h2, h3{
     font-size: 2rem;
     font-family: noto;
     font-weight: bold;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 h4, label{
@@ -506,7 +510,7 @@ nav{
 /* CONTACTO */
 
 #contacto{
-    height: 100vh;
+    height: 80vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -637,6 +641,7 @@ footer{
     width: 90%;
     margin: auto;
     padding: 40px 0;
+    font-family: nunito fina!important
 }
 
 
