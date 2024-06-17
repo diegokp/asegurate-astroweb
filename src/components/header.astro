@@ -2,6 +2,81 @@
 import 'animate.css';
 ---
 
+<!-- MOBILE MENU -->
+<div id="special" class="specialList">
+    <i class="fa-solid fa-angle-left backIcon" onclick="sectionSpecialBack()" id="BackSpecial"></i>
+    <div class="overlayTextProducts">
+        <span onclick="sectionParticulares()">Particulares</span>
+        <span onclick="sectionEmpresas()">Empresas</span>
+        <span onclick="sectionVida()">Vida, Ahorro e Inversión</span>
+        <a href="/seguro-las-palmas/salud.html"><span>Salud</span></a>
+        <a href="/seguro-las-palmas/viajes.html"><span>Viajes</span></a>
+    </div>
+    <div class="lineOutDark" onclick="clickon()">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+</div>
+<div id="specialParticulares" class="specialDetails">
+    <div class="lineOutDark" onclick="clickon()">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+    <i class="fa-solid fa-angle-left backIcon" onclick="sectionSpecialBackProducts()" id="BackSpecialProducts"></i>
+    <div class="specialListDetails">
+        <a href="/seguro-las-palmas/hogar.html"><i class="fa-solid fa-angle-right"></i> Hogar</a>
+        <a href="/seguro-las-palmas/decesos.html"><i class="fa-solid fa-angle-right"></i> Decesos</a>
+        <a href="/seguro-las-palmas/accidentes-individual.html"><i class="fa-solid fa-angle-right"></i> Accidentes individual</a>
+        <a href="/seguro-las-palmas/autos.html"><i class="fa-solid fa-angle-right"></i> Autos</a>
+        <a href="/seguro-las-palmas/vehiculos-clasicos.html"><i class="fa-solid fa-angle-right"></i> Vehículos clásicos</a>
+        <a href="/seguro-las-palmas/motos.html"><i class="fa-solid fa-angle-right"></i> Motos</a>
+        <a href="/seguro-las-palmas/ciclomotores.html"><i class="fa-solid fa-angle-right"></i> Ciclomotores</a>
+        <a href="/seguro-las-palmas/baja-laboral.htm"><i class="fa-solid fa-angle-right"></i> Seguros de baja laboral</a>
+        <a href="https://seguropordias.com/?c=fb40a60f501e42d0b3c0e7492439d783" target="_blank"><i class="fa-solid fa-angle-right"></i> Seguros por día</a>
+        <a href="/seguro-las-palmas/mascotas.html"><i class="fa-solid fa-angle-right"></i> Mascotas</a>
+        <a href="/seguro-las-palmas/defensa-juridica.html"><i class="fa-solid fa-angle-right"></i> Defensa jurídica</a>
+        <a href="/seguro-las-palmas/embarcaciones.html"><i class="fa-solid fa-angle-right"></i> Embarcaciones</a>
+    </div>
+</div>
+<div id="specialEmpresas" class="specialDetails">
+    <div class="lineOutDark" onclick="clickon()">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+    <i class="fa-solid fa-angle-left backIcon" onclick="sectionSpecialBackProducts()" id="BackSpecialProducts"></i>
+    <div class="specialListDetails">
+        <a href="/seguro-las-palmas/responsabilidad-civil.html"><i class="fa-solid fa-angle-right"></i> Responsabilidad civil</a>
+        <a href="/seguro-las-palmas/flotas.html"><i class="fa-solid fa-angle-right"></i> Flotas</a>
+        <a href="/seguro-las-palmas/accidentes-convenios.html"><i class="fa-solid fa-angle-right"></i> Accidentes de convenios</a>
+        <a href="/seguro-las-palmas/comercios.html"><i class="fa-solid fa-angle-right"></i> Comercios</a>
+        <a href="/seguro-las-palmas/oficinas.html"><i class="fa-solid fa-angle-right"></i> Oficinas</a>
+        <a href="/seguro-las-palmas/pymes.html"><i class="fa-solid fa-angle-right"></i> Pymes</a>
+        <a href="/seguro-las-palmas/defensa-juridica-empresa.html"><i class="fa-solid fa-angle-right"></i> Defensa jurídica de la empresa</a>
+    </div>
+</div>
+<div id="specialVida" class="specialDetails">
+    <div class="lineOutDark" onclick="clickon()">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+    <i class="fa-solid fa-angle-left backIcon" onclick="sectionSpecialBackProducts()" id="BackSpecialProducts"></i>
+    <div class="specialListDetails">
+        <a href="/seguro-las-palmas/vida.html"><i class="fa-solid fa-angle-right"></i> Vida Riesgo</a>
+        <a href="/seguro-las-palmas/planes-pensiones.html"><i class="fa-solid fa-angle-right"></i> Planes de Pensiones</a>
+        <a href="/seguro-las-palmas/pias.html"><i class="fa-solid fa-angle-right"></i> PIAS</a>
+        <a href="/seguro-las-palmas/sialp.html"><i class="fa-solid fa-angle-right"></i> SIALP</a>
+        <a href="/seguro-las-palmas/unit-linked.html"><i class="fa-solid fa-angle-right"></i> United Linked</a>
+    </div>
+</div>
+<div id="navbar" class="overlay">
+    <div class="lineOut" onclick="clickon()">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+    <div class="overlayText">
+        <a href="/index.html" class="GoTo"><span class="underline" onclick="sectionMenu()">Inicio</span></a>
+        <a href="/index.html#nosotros" class="GoTo"><span class="underline" onclick="sectionMenu()">Nosotros</span></a>
+        <span class="underline" onclick="sectionSpecial()">Productos</span>
+        <a href="/index.html#preguntas" class="GoTo"><span class="underline" onclick="sectionMenu()">Preguntas frecuentes</span></a>
+        <a href="/contacto.html" class="GoTo"><span class="underline" onclick="sectionMenu()">Contacto</span></a>
+    </div>
+</div>
+<!-- DESKTOP MENU -->
 <header>
     <div>
         <img src="/images/asegurate_logo.png" alt="Asegurate logo" id="logo">
@@ -70,6 +145,15 @@ function clickin(){
     window.addEventListener('scroll', disableScroll);
 };
 
+function clickon(){
+    navbar.classList.remove("openSpecial");
+    special.classList.remove("openSpecial");
+    specialParticulares.classList.remove("openSpecial");
+    specialEmpresas.classList.remove("openSpecial");
+    specialVida.classList.remove("openSpecial");
+    window.removeEventListener('scroll', disableScroll); 
+};
+
 const productsNav = document.getElementById("productsNav");
 const productsPart = document.getElementById("particulares");
 const productsEmpre = document.getElementById("empresas");
@@ -136,4 +220,29 @@ function clickvid(){
     angle[0].classList.remove("anglerotate");
     angle[1].classList.remove("anglerotate");
 };
+
+// MOVILE MENU
+function sectionMenu(){
+    navbar.classList.remove("openSpecial");
+    window.removeEventListener('scroll', disableScroll);
+};
+
+function sectionSpecial(){
+    special.classList.toggle("openSpecial");
+};
+
+function sectionSpecialBack(){
+    special.classList.remove("openSpecial");
+};
+
+function sectionSpecialBackProducts(){
+    specialParticulares.classList.remove("openSpecial");
+    specialEmpresas.classList.remove("openSpecial");
+    specialVida.classList.remove("openSpecial");
+};
+
+function disableScroll(){  
+    window.scrollTo(0, 0);
+}
+
 </script>

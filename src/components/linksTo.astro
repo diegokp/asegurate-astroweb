@@ -1,0 +1,38 @@
+---
+import Link from './ui/link.astro';
+
+interface Props {
+    title:string;
+    href:string
+}
+
+const { title, href } = Astro.props
+---
+
+<section>
+    <div class="productLinks">
+        <Link
+        href={href}
+        className="botonGenerico"
+        >{title}
+      </Link>
+      <span>Explora más seguros</span>
+      <Link
+      href={href}
+      className="botonGenerico"
+      >{title}
+    </Link>
+    </div>
+</section>
+
+<style>
+    .productLinks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+        width: 80%;
+        margin: 80px auto 20px;
+        
+    }
+</style>

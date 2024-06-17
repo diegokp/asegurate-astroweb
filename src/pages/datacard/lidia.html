@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lidia González - Asegura-Te</title>
+    <meta name="description" content="Asegura-Te - Contacto">
+    <meta name="robots" content="noindex">
+    <meta property="og:title" content="Lidia González"/>
+    <meta property="og:url" content="https://www.aseguratte.es/card/lidia.html"/>
+    <meta property="og:description" content="Asegura-Te | Lidia Gonzáles"/>
+    <meta property="og:image" content="https://www.aseguratte.es/img/asegurate_logoW.png">
+    <meta property="og:image:secure_url" content="https://www.aseguratte.es/img/asegurate_logoW.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Asegura-Te" />
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="88"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:locale" content="es_ES"/>
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_GB" />
+
+    <!-- ANIMATE CSS    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- CUSTOM STYLE     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap" rel="stylesheet">
+   
+    <!--FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/9622d892d7.js" crossorigin="anonymous"></script>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root{
+    --grey:#B3B3B3;
+    --yellow:#F4D235;
+    --blue:#283B5A;
+    --back:#e4e4e4;
+}
+
+      @font-face{
+        font-family: noto;
+        src: url(../fonts/NotoSerif-Regular.ttf);
+      }
+
+      @font-face {
+      font-family: nunito semi;
+      src: url(../fonts/Nunito-SemiBold.ttf);
+      }
+
+      @font-face {
+      font-family: nunito negrita;
+      src: url(../fonts/Nunito-Bold.ttf);
+      }
+        body {
+            background-color:#e4e4e4;
+            color: #283B5A;
+            font-family: nunito negrita;
+        }
+
+        header{
+          background-image: url("../img/decesos.jpg");
+          background-position:center;
+          background-size: cover;
+          height: 200px;
+          text-align: center;
+        }
+
+        h3{
+            font-size: 26px;
+        }
+
+
+        #card{
+          width: 90%;
+          max-width: 600px;
+          margin: auto;
+          padding-top: 200px;
+          text-align: center;  
+        }
+        .logobox >a > img{
+            width: 200px;
+            position:relative;
+            bottom: -140px;
+        }
+
+        #services{
+          margin: 50px 0 100px 0;
+          display: flex;
+          flex-direction: column;
+        }
+
+        #services > span{
+          font-size:22px;
+          margin-top: 15px;
+        }
+
+        span{
+            font-weight: bold;
+        }
+
+        .social{
+          width: 100%;
+          color: #283B5A;
+          opacity: 0.85;
+          text-align: center;
+          font-size: 40px;
+          margin-bottom: 40px;
+          display: flex;
+          justify-content: space-around;
+          margin-top: 60px;
+        }
+
+        .social a{
+            color: #283B5A;
+        }
+
+        .list{
+          display: flex;
+          height: 0;
+          overflow-y: hidden;
+          transition:2s;
+          width: 80%;
+          margin: auto;
+        }
+
+        .anglerotate{
+          transform: rotate(180deg);
+        }
+
+        .answerOpen{
+          height: auto;
+        }
+
+        ul{
+          margin: 10px auto;
+          list-style: none;
+          font-size: 18px;
+        }
+
+        li{
+          text-align: left;
+          padding: 3px;
+        }
+
+        li i{
+          margin-right: 5px;
+          color: #F4D235;
+        }
+
+        .botonGenerico{
+          background-color: var(--yellow);
+          font-family: bayan;
+          font-weight: bold;
+          font-size: 1.2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 2px solid;
+          border-color: var(--yellow);
+          transition: 0.5s;
+          cursor: pointer;
+          width: 240px;
+          height: 50px;
+          margin-bottom: 60px;
+        }
+
+        .botonGenerico >a{  
+            color: var(--blue);
+            padding-top: 5px;
+            font-family: nunito negrita;
+            text-decoration: none;
+        }
+
+        .botonGenerico >i{
+            color: #ffff;
+            font-size: 1.6rem;
+            padding-left:10px;
+        }
+
+        .botonGenerico:hover{
+            background: var(--back);
+        }
+
+
+
+        /* FOOTER*/
+        #footer{
+            bottom: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: center;
+            transition: 1600ms;
+            transition-timing-function: cubic-bezier(0.645, 0.045,0.355,1);
+        }
+        #footer > span{
+          color: #283B5A;
+          margin-bottom: 10px;
+          font-size: 12px;
+        }
+
+        #footer > a{
+            color: #283B5A;
+            font-size: 24px;
+            text-decoration: none;
+            font-family: nunito semi;
+            margin-top: 40px;
+        }
+
+        #footer img{
+          width: 200px;
+          margin: 60px 0 60px 0;
+        }
+        .fa-whatsapp-square{
+          font-size: 48px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+      <div class="logobox animate__animated animate__fadeInDown">
+        <a href="https://www.aseguratte.es" target="_blank"><img src="../img/logo_round.png" alt=""></a>
+      </div>
+    </header>
+    <section id="card" data-tooltip="Contacto">
+      <h3 class="animate__animated animate__fadeIn animate__delay-1s">Lidia Gonzáles</h3>
+      <div class="social animate__animated animate__fadeIn animate__delay-2s">
+        <a href="mailto:direccion@aseguratte.es?Subject=Consulta"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+34658448231"><i class="fas fa-phone"></i></a>
+        <a href="../resources/lidia.vcf"><i class="fas fa-download"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=34658448231&app=facebook&entry_point=page_cta&fbclid=IwAR1wSpVlak-46L0wwCbhU5jjNEWMeH8tiB3TVSUsMrcpoUXh11lxBacGnG8"><i class="fa-brands fa-whatsapp-square"></i></a>
+      </div>
+      <div id="services" class="animate__animated animate__fadeIn animate__delay-2s">
+        <span class="product" onclick="clickProduct(1)">Particulares <i class="fa-solid fa-angle-down angle"></i></span>
+        <div class="list">
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Hogar</li>
+            <li><i class="fa-solid fa-check"></i> Decesos</li>
+            <li><i class="fa-solid fa-check"></i> Accidentes individuales</li>
+            <li><i class="fa-solid fa-check"></i> Autos</li>
+            <li><i class="fa-solid fa-check"></i> Vehículos clásicos</li>
+            <li><i class="fa-solid fa-check"></i> Motos</li>
+            <li><i class="fa-solid fa-check"></i> Ciclomotores</li>
+            <li><i class="fa-solid fa-check"></i> Seguros de baja laboral</li>
+            <li><i class="fa-solid fa-check"></i> Seguros por día</li>
+            <li><i class="fa-solid fa-check"></i> Mascotas</li>
+            <li><i class="fa-solid fa-check"></i> Seguros de viaje</li>
+            <li><i class="fa-solid fa-check"></i> Defensa jurídica</li>
+            <li><i class="fa-solid fa-check"></i> Embarcaciones</li>
+          </ul>
+
+        </div>
+        <span class="product" onclick="clickProduct(2)">Empresas <i class="fa-solid fa-angle-down angle"></i></span>
+        <div class="list">
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Responsabilidad civil</li>
+            <li><i class="fa-solid fa-check"></i> Flotas</li>
+            <li><i class="fa-solid fa-check"></i> Accidentes de convenio</li>
+            <li><i class="fa-solid fa-check"></i> Comercios</li>
+            <li><i class="fa-solid fa-check"></i> Oficinas</li>
+            <li><i class="fa-solid fa-check"></i> Pymes</li>
+            <li><i class="fa-solid fa-check"></i> Defensa jurídica de la empresa</li>
+          </ul>
+        </div>
+        <span class="product" onclick="clickProduct(3)">Vida, Ahorro e Inversión <i class="fa-solid fa-angle-down angle"></i></span>
+        <div class="list">
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Vida Riesgo</li>
+            <li><i class="fa-solid fa-check"></i> Planes de Pensiones</li>
+            <li><i class="fa-solid fa-check"></i> PIAS</li>
+            <li><i class="fa-solid fa-check"></i> SIALP</li>
+            <li><i class="fa-solid fa-check"></i> United Linked</li>
+          </ul>
+        </div>   
+        <span>Salud y dental</span>
+        <span>Viajes</span>
+      </div>
+      <div class="social animate__animated animate__fadeIn animate__delay-2s">
+        <a href="https://www.instagram.com/aseguratebylidiagonzalez/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://m.facebook.com/asegurattebylidiagonzalez/?__tn__=%2Cg" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/asegura-te-by-lidia-gonzález-42015b28/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+        
+      <div id="footer" class="animate__animated animate__fadeIn animate__delay-2s">
+        <video src="../media/aseguraTe_video.mp4" width="420"  height="240" controls muted>
+          Lo sentimos. Este vídeo no puede reproducirse en este navegador.<br>
+          Puedes descargar el video aqui: <a href="https://www.aseguratte.es/media/aseguraTe_video.mp4">Enlace</a>. 
+          </video>
+        <a href="https://www.aseguratte.es" target="_blank">www.aseguratte.es</a>
+        <img src="../img/lidiaqr.png" alt="LidiaCard">
+        <div class="botonGenerico">
+          <a href="../landings/asistencia.html" target="_blank">Asistencia 24hs</a><i class="fa-solid fa-angle-right"></i>
+        </div>
+        <span>AseguraTe - 2022</span>
+      </div>
+    </section>
+   
+
+
+    <script>
+      var list = document.getElementsByClassName("list");
+      var angle = document.getElementsByClassName("angle");
+
+      function clickProduct (boton){
+        switch (boton){
+          case 1:
+             angle[0].classList.toggle("anglerotate");
+             list[0].classList.toggle("answerOpen");
+             break;
+          case 2:  
+            angle[1].classList.toggle("anglerotate");
+            list[1].classList.toggle("answerOpen");
+            break;
+          case 3:  
+          angle[2].classList.toggle("anglerotate");
+          list[2].classList.toggle("answerOpen");
+          break
+        }
+      }
+
+    </script>
+
+</body>
+
+</html>

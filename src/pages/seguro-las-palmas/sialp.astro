@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro';
+import SegurosPage from '~/components/segurosPage.astro';
+
+
+---
+
+<Layout
+	title="Seguros Individuales de Ahorro a Largo Plazo"
+	description='Asegura tu futuro financiero con nuestros SIALP en Las Palmas. Asegura-Te te ayuda, llamanos o escribenos ahora. Te ayudaremos.'
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <SegurosPage
+        title='Seguros Individuales de Ahorro a Largo Plazo'
+        url="/images/imagen1.webp"
+        alt="Planes Individuales de Ahorro Sistemático en Las Palmas"
+        href="/contacto.html"
+        subtitle='Planifica tu jubilación con nuestros SIALP'
+        subsubtitle="¿Por qué elegir nuestros SIALP?"
+        >
+        <p slot="after-title">
+			Asegura tu futuro financiero con nuestros seguros diseñados para ofrecerte estabilidad económica a largo plazo.
+        </p>
+        <p slot="after-subtitle">
+            En Asegura-Te nos preocupamos por tu bienestar financiero tanto como tú, por eso nos dedicamos a proporcionarte la mejor protección en el mercado. Nuestros SIALP están diseñados para brindarte la cobertura que necesitas en tus años dorados, combinando inversiones seguras y rentables para maximizar tu patrimonio. Con opciones de inversión personalizadas y tarifas competitivas, puedes estar tranquilo sabiendo que estás protegido contra los riesgos financieros asociados con la jubilación. Confía en nosotros para proteger tu futuro y vivir la vida que siempre has soñado.
+        </p>
+        <p slot="after-subsubtitle">
+            Nuestros SIALP están diseñados para ofrecerte un plan de ahorro seguro y rentable a largo plazo. Confía en nosotros para asegurar tu futuro financiero.
+        </p>
+    </SegurosPage>
+	<Footer />
+</Layout>

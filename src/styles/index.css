@@ -325,9 +325,9 @@ nav{
     font-size: 1.8rem;
     font-family: nunito negrita ;
     text-align: center;
-    overflow: scroll;
- 
+    overflow: scroll; 
 }
+
 
 .overlayTextProducts{
     width: 320px;
@@ -378,6 +378,7 @@ nav{
     color: #ffff;
     cursor: pointer;
     position: relative;
+    text-decoration: none;
 }
 
 .underline:after, .boton_menu:after{

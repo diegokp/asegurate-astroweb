@@ -18,7 +18,7 @@ import Link from "./ui/link.astro"
             </Link>
         </div>
         <div>
-            <img src="images/hogar_dest.jpg" alt="Seguros Producto" id="productoImg">
+            <img src="images/hogar_dest.webp" alt="Seguros Las Palmas" id="productoImg">
         </div>
         <div>
             <div class="botonProducto Active" onclick="clickProduct(1)"><i class="fa-solid fa-house"></i>HOGAR</div>
@@ -69,7 +69,7 @@ function clickProduct(boton){
              productoTitle.innerHTML= "Seguros de Hogar en las palmas";
              productoTxt.innerHTML= "Calcula online tu seguro de hogar. Encuentra el mejor precio para asegurar tu vivienda con todas las coberturas que necesitas.";
              enlace.href="/seguro-las-palmas/hogar.html";
-             Image.src="images/hogar_dest.jpg";
+             Image.src="images/hogar_dest.webp";
              break;
          case 2:
              
@@ -77,28 +77,28 @@ function clickProduct(boton){
              productoTitle.innerHTML= "Seguros Decesos en las palmas";
              productoTxt.innerHTML= "Calcula online tu seguro de decesos. Seguro de decesos completo. Hasta un 60% más barato.";
              enlace.href="/seguro-las-palmas/decesos.html";
-             Image.src="images/decesos_dest.jpg";
+             Image.src="images/decesos_destLow.webp";
              break;
          case 3:
              productActive[2].classList.add("Active");
              productoTitle.innerHTML= "Seguros de Salud en las palmas";
              productoTxt.innerHTML= "Solicita presupuesto de tu seguro de salud.  Acceso a los mejores hospitales y especialistas sin esperas.";
              enlace.href="/seguro-las-palmas/salud.html";
-             Image.src="/images/salud_dest.jpg";
+             Image.src="/images/salud_destLow.webp";
              break;                
          case 4:
              productActive[3].classList.add("Active");
              productoTitle.innerHTML= "Seguros de Viajes en las palmas";
              productoTxt.innerHTML= "Solicita presupuesto de tu seguro de viaje.  Porque cada viaje es diferente. ¡Elige el seguro que más se adapte a tus necesidades!";
-             enlace.href="/seguro-las-palmas/viajes.html";
-             Image.src="/images/viajes_dest.jpg";
+             enlace.href="/seguro-las-palmas/viajes.webp";
+             Image.src="/images/viajes_dest.webp";
              break;    
          case 5:
              productActive[4].classList.add("Active");
              productoTitle.innerHTML= "Seguros de Embarcaciones en las palmas";
              productoTxt.innerHTML= "Solicita presupuesto de tu seguro de embarcaciones. Incluye Cobertura de salvamento marítimo.  Adaptamos las coberturas a tus necesidades.";
              enlace.href="/seguro-las-palmas/embarcaciones.html";
-             Image.src="/images/barcos_dest.jpg";
+             Image.src="/images/barcos_destLow.webp";
              break;   
                                                        
     };

@@ -17,7 +17,7 @@ import Link from "./ui/link.astro";
           >Escoge tu seguro ahora
         </Link>
         </div>
-          <img src="images/decesos.webp" alt="decesos banner">
+          <img src="images/decesos.webp" alt="Seguros decesos Las Palmas">
       </div>
       <div class="swiper-slide" id="slide2">
         <div class="bannerContent">
@@ -31,7 +31,7 @@ import Link from "./ui/link.astro";
           >Calcula tu seguro
         </Link>
         </div>
-        <img src="images/mascotas.webp" alt="mascotas banner">
+        <img src="images/mascotas.webp" alt="Seguros mascotas Las Palmas">
     </div>
       <div class="swiper-slide" id="slide3">
         <div class="bannerContent">
@@ -45,7 +45,7 @@ import Link from "./ui/link.astro";
             >Calcula tu seguro
           </Link>
         </div>
-        <img src="images/salud.jpg" alt="salud banner">
+        <img src="images/salud.webp" alt="Seguros salud Las Palmas">
       </div>
     <div class="swiper-slide" id="slide4">
         <div class="bannerContent">
@@ -54,12 +54,12 @@ import Link from "./ui/link.astro";
               <p>Muévete con tranquilidad con un seguro adaptado a tus necesidades.</p>
             </div>
             <Link
-            href="/seguro-las-palmas/contacto.html"
+            href="/contacto.html"
             className="botonGenerico"
             >Calcula tu seguro
           </Link>
         </div>
-        <img src="images/patinetes.jpg" alt="patinetes banner">
+        <img src="images/patinetes.webp" alt="Seguros patinetes Las Palmas">
     </div>
     <div class="swiper-slide" id="slide5">
         <div class="bannerContent">
@@ -74,7 +74,7 @@ import Link from "./ui/link.astro";
             >Pide cita aquí
           </Link>
         </div>
-        <img src="images/luna.jpg" alt="luna banner">
+        <img src="images/luna.webp" alt="Seguros luna Las Palmas">
     </div>
     <div class="swiper-slide" id="slide6">
         <div class="bannerContent">
@@ -89,7 +89,7 @@ import Link from "./ui/link.astro";
             >Calcula tu seguro
           </Link>
         </div>
-        <img src="images/segurodias.jpg" alt="seguros días banner">
+        <img src="images/segurodias.webp" alt="Seguros por días Las Palmas">
     </div>
     </div>
     <div class="swiper-button-next"></div>
@@ -174,5 +174,13 @@ import Link from "./ui/link.astro";
 }
 .bannerContent > div:nth-child(1){
     margin-bottom: 30px; 
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 900px)  {
+  .swiper1 {
+    height: 80vh; 
+  }  
 }
 </style>
