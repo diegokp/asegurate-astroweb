@@ -5,7 +5,7 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
-
+import SegurosLink from '~/components/segurosLink.astro';
 
 ---
 
@@ -36,5 +36,11 @@ import SegurosPage from '~/components/segurosPage.astro';
             Nuestros seguros para flotas están diseñados pensando en tu seguridad y tranquilidad al conducir. Confía en nosotros para proteger tu flota.
         </p>
     </SegurosPage>
+    <SegurosLink 
+    hrefFrom='/seguro-las-palmas/embarcaciones.html'
+    titleFrom='Embarcaciones'
+    hrefTo='/seguro-las-palmas/hogar.html'
+    titleTo='Hogar'
+    />
 	<Footer />
 </Layout>

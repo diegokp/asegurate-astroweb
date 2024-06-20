@@ -5,6 +5,7 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
+import SegurosLink from '~/components/segurosLink.astro';
 
 
 ---
@@ -36,5 +37,11 @@ import SegurosPage from '~/components/segurosPage.astro';
             Nuestros PIAS están diseñados para ofrecerte un plan de ahorro seguro y rentable a largo plazo. Confía en nosotros para asegurar tu futuro financiero.
         </p>
     </SegurosPage>
+    <SegurosLink 
+    hrefFrom='/seguro-las-palmas/oficinas.html'
+    titleFrom='Oficinas'
+    hrefTo='/seguro-las-palmas/planes-pensiones.html'
+    titleTo='Planes de pensiones'
+    />
 	<Footer />
 </Layout>

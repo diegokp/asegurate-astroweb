@@ -5,7 +5,7 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
-
+import SegurosLink from '~/components/segurosLink.astro';
 
 ---
 
@@ -36,5 +36,11 @@ import SegurosPage from '~/components/segurosPage.astro';
             Nuestro seguro de defensa jurídica te ofrece tranquilidad y protección legal en momentos difíciles. Confía en nosotros para cuidar de tus derechos.
         </p>
     </SegurosPage>
+    <SegurosLink 
+    hrefFrom='/seguro-las-palmas/defensa-juridica-empresa.html'
+    titleFrom='Defensa jurídica empresa'
+    hrefTo='/seguro-las-palmas/embarcaciones.html'
+    titleTo='Embarcaciones'
+    />
 	<Footer />
 </Layout>

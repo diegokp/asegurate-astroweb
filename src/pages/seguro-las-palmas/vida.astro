@@ -6,7 +6,7 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import Tarificador from '~/components/tarificador.astro';
-
+import SegurosLink from '~/components/segurosLink.astro';
 
 ---
 
@@ -38,5 +38,11 @@ import Tarificador from '~/components/tarificador.astro';
         </p>
     </SegurosPage>
     <Tarificador name="vida"/>
+    <SegurosLink 
+    hrefFrom='/seguro-las-palmas/viajes.html'
+    titleFrom='Viajes'
+    hrefTo='/seguro-las-palmas/accidentes-convenios.html'
+    titleTo='Accidente de convenios'
+    />
 	<Footer />
 </Layout>

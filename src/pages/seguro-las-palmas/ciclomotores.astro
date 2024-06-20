@@ -5,7 +5,7 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
-
+import SegurosLink from '~/components/segurosLink.astro';
 
 ---
 
@@ -36,5 +36,11 @@ import SegurosPage from '~/components/segurosPage.astro';
             Nuestros seguros para ciclomotores están diseñados pensando en tu protección y comodidad al conducir. Confía en nosotros para cuidar de ti y de tu vehículo.
         </p>
     </SegurosPage>
+    <SegurosLink 
+    hrefFrom='/seguro-las-palmas/baja-laboral.html'
+    titleFrom='Baja laboral'
+    hrefTo='/seguro-las-palmas/comercios.html'
+    titleTo='Comercios'
+    />
 	<Footer />
 </Layout>

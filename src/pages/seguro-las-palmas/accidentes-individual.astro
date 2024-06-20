@@ -5,6 +5,7 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
+import SegurosLink from '~/components/segurosLink.astro';
 
 
 ---
@@ -36,5 +37,11 @@ import SegurosPage from '~/components/segurosPage.astro';
             Nuestros seguros de accidentes individual están diseñados para brindarte tranquilidad y protección en caso de imprevistos. Confía en nosotros para cuidar de ti.
         </p>
     </SegurosPage>
+    <SegurosLink 
+    hrefFrom='/seguro-las-palmas/accidentes-convenios.html'
+    titleFrom='Accidentes de convenios'
+    hrefTo='/seguro-las-palmas/autos.html'
+    titleTo='Autos'
+    />
 	<Footer />
 </Layout>

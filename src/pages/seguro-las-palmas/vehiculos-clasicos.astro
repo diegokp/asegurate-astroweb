@@ -5,7 +5,7 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
-
+import SegurosLink from '~/components/segurosLink.astro';
 
 
 ---
@@ -37,5 +37,11 @@ import SegurosPage from '~/components/segurosPage.astro';
             En Asegura-Te entendemos tu amor por los vehículos clásicos, por eso ofrecemos seguros para vehículos clásicos en Las Palmas diseñados para proteger tu inversión con estilo. Nuestros planes de cobertura especializada están diseñados para adaptarse a las necesidades únicas de tu vehículo clásico, brindándote la tranquilidad de saber que estás protegido contra daños, robos y otros riesgos. Confía en nosotros para proteger tu vehículo clásico y mantener viva la pasión por los autos antiguos.
         </p>
     </SegurosPage>
+    <SegurosLink 
+    hrefFrom='/seguro-las-palmas/unit-linked.html'
+    titleFrom='Unit Linked'
+    hrefTo='/seguro-las-palmas/viajes.html'
+    titleTo='Viajes'
+    />
 	<Footer />
 </Layout>

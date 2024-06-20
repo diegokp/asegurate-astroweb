@@ -5,7 +5,7 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
-
+import SegurosLink from '~/components/segurosLink.astro';
 
 ---
 
@@ -36,5 +36,11 @@ import SegurosPage from '~/components/segurosPage.astro';
             Nuestro seguro de baja laboral te ofrece protección y seguridad financiera en momentos difíciles. Confía en nosotros para cuidar de ti.
         </p>
     </SegurosPage>
+    <SegurosLink 
+    hrefFrom='/seguro-las-palmas/autos.html'
+    titleFrom='Autos'
+    hrefTo='/seguro-las-palmas/ciclomotores.html'
+    titleTo='Ciclomotores'
+    />
 	<Footer />
 </Layout>

@@ -5,7 +5,7 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
-
+import SegurosLink from '~/components/segurosLink.astro';
 
 ---
 
@@ -36,5 +36,11 @@ import SegurosPage from '~/components/segurosPage.astro';
             Nuestros seguros para mascotas están diseñados pensando en su salud y bienestar. Confía en nosotros para cuidar de tus compañeros peludos.
         </p>
     </SegurosPage>
+    <SegurosLink 
+    hrefFrom='/seguro-las-palmas/hogar.html'
+    titleFrom='Hogar'
+    hrefTo='/seguro-las-palmas/motos.html'
+    titleTo='Motos'
+    />
 	<Footer />
 </Layout>

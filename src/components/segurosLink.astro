@@ -1,0 +1,54 @@
+---
+import Button from './ui/button.astro';
+
+interface Props {
+    titleFrom:string;
+    hrefFrom:string;
+    titleTo:string;
+    hrefTo:string;
+}
+
+const { titleFrom, hrefFrom, titleTo, hrefTo } = Astro.props
+---
+
+<section>
+    <div class="productLinks">
+        <Button
+        href={hrefFrom}
+        className="botonLink"
+        >{titleFrom}
+      </Button>
+      <div>
+        <i class="fa-solid fa-angle-left"></i>
+        <span>Explora otros seguros</span>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+      <Button
+      href={hrefTo}
+      className="botonLink"
+      >{titleTo}
+    </Button>
+    </div>
+</section>
+
+<style>
+    .productLinks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        margin: 80px auto 20px;
+        
+    }
+
+    .productLinks >* i{
+        color: #ffff;
+        font-size: 1.2rem;
+        margin: 20px;
+    }
+
+    .productLinks >* span{
+        font-size: 1.2rem;
+    }
+</style>

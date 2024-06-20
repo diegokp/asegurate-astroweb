@@ -1,0 +1,43 @@
+---
+interface Props {
+    href:string;
+    className:string;
+    target?:string
+    id?:string
+}
+
+const { href, className, target, id } = Astro.props
+
+---
+
+<a 
+href={href} 
+class={className}
+target={target}
+id={id}
+>
+<slot />
+</a>
+
+<style>
+
+
+.botonLink {
+    background-color: var(--back);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-color: var(--yellow);
+    transition: 0.5s;
+    cursor: pointer;
+    min-width: 200px;
+    color: var(--blue);
+    padding: 12px 16px;
+}
+
+.botonLink:hover{
+    background: var(--yellow);
+}
+</style>

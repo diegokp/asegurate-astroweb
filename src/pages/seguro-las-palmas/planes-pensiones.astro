@@ -5,7 +5,7 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
-import LinksTo from '~/components/linksTo.astro';
+import SegurosLink from '~/components/segurosLink.astro';
 
 
 ---
@@ -37,8 +37,11 @@ import LinksTo from '~/components/linksTo.astro';
             Nuestros planes de pensiones están diseñados para ofrecerte seguridad y estabilidad financiera en la jubilación. Confía en nosotros para planificar tu futuro.
         </p>
     </SegurosPage>
-    <LinksTo 
-    href='/contacto.html'
-    title='Test'/>
+    <SegurosLink 
+    hrefFrom='/seguro-las-palmas/pias.html'
+    titleFrom='PIAS'
+    hrefTo='/seguro-las-palmas/pymes.html'
+    titleTo='Pymes'
+    />
 	<Footer />
 </Layout>

@@ -5,7 +5,7 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
-
+import SegurosLink from '~/components/segurosLink.astro';
 
 ---
 
@@ -20,7 +20,7 @@ import SegurosPage from '~/components/segurosPage.astro';
 	</section>
     <SegurosPage
         title='Seguros para Oficinas en Las Palmas'
-        url="/images/imagen1.webp"
+        url="/images/oficinas.webp"
         alt="Seguros para Oficinas en Las Palmas"
         href="/contacto.html"
         subtitle='Protección para el espacio de trabajo'
@@ -36,5 +36,11 @@ import SegurosPage from '~/components/segurosPage.astro';
             Nuestros seguros para oficinas están diseñados pensando en la protección y bienestar de tu negocio. Confía en nosotros para cuidar de tu espacio de trabajo.
         </p>
     </SegurosPage>
+    <SegurosLink 
+    hrefFrom='/seguro-las-palmas/motos.html'
+    titleFrom='Motos'
+    hrefTo='/seguro-las-palmas/pias.html'
+    titleTo='PIAS'
+    />
 	<Footer />
 </Layout>
