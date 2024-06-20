@@ -19,9 +19,11 @@ const { titleFrom, hrefFrom, titleTo, hrefTo } = Astro.props
         >{titleFrom}
       </Button>
       <div>
+        <i class="hide fa-solid fa-angle-left"></i>
         <i class="fa-solid fa-angle-left"></i>
         <span>Explora otros seguros</span>
         <i class="fa-solid fa-angle-right"></i>
+        <i class="hide fa-solid fa-angle-right"></i>
       </div>
       <Button
       href={hrefTo}
@@ -48,7 +50,16 @@ const { titleFrom, hrefFrom, titleTo, hrefTo } = Astro.props
         margin: 20px;
     }
 
+    .hide{
+        display: none;
+    }
+
     .productLinks >* span{
         font-size: 1.2rem;
     }
+    @media only screen and (max-width: 900px)  {
+        .productLinks{
+        flex-direction: column;        
+    }
+}
 </style>
