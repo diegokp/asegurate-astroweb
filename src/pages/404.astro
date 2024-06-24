@@ -1,0 +1,39 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro'
+
+---
+
+<Layout
+	title=""
+	description=""
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <main>
+        <h1>404</h1>
+        <h3>Lo siento, tenemos un problema.</h3>
+        <p>No podemos encontrar la dirección url.</p>
+    </main>
+	<Footer />
+</Layout>
+
+
+<style>
+    main{
+        width: 90%;
+        max-width: 1600px;
+        margin: auto;
+        text-align: center;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+</style>

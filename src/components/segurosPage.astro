@@ -15,7 +15,7 @@ const { title, subtitle, subsubtitle, url, alt, href } = Astro.props
 ---
 <section>
     <main>
-        <img src={url} alt={alt}>
+        <img src={url} alt={alt} draggable="false">
         <h1>{title}</h1>
         <div>
             <slot name="after-title" />
