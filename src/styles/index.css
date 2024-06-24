@@ -178,13 +178,7 @@ header >div:nth-child(1){
   }
   
 
-#logo{
-    width: 250px;
-    /* transition: 1000ms;
-    transition-timing-function: cubic-bezier(0.645, 0.045,0.355,1);
-    transform: translateY(110%); */
 
-}
 
 nav{
     width:50%;

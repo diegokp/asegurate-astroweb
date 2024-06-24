@@ -68,7 +68,9 @@ import Footer from '~/components/footer.astro'
 			<h4>Datos de contacto para ejercer sus derechos:</h4>
 			<p>ASEGURA-TE CORREDURIA DE SEGUROS SL. CALLE DOMINGO MONTEVERDE, 144 BAJO A - 35118 PLAYA DE ARINAGA LAS PALMAS (Las Palmas). E-mail: <a href="mailto:direccion@aseguratte.es">direccion@aseguratte.es</a></p>
 			<h4><strong>COOKIES UTILIZADAS EN ESTE SITIO WEB</strong></h4>
-			<script type="text/javascript" charset="UTF-8"  data-cookiescriptreport="report" src="//report.cookie-script.com/r/49059b49d617a458284b7a6a7c644dfe.js"></script>
+			<div id="cookiePanel">
+				<script type="text/javascript" charset="UTF-8"  data-cookiescriptreport="report" src="//report.cookie-script.com/r/49059b49d617a458284b7a6a7c644dfe.js"></script>
+			</div>
 			<br>
 			<h4><strong>¿CÓMO GESTIONAR LAS COOKIES DESDE EL NAVEGADOR?</strong></h4>
 			<table border="0" cellpadding="1" cellspacing="1" class="pdf_datatable" style="width:100%;">
@@ -149,6 +151,11 @@ p{
 table{
 	margin-top: 40px;
 	font-family: nunito fina!important
+}
+
+#cookiePanel{
+	width: 100%;
+	overflow: scroll;
 }
 
 </style>

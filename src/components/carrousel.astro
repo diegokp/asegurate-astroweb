@@ -17,7 +17,11 @@ import Link from "./ui/link.astro";
           >Escoge tu seguro ahora
         </Link>
         </div>
-          <img src="images/decesos.webp" alt="Seguros decesos Las Palmas" draggable="false">
+        <picture>
+          <source media="(max-width: 899px)" srcset="/images/decesos480w.webp">
+          <source media="(min-width: 900px)" srcset="/images/decesos.webp">
+          <img src="/images/decesos.webp" alt="Seguros decesos Las Palmas"  draggable="false">
+        </picture>
       </div>
       <div class="swiper-slide" id="slide2">
         <div class="bannerContent">
@@ -31,7 +35,11 @@ import Link from "./ui/link.astro";
           >Calcula tu seguro
         </Link>
         </div>
-        <img src="images/mascotas.webp" alt="Seguros mascotas Las Palmas" draggable="false">
+        <picture>
+          <source media="(max-width: 899px)" srcset="/images/mascotas480w.webp">
+          <source media="(min-width: 900px)" srcset="/images/mascotas.webp">
+          <img src="images/mascotas.webp" alt="Seguros mascotas Las Palmas" draggable="false">
+        </picture>
     </div>
       <div class="swiper-slide" id="slide3">
         <div class="bannerContent">
@@ -45,7 +53,11 @@ import Link from "./ui/link.astro";
             >Calcula tu seguro
           </Link>
         </div>
-        <img src="images/salud.webp" alt="Seguros salud Las Palmas" draggable="false">
+        <picture>
+          <source media="(max-width: 899px)" srcset="/images/salud480w.webp">
+          <source media="(min-width: 900px)" srcset="/images/salud.webp">
+          <img src="images/salud.webp" alt="Seguros salud Las Palmas" draggable="false">
+        </picture>
       </div>
     <div class="swiper-slide" id="slide4">
         <div class="bannerContent">
@@ -59,7 +71,11 @@ import Link from "./ui/link.astro";
             >Calcula tu seguro
           </Link>
         </div>
-        <img src="images/patinetes.webp" alt="Seguros patinetes Las Palmas" draggable="false">
+        <picture>
+          <source media="(max-width: 899px)" srcset="/images/patinetes480w.webp">
+          <source media="(min-width: 900px)" srcset="/images/patinetes.webp">
+          <img src="images/patinetes.webp" alt="Seguros patinetes Las Palmas" draggable="false">
+        </picture>
     </div>
     <div class="swiper-slide" id="slide5">
         <div class="bannerContent">
@@ -74,7 +90,11 @@ import Link from "./ui/link.astro";
             >Pide cita aquí
           </Link>
         </div>
-        <img src="images/luna.webp" alt="Seguros luna Las Palmas" draggable="false">
+        <picture>
+          <source media="(max-width: 899px)" srcset="/images/luna480w.webp">
+          <source media="(min-width: 900px)" srcset="/images/luna.webp">
+          <img src="images/luna.webp" alt="Seguros luna Las Palmas" draggable="false">
+        </picture>
     </div>
     <div class="swiper-slide" id="slide6">
         <div class="bannerContent">
@@ -89,7 +109,11 @@ import Link from "./ui/link.astro";
             >Calcula tu seguro
           </Link>
         </div>
-        <img src="images/segurodias.webp" alt="Seguros por días Las Palmas" draggable="false">
+        <picture>
+          <source media="(max-width: 899px)" srcset="/images/segurodias480w.webp">
+          <source media="(min-width: 900px)" srcset="/images/segurodias.webp">
+          <img src="images/segurodias.webp" alt="Seguros por días Las Palmas" draggable="false">
+        </picture>
     </div>
     </div>
     <div class="swiper-button-next"></div>
@@ -152,12 +176,15 @@ import Link from "./ui/link.astro";
 .swiper-button-next,  .swiper-button-prev{
     color: aliceblue !important;
 }
-.swiper-slide img {
+
+
+.swiper-slide picture {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 
 .bannerContent{
     width: 60%;
