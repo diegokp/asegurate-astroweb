@@ -1,0 +1,46 @@
+{
+	"items": [
+		{
+			"question":"¿Qué diferencia hay entre el asegurado, el tomador y el beneficiario de un seguro?",
+            "answer":{
+                "1":"El tomador del seguro es la persona que contrata el seguro, es decir, a nombre de quien figura la póliza y quien paga la prima.",
+                "2":"El asegurado es la persona a quien protege el seguro, por ejemplo en un seguro de automóvil, el asegurado sería la persona que sufre el accidente, que puede ser o no la misma que firma y paga la póliza. Beneficiario es aquel que recibiría la indemnización en el caso de que ocurriera el siniestro.",
+                "3":"En la mayoría de los casos, beneficiario y asegurado son la misma persona, sin embargo, en los seguros donde se cubre la muerte del asegurado, el beneficiario de la indemnización es otra persona, que queda elegida por el tomador al firmar la póliza. En muchas ocasiones tomador, asegurado y beneficiario son la misma persona. En otras, suelen coincidir tomador y asegurado o asegurado y beneficiario.",
+                "4":"En el caso de seguros que cubran la muerte del asegurado, las tres figuras podrían estar representadas por tres personas distintas."
+            }
+		},
+        {
+			"question":"¿El seguro a todo riesgo cubre absolutamente cualquier daño?",
+            "answer":{
+                "1":"No. Todos los seguros tienen limitaciones que es importante conocer."
+            }
+		},
+        {
+			"question":"¿Para qué contratar un seguro de decesos?",
+            "answer":{
+                "1":"Contratar un seguro de decesos permite prevenir las consecuencias económicas derivadas del propio fallecimiento para que los familiares no tengan que asumir dichos gastos funerarios y para facilitarles los trámites derivados del mismo."
+            }
+		},
+        {
+			"question":"¿Qué es el infraseguro?",
+            "answer":{
+                "1":"Se trata de la declaración en la póliza de seguro del objeto asegurado por un valor inferior al que realmente tiene. Esta situación es muy desfavorable para el cliente en caso de siniestro, por lo que siempre se debe hacer una valoración de los bienes lo más cercana a la realidad."
+            }
+		},
+        {
+			"question":"¿Qué es el copago en el seguro de salud?",
+            "answer":{
+                "1":"El copago significa abonar una cantidad de dinero cuando hacen uso del servicio médico. Dicha cantidad oscila entre 1 y 100€.",
+                "2":"Esta forma de pago es beneficiosa tanto para la compañía aseguradora como para el asegurado. El motivo es claro: los usuarios hacen un uso más razonables de la consulta médica.",
+                "3":"Este tipo de pólizas es recomendable para aquellas personas que no quieren acudir al hospital."
+            }
+		},
+        {
+			"question":"¿Qué es el período de carencia en un seguro de salud?",
+            "answer":{
+                "1":"Los seguros de salud particulares suelen tener lo que se denomina “período de carencia” para acceder a determinados servicios. Las carencias son el periodo que transcurre desde la fecha de alta de la póliza y el día en que se pueden solicitar determinadas pruebas, generalmente pruebas de alto diagnóstico, hospitalizaciones e intervenciones quirúrgicas.",
+                "2":"Las compañías de seguros exigen cierto periodo de tiempo desde la contratación  para acceder a estos servicios y  se incrementa cuando se trate de hospitalizaciones no urgentes  e intervenciones quirúrgicas programadas."
+            }
+		}
+	]
+}

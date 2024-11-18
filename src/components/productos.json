@@ -1,0 +1,49 @@
+{
+	"items": [
+		{
+			"id": 1,
+			"title": "Seguros de Hogar en Las Palmas",
+			"description": "Calcula online tu seguro de hogar. Encuentra el mejor precio para asegurar tu vivienda con todas las coberturas que necesitas.",
+			"image": "images/hogar_dest.webp",
+			"href": "/seguro-las-palmas/hogar/",
+			"productType": "HOGAR",
+            "icon":"fa-solid fa-house"
+		},
+        {
+			"id": 2,
+			"title": "Seguros Decesos en Las Palmas",
+			"description": "Calcula online tu seguro de decesos. Seguro de decesos completo. Hasta un 60% más barato.",
+			"image": "images/decesos_destLow.webp",
+			"href": "/seguro-las-palmas/decesos/",
+			"productType": "DECESOS",
+            "icon":"fa-sharp fa-solid fa-seedling"
+		},
+		{
+			"id": 3,
+			"title": "Seguros de Salud en Las Palmas",
+			"description": "Solicita presupuesto de tu seguro de salud.  Acceso a los mejores hospitales y especialistas sin esperas.",
+			"image": "/images/salud_destLow.webp",
+			"href": "/seguro-las-palmas/salud/",
+			"productType": "SALUD",
+            "icon":"fa-solid fa-heart-pulse"
+		},
+		{
+			"id": 4,
+			"title": "Seguros de Viajes en Las Palmas",
+			"description": "Solicita presupuesto de tu seguro de viaje.  Porque cada viaje es diferente. ¡Elige el seguro que más se adapte a tus necesidades!",
+			"image": "/images/viajes_dest.webp",
+			"href": "/seguro-las-palmas/viajes/",
+			"productType": "VIAJES",
+            "icon":"fa-solid fa-plane"
+		},
+		{
+			"id": 5,
+			"title": "Seguros de Embarcaciones  en Las Palmas",
+			"description": "Solicita presupuesto de tu seguro de embarcaciones. Incluye Cobertura de salvamento marítimo.  Adaptamos las coberturas a tus necesidades.",
+			"image": "/images/barcos_destLow.webp",
+			"href": "/seguro-las-palmas/embarcaciones/",
+			"productType": "EMBARCACIONES",
+            "icon":"fa-solid fa-sailboat"
+		}
+	]
+}
