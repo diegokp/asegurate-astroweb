@@ -1,22 +1,15 @@
 <script setup>
 import {  ref, computed } from "vue";
-import { items } from "~/components/preguntas.json"
+import { items } from "~/components/data/preguntas.json"
 
 const preguntas = ref(items)
 const active = ref(false)
 
 defineProps(["id"])
 
-// function showRespuesta(){
-//     if (active.value === true) {
-//         active.value = false;
-//   } else {
-//      active.value = true
-//   }
-// }
 
 function showRespuesta(){
-    active.value ? active.value = false : active.value = true
+   return active.value ? active.value = false : active.value = true
 }
 
 

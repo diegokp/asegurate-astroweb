@@ -1,6 +1,6 @@
 <script setup>
 import {  ref } from "vue";
-import { items } from "~/components/productos.json"
+import { items } from "~/components/data/productos.json"
 
 const products =ref(items)
 const selected = ref(0)
@@ -17,23 +17,23 @@ function showProduct(id) {
             <div>
                 <h3 id="productoTitle">{{ products[selected].title }}</h3>
                 <p id="productoTxt">{{ products[selected].description }}</p>
-                <a 
-                    :href="products[selected].href" 
-                    class="botonGenerico" 
+                <a
+                    :href="products[selected].href"
+                    class="botonGenerico"
                     >
                     Calcula tu Seguro
                     <i class="fa-solid fa-angle-right"></i>
                 </a>
             </div>
             <div>
-                <img 
-                :src="products[selected].image" 
-                alt="Seguros Las Palmas" 
-                id="productoImg" 
+                <img
+                :src="products[selected].image"
+                alt="Seguros Las Palmas"
+                id="productoImg"
                 draggable="false">
             </div>
             <div>
-                <button 
+                <button
                     v-for="(product, index) in products"
                     :key="product.id"
                     @click="showProduct(index)"
@@ -73,13 +73,13 @@ function showProduct(id) {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 400px;
-    grid-template-areas: 
+    grid-template-areas:
         "txt image boton"
     ;
     align-items: center;
     gap:30px;
-    margin-bottom: 100px; 
-    overflow: hidden;  
+    margin-bottom: 100px;
+    overflow: hidden;
 }
 
 article > div:nth-child(1){
@@ -113,7 +113,7 @@ article > div:nth-child(1){
     height: 100%;
     justify-content: space-between;
     grid-area: boton;
-    
+
 }
 
 .botonProducto{
@@ -175,13 +175,13 @@ article > div:nth-child(1){
    #productos >article{
        grid-template-rows:repeat(3, 1fr);
        grid-template-columns: 1fr;
-       grid-template-areas: 
+       grid-template-areas:
        "boton"
-       "image" 
+       "image"
        "txt";
        gap: 30px;
        padding: 20px 10px;
-   }   
+   }
 }
 
 </style>

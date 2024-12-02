@@ -1,0 +1,24 @@
+{
+	"productos": [
+		{
+			"name":"Particulares",
+            "href":""
+		},
+        {
+			"name":"Empresas",
+            "href":""
+		},
+        {
+			"name":"Vida, Ahorro e Inversion",
+            "href":""
+		},
+        {
+			"name":"Salud",
+            "href":"/seguro-las-palmas/salud/"
+		},
+        {
+			"name":"Viajes",
+            "href":"/seguro-las-palmas/viajes/"
+		}
+	]
+}

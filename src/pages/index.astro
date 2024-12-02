@@ -8,7 +8,7 @@ import Companies from '~/components/companies.astro';
 import Footer from '~/components/footer.astro'
 import Carrousel from '~/components/carrousel.astro';
 import Productos from '~/components/productos.vue';
-import PreguntasVue from '~/components/preguntas.vue'
+import Preguntas from '~/components/preguntas.vue'
 ---
 
 <Layout
@@ -24,6 +24,6 @@ import PreguntasVue from '~/components/preguntas.vue'
 	<AboutUs />
 	<Productos client:only="vue"/>
 	<Companies />
-	<PreguntasVue client:only="vue" />
+	<Preguntas client:only="vue" />
 	<Footer />
 </Layout>
