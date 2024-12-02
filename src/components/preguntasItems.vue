@@ -7,12 +7,16 @@ const active = ref(false)
 
 defineProps(["id"])
 
+// function showRespuesta(){
+//     if (active.value === true) {
+//         active.value = false;
+//   } else {
+//      active.value = true
+//   }
+// }
+
 function showRespuesta(){
-    if (active.value === true) {
-        active.value= false;
-  } else {
-     active.value= true
-  }
+    active.value ? active.value = false : active.value = true
 }
 
 
@@ -23,13 +27,13 @@ function showRespuesta(){
         <article
             class="accordion"
             >
-                <div  class="question"  @click="showRespuesta" > 
-                    {{ preguntas[id].question }} 
-                    
+                <div  class="question"  @click="showRespuesta" >
+                    {{ preguntas[id].question }}
+
                     <i v-if="active" class="fa-solid fa-angle-up angle"></i>
                     <i v-else class="fa-solid fa-angle-down angle"></i>
                 </div>
-                <div 
+                <div
                 class="answer"
                 :class="{ answerOpen: active }"
                 >
@@ -97,6 +101,6 @@ function showRespuesta(){
     .accordion{
         width: 100%;
     }
-    
+
 }
 </style>
