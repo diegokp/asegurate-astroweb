@@ -27,7 +27,7 @@ function showRespuesta(){
                     <i v-else class="fa-solid fa-angle-down angle"></i>
                 </div>
                 <div
-                class="answer"
+                class="answer prose max-w-none"
                 :class="{ answerOpen: active }"
                 >
                     <div>
@@ -81,7 +81,7 @@ function showRespuesta(){
     padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+
 }
 
 

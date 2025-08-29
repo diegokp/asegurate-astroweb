@@ -1,0 +1,65 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro'
+import CardBlog from '~/components/cardBlog.astro';
+
+import { getCollection } from "astro:content";
+const posts = await getCollection("blog");
+
+---
+
+<Layout
+	title=""
+	description=""
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+	<section>
+    	<main>
+    	    <h1>Últimos artículos</h1>
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 xl:gap-24">
+				{posts.map((post) => <CardBlog post={post} />)}
+			</div>
+    	</main>
+	</section>
+	<Footer />
+</Layout>
+
+
+<style>
+
+
+    main{
+        width: 85%;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    main > div{
+        width: 100%;
+    }
+
+
+    main > img{
+        width: 80%;
+        max-width: 900px;
+    }
+
+
+    @media only screen and (max-width: 900px)  {
+        main > img{
+            width: 100%;
+        }
+    }
+
+</style>

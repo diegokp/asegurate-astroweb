@@ -89,6 +89,7 @@ import 'animate.css';
         <a  href="/index.html" class="boton_menu" onclick="clickproClose()">Inicio</a>
         <a href="/index.html#nosotros" class="GoTo"><div class="boton_menu" onclick="clickproClose()">Nosotros</div></a>
         <div class="boton_menu" onclick="clickproOpen()">Productos</div>
+                <a href="/blog" class="GoTo"><div class="boton_menu" onclick="clickproClose()">Blog</div></a>
         <a href="/index.html#preguntas" class="GoTo"><div class="boton_menu" onclick="clickproClose()">Preguntas frecuentes</div></a>
         <a href="/contacto/" class="GoTo"><div class="boton_menu" onclick="clickproClose()">Contacto</div></a>
     </nav>
@@ -151,7 +152,7 @@ function clickon(){
     specialParticulares.classList.remove("openSpecial");
     specialEmpresas.classList.remove("openSpecial");
     specialVida.classList.remove("openSpecial");
-    window.removeEventListener('scroll', disableScroll); 
+    window.removeEventListener('scroll', disableScroll);
 };
 
 const productsNav = document.getElementById("productsNav");
@@ -241,7 +242,7 @@ function sectionSpecialBackProducts(){
     specialVida.classList.remove("openSpecial");
 };
 
-function disableScroll(){  
+function disableScroll(){
     window.scrollTo(0, 0);
 }
 

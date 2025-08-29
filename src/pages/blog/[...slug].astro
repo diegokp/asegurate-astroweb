@@ -1,0 +1,46 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import HeaderTop from '~/components/headerTop.astro';
+import Header from '~/components/header.astro';
+import Whatsapp from '~/components/whatsapp.astro';
+import Footer from '~/components/footer.astro'
+import BlogPage from '~/components/blogPage.astro';
+import { getCollection, render} from "astro:content";
+
+export async function getStaticPaths() {
+	const posts = await getCollection("blog");
+	return posts.map((post) => ({
+		params: { slug: post.id },
+		props: { post },
+	}));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Layout
+	title=""
+	description=""
+	>
+	<Whatsapp />
+	<section id="inicio">
+		<HeaderTop />
+		<Header />
+	</section>
+    <BlogPage
+        title={post.data.title}
+        image={post.data.image}
+        alt={post.data.imageAlt}
+        date={post.data.excerpt}
+		href={post.data.link}
+    >
+        <div slot="article">
+            <Content/>
+        </div>
+    </BlogPage>
+	<Footer />
+</Layout>
+
+
+

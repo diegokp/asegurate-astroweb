@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -73,7 +75,10 @@ h2, h3{
 }
 
 h4, label{
-    font-family: bayan;
+    font-size: 1.5rem;
+    font-family: noto;
+    font-weight: bold;
+    /* font-family: bayan; */
 }
 
 a{
@@ -170,13 +175,13 @@ header >div:nth-child(1){
     opacity: 0.7;
     z-index: 99;
   }
-  
+
   .boton-subir a {
     font-size: 25px;
     color: #fff;
 
   }
-  
+
 
 
 
@@ -187,7 +192,7 @@ nav{
     justify-content: space-around;
     flex-wrap: wrap;
     font-family: nunito semi;
-    min-width: 600px;   
+    min-width: 600px;
 }
 
 .boton_menu{
@@ -319,7 +324,7 @@ nav{
     font-size: 1.8rem;
     font-family: nunito negrita ;
     text-align: center;
-    overflow: scroll; 
+    overflow: scroll;
 }
 
 
@@ -415,7 +420,7 @@ nav{
 .custom_main{
     flex-grow: 1;
     /* min-height: 500px;   */
-    background-color: #ffff;   
+    background-color: #ffff;
 }
 
 
@@ -444,7 +449,7 @@ nav{
 .overlayProducts a{
     text-align: center;
     color: var(--blue);
-   
+
 }
 
 .open_products{
@@ -464,7 +469,7 @@ nav{
     border-radius: 0 0 10px 10px;
 }
 
-.open_ListProduct{    
+.open_ListProduct{
     height:auto;
 
 }
@@ -548,7 +553,7 @@ nav{
     display: grid;
     grid-template-rows: 1fr 230px;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     "logo logo logo"
     "asegurate enlaces siguenos";
     gap: 60px;
@@ -580,7 +585,7 @@ nav{
     grid-area: siguenos;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 #siguenos div:nth-child(3){
@@ -731,13 +736,13 @@ textarea{
 @media only screen and (max-width: 900px)  {
     nav{
         display: none;
-    } 
+    }
     header{
         align-items: flex-start;
     }
     #header_top{
         display: none;
-    }  
+    }
 
 
     h1, .bannerContent *> span{
@@ -776,15 +781,15 @@ textarea{
     .datos{
         grid-template-rows: 1fr 230px 230px 230px;
         grid-template-columns: 1fr;
-        grid-template-areas: 
+        grid-template-areas:
         "logo"
-        "asegurate" 
-        "enlaces" 
+        "asegurate"
+        "enlaces"
         "siguenos";
         gap: 30px;
     }
 
- 
+
     .legalText{
         flex-direction: column;
         width: 100%;
@@ -799,7 +804,7 @@ textarea{
     h4{
         font-size: 0.8rem;
     }
-    
+
 }
 
 
@@ -809,7 +814,7 @@ textarea{
     #line{
         display: none;
     }
-}  
+}
 
 
 
