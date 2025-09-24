@@ -6,6 +6,7 @@ imageAlt: seguro de salud Asegurate
 excerpt: Publicado el 1 octubre 2025
 publishDate: 2025-10-01
 link: /seguro-las-palmas/salud/
+draft: false
 ---
 
 
