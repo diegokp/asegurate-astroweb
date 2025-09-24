@@ -4,7 +4,7 @@ slug: por-que-contratar-un-seguro
 image: /images/blog/imagenIA01.webp
 imageAlt: imagen de por que contratar un seguro
 excerpt: Publicado el 1 Septiembre 2025
-publishDate: 2025-11-01
+publishDate: 2025-09-01
 link: /index.html
 ---
 
