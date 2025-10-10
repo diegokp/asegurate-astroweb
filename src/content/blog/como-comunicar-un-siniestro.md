@@ -1,12 +1,12 @@
 ---
 title:  📞 ¿Cómo comunicar un siniestro de forma rápida y eficaz con tu correduría?
 slug: como-comunicar-un-siniestro
-image: /images/blog/imagen04.webp
+image: /images/blog/imagen05.webp
 imageAlt: imagen de siniestro
-excerpt: Publicado el 15 noviembre 2025
-publishDate: 2025-11-15
+excerpt: Publicado el 1 noviembre 2025
+publishDate: 2025-11-1
 link: /index.html
-draft: false
+draft: true
 ---
 
 Cuando ocurre un siniestro —ya sea un accidente de tráfico, un escape de agua en casa o un robo en tu negocio— es normal sentirse nervioso o no saber exactamente qué hacer.

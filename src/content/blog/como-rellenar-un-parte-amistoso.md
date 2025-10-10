@@ -6,7 +6,7 @@ imageAlt: imagen de parte amistoso
 excerpt: Publicado el 15 Octubre 2025
 publishDate: 2025-10-15
 link: /index.html
-draft: false
+draft: true
 ---
 
 Tener un accidente de tráfico es un mal trago, pero saber **cómo rellenar bien un parte amistoso** puede hacer que todo se solucione más rápido y sin complicaciones.
