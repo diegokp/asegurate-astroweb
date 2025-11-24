@@ -9,5 +9,8 @@ import markdoc from '@astrojs/markdoc';
 // https://astro.build/config
 export default defineConfig({
   site:'https://www.aseguratte.es',
-  integrations: [vue(), tailwind(), sitemap(), markdoc()]
+  integrations: [vue(), tailwind(), sitemap(), markdoc()],
+  // experimental: {
+  //   liveContentCollections: true,
+  // },
 });

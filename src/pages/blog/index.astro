@@ -11,19 +11,21 @@ import { getCollection } from "astro:content";
 import { date } from 'astro:schema';
 // const posts = await getCollection("blog");
 
-const posts = (
-  await getCollection(
-    'blog',
-    ({ data }: CollectionEntry<'blog'>) => data.publishDate <= new Date()
-  )
-).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
-
 // const posts = (
 //   await getCollection(
 //     'blog',
-//     ({ data }: CollectionEntry<'blog'>) => data.draft == false
+//     ({ data }: CollectionEntry<'blog'>) => data.publishDate <= new Date()
 //   )
 // ).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+export const prerender = false
+
+const posts = (
+  await getCollection(
+    'blog',
+    ({ data }: CollectionEntry<'blog'>) => data.draft == false
+  )
+).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 
 ---
 
