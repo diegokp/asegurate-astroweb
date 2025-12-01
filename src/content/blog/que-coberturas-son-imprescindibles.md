@@ -6,7 +6,7 @@ imageAlt: imagen de coberturas impresindibles
 excerpt: Publicado el 15 noviembre 2025
 publishDate: 2025-11-15
 link: /index.html
-draft: false
+last: true
 ---
 
 Contratar un seguro de hogar es una decisión importante, pero muchas veces lo hacemos sin entender realmente **qué estamos asegurando y para qué**. Algunas coberturas son **esenciales** para protegerte ante los problemas más comunes, mientras que otras pueden **no ser necesarias** en todos los casos.

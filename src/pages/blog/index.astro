@@ -18,14 +18,22 @@ import { date } from 'astro:schema';
 //   )
 // ).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 
-export const prerender = false
+
 
 const posts = (
   await getCollection(
     'blog',
-    ({ data }: CollectionEntry<'blog'>) => data.draft == false
+    ({ data }: CollectionEntry<'blog'>) => data.last == false
   )
 ).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+const postsDraft = (
+  await getCollection(
+    'blog',
+    ({ data }: CollectionEntry<'blog'>) => data.last == true
+  )
+).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
 
 ---
 
@@ -39,8 +47,14 @@ const posts = (
 		<Header />
 	</section>
 	<section>
+        <main>
+    	<h1>Últimos artículos</h1>
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 xl:gap-24">
+				{postsDraft.map((post) => <CardBlog post={post} />)}
+			</div>
+    	</main>
     	<main>
-    	    <h1>Últimos artículos</h1>
+    	    <h2>Otros artículos</h2>
 			<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 xl:gap-24">
 				{posts.map((post) => <CardBlog post={post} />)}
 			</div>

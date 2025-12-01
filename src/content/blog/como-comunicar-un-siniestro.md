@@ -6,7 +6,7 @@ imageAlt: imagen de siniestro
 excerpt: Publicado el 1 noviembre 2025
 publishDate: 2025-11-1
 link: /index.html
-draft: false
+last: true
 ---
 
 Cuando ocurre un siniestro —ya sea un accidente de tráfico, un escape de agua en casa o un robo en tu negocio— es normal sentirse nervioso o no saber exactamente qué hacer.
