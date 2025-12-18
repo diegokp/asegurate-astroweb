@@ -5,6 +5,7 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro'
 import CardBlog from '~/components/cardBlog.astro';
+import Articulos from '~/components/articulos.vue'
 
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from "astro:content";
@@ -47,17 +48,18 @@ const postsDraft = (
 		<Header />
 	</section>
 	<section>
-        <main>
+      <main>
     	<h1>Últimos artículos</h1>
-			<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 xl:gap-24">
+			<!-- <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 xl:gap-24">
 				{postsDraft.map((post) => <CardBlog post={post} />)}
-			</div>
+			</div> -->
     	</main>
     	<main>
-    	    <h2>Otros artículos</h2>
+    	    <!-- <h2>Otros artículos</h2>
 			<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 xl:gap-24">
 				{posts.map((post) => <CardBlog post={post} />)}
-			</div>
+			</div> -->
+        <Articulos client:only="vue"></Articulos>
     	</main>
 	</section>
 	<Footer />

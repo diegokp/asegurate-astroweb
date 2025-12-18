@@ -1,0 +1,83 @@
+[
+    {
+        "id": "1",
+        "title": "¿Por qué contratar un seguro con una correduría como ASEGURA-TE? 🛡️",
+        "slug": "por-que-contratar-un-seguro",
+        "image": "/images/blog/imagenIA01.webp",
+        "imageAlt": "imagen de por que contratar un seguro",
+        "excerpt": "Publicado el 1 Septiembre 2025",
+        "publishDate": "2025-09-01"
+    },
+    {
+        "id": "2",
+        "title": "👨‍👩‍👧‍👦 ¿Cómo elegir el mejor seguro de vida para tu familia?",
+        "slug": "como-elegir-el-mejor-seguro-para-tu-familia",
+        "image": "/images/blog/imagenIA02.webp",
+        "imageAlt": "imagen de por que contratar un seguro",
+        "excerpt": "Publicado el 15 Septiembre 2025",
+        "publishDate": "2025-09-15"
+    },
+    {
+        "id": "3",
+        "title": " 🩺 ¿Estás pensando en cambiar de seguro de salud? Lo que debes saber antes de hacerlo",
+        "slug": "estas-pensando-en-cambiar-de-seguro-de-salud",
+        "image": "/images/blog/imagenIA03.webp",
+        "imageAlt": "seguro de salud Asegurate",
+        "excerpt": "Publicado el 1 octubre 2025",
+        "publishDate": "2025-10-01"
+    },
+    {
+        "id": "4",
+        "title": "📋 Cómo rellenar correctamente un parte amistoso de accidente (paso a paso)",
+        "slug": "como-rellenar-un-parte-amistoso",
+        "image": "/images/blog/imagen04.webp",
+        "imageAlt": "imagen de parte amistoso",
+        "excerpt": "Publicado el 15 Octubre 2025",
+        "publishDate": "2025-10-15"
+    },
+    {
+        "id": "5",
+        "title": "📞 ¿Cómo comunicar un siniestro de forma rápida y eficaz con tu correduría?",
+        "slug": "como-comunicar-un-siniestro",
+        "image": "/images/blog/imagen05.webp",
+        "imageAlt": "imagen de siniestro",
+        "excerpt": "Publicado el 1 noviembre 2025",
+        "publishDate": "2025-11-01"
+    },
+    {
+        "id": "6",
+        "title": "🏡 Seguro de hogar ¿qué coberturas son imprescindibles y cuáles puedes evitar?",
+        "slug": "que-coberturas-son-imprescindibles",
+        "image": "/images/blog/cobertura.png",
+        "imageAlt": "imagen de coberturas impresindibles",
+        "excerpt": "Publicado el 15 noviembre 2025",
+        "publishDate": "2025-11-15"
+    },
+    {
+        "id": "7",
+        "title": "🎁 Regala tranquilidad ¿Sabías que puedes contratar un seguro para otra persona?",
+        "slug": "regala-tranquilidad",
+        "image": "/images/blog/fiesta_navidenia.png",
+        "imageAlt": "imagen de fiesta navidenia",
+        "excerpt": "Publicado el 1 diciembre 2025",
+        "publishDate": "2025-12-01"
+    },
+    {
+        "id": "8",
+        "title": "📆 Cierre de año asegurado, ¡revisa tus pólizas!",
+        "slug": "cierre-asegurado",
+        "image": "/images/blog/cierre-asegurado.png",
+        "imageAlt": "imagen de mujer cierre de año",
+        "excerpt": "Publicado el 15 diciembre 2025",
+        "publishDate": "2025-12-12"
+    },
+    {
+        "id": "9",
+        "title": "🎉 ¡Feliz 2026! Empieza el año asegurado, los seguros que no puedes olvidar",
+        "slug": "seguros-que-no-puedes-olvidar",
+        "image": "/images/blog/familia-seguros.jpeg",
+        "imageAlt": "imagen de familia buscando seguro",
+        "excerpt": "Publicado el 1 enero 2026",
+        "publishDate": "2025-12-19"
+    }
+]
