@@ -8,7 +8,7 @@ const loading = ref(true)
 
 const fetchData = async () => {
   try {
-    const res = await fetch('https://raw.githubusercontent.com/diegokp/asegurattedata/main/data.json')
+    const res = await fetch('https://raw.githubusercontent.com/diegokp/asegurate-astroweb/main/public/api/data.json')
     articulos.value = await res.json()
   } catch (error) {
     console.log(error)
