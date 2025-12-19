@@ -5,8 +5,9 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
-import Tarificador from '~/components/tarificador.astro';
+// import Tarificador from '~/components/tarificador.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import ContactForm from '~/components/contactForm.astro';
 
 
 ---
@@ -38,8 +39,9 @@ import SegurosLink from '~/components/segurosLink.astro';
             Nuestros seguros de autos están diseñados para brindarte la mejor protección y tranquilidad al conducir. Confía en nosotros para cuidar de ti y de tu vehículo.
         </p>
     </SegurosPage>
-    <Tarificador name="autos"/>
-    <SegurosLink 
+    <ContactForm page="Autos"/>
+    <!-- <Tarificador name="autos"/> -->
+    <SegurosLink
     hrefFrom='/seguro-las-palmas/accidentes-individual/'
     titleFrom='Accidentes individual'
     hrefTo='/seguro-las-palmas/baja-laboral/'

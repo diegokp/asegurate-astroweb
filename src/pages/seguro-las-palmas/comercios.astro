@@ -5,7 +5,8 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
-import Tarificador from '~/components/tarificador.astro';
+// import Tarificador from '~/components/tarificador.astro';
+import ContactForm from '~/components/contactForm.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 
 ---
@@ -37,8 +38,9 @@ import SegurosLink from '~/components/segurosLink.astro';
             Nuestros seguros para comercios están diseñados para brindarte la mejor protección y tranquilidad para tu negocio. Confía en nosotros para proteger lo que más te importa.
         </p>
     </SegurosPage>
-    <Tarificador name="comercios"/>
-    <SegurosLink 
+        <ContactForm  page="Comercios"/>
+    <!-- <Tarificador name="comercios"/> -->
+    <SegurosLink
     hrefFrom='/seguro-las-palmas/ciclomotores/'
     titleFrom='Ciclomotores'
     hrefTo='/seguro-las-palmas/decesos/'

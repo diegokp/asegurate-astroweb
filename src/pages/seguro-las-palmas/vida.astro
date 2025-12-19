@@ -5,7 +5,8 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
-import Tarificador from '~/components/tarificador.astro';
+// import Tarificador from '~/components/tarificador.astro';
+import ContactForm from '~/components/contactForm.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 
 ---
@@ -37,8 +38,9 @@ import SegurosLink from '~/components/segurosLink.astro';
             Nuestros seguros de vida riesgo están diseñados pensando en la protección y seguridad de tu familia. Confía en nosotros para cuidar de ellos.
         </p>
     </SegurosPage>
-    <Tarificador name="vida"/>
-    <SegurosLink 
+    <ContactForm  page="Vida"/>
+    <!-- <Tarificador name="vida"/> -->
+    <SegurosLink
     hrefFrom='/seguro-las-palmas/viajes/'
     titleFrom='Viajes'
     hrefTo='/seguro-las-palmas/accidentes-convenios/'

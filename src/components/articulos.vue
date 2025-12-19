@@ -53,8 +53,8 @@ const restoArticulos = computed(() => {
               	</div>
               	<div class="px-4 h-72 flex flex-col grow border-x-2 border-b-2 border-gray-100 overflow-hidden">
                   <div class="flex flex-col justify-center items-center h-full">
-                    <h4 class="tracking-wide">{{articulo.title}}</h4>
-              		  <p class="mt-2 mb-8 prose">{{articulo.excerpt}}</p>
+                    <h4 class="text-2xl tracking-wide ">{{articulo.title}}</h4>
+              		  <p class="mt-2 prose">{{articulo.excerpt}}</p>
                   </div>
               		<span
               			class="text-center px-4 py-2 -mx-4 text-white text-2xl bg-brand mt-auto block"
@@ -75,9 +75,9 @@ const restoArticulos = computed(() => {
               		<img :src="`${articulo.image}`"  :alt="`${articulo.imageAlt}`"/>
               	</div>
               	<div class="px-4 h-72 flex flex-col grow border-x-2 border-b-2 border-gray-100 overflow-hidden">
-                  <div class="flex flex-col justify-center items-center h-full">
-                    <h4 class="tracking-wide">{{articulo.title}}</h4>
-              		  <p class="mt-2 mb-8 prose">{{articulo.excerpt}}</p>
+                  <div class="flex flex-col justify-center items-center h-full ">
+                    <h4 class="text-2xl tracking-wide">{{articulo.title}}</h4>
+              		  <p class="mt-2 prose">{{articulo.excerpt}}</p>
                   </div>
               		<span
               			class="text-center px-4 py-2 -mx-4 text-white text-2xl bg-brand mt-auto block"

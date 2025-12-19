@@ -1,13 +1,18 @@
 ---
+interface Props {
+    page:string
+}
 
+const {page} = Astro.props
 ---
+
 
 <!-- To make this contact form work, create your free access key from https://web3forms.com/
      Then you will get all form submissions in your email inbox. -->
 
 <section>
   <main>
-    <h1>Contacta con nosotros</h1>
+    <h3>Contacta con nosotros</h3>
     <form
     action="https://api.web3forms.com/submit"
     method="POST"
@@ -16,7 +21,7 @@
     novalidate>
     <input type="hidden" name="access_key" value="fa1cd8de-9022-4dc8-8cb2-20e62d868462" />
     <input type="hidden" name="from_name" value="aseguratte.es">
-    <input type="hidden" name="subject" value="Nuevo mensaje desde formulario web">
+    <input type="hidden" name="subject" value=`Nuevo mensaje desde página ${page}` >
     <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
     <div class="mb-5">
       <input
@@ -156,16 +161,16 @@ main{
         let json = await response.json();
         if (response.status == 200) {
           result.classList.add("text-green-500");
-          result.innerHTML = json.message;
+          result.innerHTML = "¡Mensaje enviado!, pronto nos pondremos en contacto.";
         } else {
           console.log(response);
           result.classList.add("text-red-500");
-          result.innerHTML = json.message;
+          result.innerHTML = "'¡Algo ha salido mal!, inténtalo nuevamente.'";
         }
       })
       .catch((error) => {
         console.log(error);
-        result.innerHTML = "Algo ha salido mal. Por favor intenta nuevemente!";
+        result.innerHTML = "'¡Algo ha salido mal!, inténtalo nuevamente.'";
       })
       .then(function () {
         form.reset();

@@ -5,10 +5,12 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
-import Tarificador from '~/components/tarificador.astro';
+// import Tarificador from '~/components/tarificador.astro';
+import ContactForm from '~/components/contactForm.astro';
 import SegurosLink from '~/components/segurosLink.astro';
-
 ---
+
+
 
 <Layout
 	title="Seguros de Hogar en Las Palmas"
@@ -37,12 +39,14 @@ import SegurosLink from '~/components/segurosLink.astro';
             En Asegura-Te nos comprometemos a ofrecerte seguros de hogar adaptados a tus necesidades, con coberturas amplias y precios competitivos. Además, nuestro equipo de profesionales estará contigo en cada paso del proceso para brindarte el mejor servicio.
         </p>
     </SegurosPage>
-    <Tarificador name="hogar"/>
-    <SegurosLink 
+    <ContactForm  page="Hogar"/>
+    <!-- <Tarificador name="hogar"/> -->
+    <SegurosLink
     hrefFrom='/seguro-las-palmas/flotas/'
     titleFrom='Flotas'
     hrefTo='/seguro-las-palmas/mascotas/'
     titleTo='Mascotas'
     />
+
 	<Footer />
 </Layout>
