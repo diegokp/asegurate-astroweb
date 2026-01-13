@@ -79,5 +79,14 @@
         "imageAlt": "imagen de familia buscando seguro",
         "excerpt": "Publicado el 1 enero 2026",
         "publishDate": "2026-01-01"
+    },
+        {
+        "id": "10",
+        "title":"🔁 ¿Puedo cambiar de compañía si ya tengo un seguro activo?",
+        "slug": "cambiar-de-seguro",
+        "image": "/images/blog/cambiodeseguro.png",
+        "imageAlt": "imagen de mujer buscando seguro nuevo",
+        "excerpt": "Publicado el 15 enero 2026",
+        "publishDate": "2026-01-15"
     }
 ]
