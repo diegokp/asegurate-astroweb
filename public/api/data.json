@@ -91,11 +91,20 @@
     },
     {
         "id": "11",
+        "title":"📘 Ley 5/2025. seguros y obligaciones para patinetes eléctricos",
+        "slug": "seguros-patinetes-electricos",
+        "image": "/images/blog/patinetes-electricos.png",
+        "imageAlt": "imagen de accidente patinete electrico",
+        "excerpt": "Publicado el 1 febrero 2026",
+        "publishDate": "2026-02-01"
+    },
+    {
+        "id": "12",
         "title":"❤️ Tener un seguro de vida también es un acto de amor",
         "slug": "tener-un-seguro-de-vida",
         "image": "/images/blog/seguro-de-vida.png",
         "imageAlt": "imagen de pareja con un seguro de vida",
-        "excerpt": "Publicado el 1 febrero 2026",
-        "publishDate": "2026-02-01"
+        "excerpt": "Publicado el 15 febrero 2026",
+        "publishDate": "2026-02-15"
     }
 ]
