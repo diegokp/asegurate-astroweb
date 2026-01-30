@@ -56,11 +56,11 @@ Consúltanos y revisamos tu caso particular sin compromiso.
 
 Hay muchas razones válidas para cambiar:
 
-✅ Porque tu prima ha subido
-✅ Porque no estás satisfecho con el servicio
-✅ Porque tu situación personal ha cambiado
-✅ Porque te ofrecen mejores coberturas al mismo precio
-✅ Porque quieres centralizar tus seguros con un mismo mediador
+- ✅ Porque tu prima ha subido
+- ✅ Porque no estás satisfecho con el servicio
+- ✅ Porque tu situación personal ha cambiado
+- ✅ Porque te ofrecen mejores coberturas al mismo precio
+- ✅ Porque quieres centralizar tus seguros con un mismo mediador
 
 Recuerda que en **ASEGURA-TE** **trabajamos con varias compañías**, y comparamos para ti lo mejor en cada momento.
 
@@ -71,10 +71,10 @@ Recuerda que en **ASEGURA-TE** **trabajamos con varias compañías**, y comparam
 No tienes que preocuparte por papeleos ni por negociar con la aseguradora saliente.
 En **ASEGURA-TE**:
 
-📌 Revisamos tu póliza actual
-📌 Comprobamos la fecha de vencimiento
-📌 Te proponemos alternativas sin compromiso
-📌 Te avisamos con tiempo si decides cambiar
+- 📌 Revisamos tu póliza actual
+- 📌 Comprobamos la fecha de vencimiento
+- 📌 Te proponemos alternativas sin compromiso
+- 📌 Te avisamos con tiempo si decides cambiar
 
 Y si decides continuar con tu póliza actual, **también te ayudamos a ajustarla** o mejorarla.
 

@@ -1,5 +1,5 @@
 ---
-title: 📘 Ley 5/2025. seguros y obligaciones para patinetes eléctricos
+title: 📘 Ley 5/2025. Seguros y obligaciones para patinetes eléctricos
 slug: seguros-patinetes-electricos
 image: /images/blog/patinetes-electricos.png
 imageAlt: imagen de accidente patinete electrico
@@ -22,10 +22,10 @@ En ASEGURA-TE te lo explicamos de forma **clara y sencilla**, para que sepas có
 
 Esta ley nace con un objetivo muy concreto:
 
-✅ Proteger mejor a las personas que sufren un accidente
-✅ Adaptar la ley a las nuevas formas de movilidad
-✅ Evitar situaciones sin cobertura de seguro
-✅ Reforzar la responsabilidad civil de los usuarios
+- ✅ Proteger mejor a las personas que sufren un accidente
+- ✅ Adaptar la ley a las nuevas formas de movilidad
+- ✅ Evitar situaciones sin cobertura de seguro
+- ✅ Reforzar la responsabilidad civil de los usuarios
 
 En resumen: **que nadie quede desprotegido tras un accidente**, ni quien sufre el daño ni quien lo causa.
 
@@ -48,10 +48,10 @@ Uno de los cambios más relevantes es que **los patinetes eléctricos ya están 
 
 Actualmente:
 
-✅ Los patinetes eléctricos son considerados **vehículos de movilidad personal (VMP)**
-✅ Están sujetos a normas claras de circulación impuestas por la DGT
-✅ **Existe obligación de contar con un seguro de responsabilidad civil**, especialmente en entornos urbanos
-✅ Se exige el cumplimiento de normas de uso: edad mínima, casco en muchos municipios, prohibición de circular por aceras, etc.
+- ✅ Los patinetes eléctricos son considerados **vehículos de movilidad personal (VMP)**
+- ✅ Están sujetos a normas claras de circulación impuestas por la DGT
+- ✅ **Existe obligación de contar con un seguro de responsabilidad civil**, especialmente en entornos urbanos
+- ✅ Se exige el cumplimiento de normas de uso: edad mínima, casco en muchos municipios, prohibición de circular por aceras, etc.
 
 📌 Esto significa que **si circulas con un patinete sin seguro y causas un daño**, **responderás con tu patrimonio personal**.
 
@@ -89,10 +89,10 @@ Esto se traduce en **procesos más claros y compensaciones más ajustadas**.
 
 La ley refuerza los controles sobre las compañías de seguros:
 
-✅ Mayor supervisión
-✅ Exigencias de solvencia
-✅ Más protección para el asegurado
-✅ Reglas claras en la gestión de siniestros
++ ✅ Mayor supervisión
++ ✅ Exigencias de solvencia
++ ✅ Más protección para el asegurado
++ ✅ Reglas claras en la gestión de siniestros
 
 Todo esto busca que el cliente final tenga **más seguridad y menos problemas** cuando necesita usar su seguro.
 
@@ -100,10 +100,10 @@ Todo esto busca que el cliente final tenga **más seguridad y menos problemas** 
 
 ### 📌 ¿Qué significa todo esto para ti?
 
-✔️ Si usas patinete eléctrico, **necesitas seguro de RC**
-✔️ Si causas un accidente, la ley es más clara sobre tu responsabilidad
-✔️ Las víctimas están mejor protegidas
-✔️ Los seguros tienen que responder con mayor rigor
+- ✔️ Si usas patinete eléctrico, **necesitas seguro de RC**
+- ✔️ Si causas un accidente, la ley es más clara sobre tu responsabilidad
+- ✔️ Las víctimas están mejor protegidas
+- ✔️ Los seguros tienen que responder con mayor rigor
 
 Y, sobre todo, **no tener seguro ya no es una opción responsable**.
 
@@ -113,10 +113,13 @@ Y, sobre todo, **no tener seguro ya no es una opción responsable**.
 
 En ASEGURA-TE te asesoramos para que:
 
-🔎 Sepas si necesitas seguro según tu vehículo
-🔎 Tengas la cobertura adecuada (ni corta ni excesiva)
-🔎 Cumplas la normativa vigente
-🔎 Estés protegido ante cualquier imprevisto
+- 🔎 Sepas si necesitas seguro según tu vehículo
+- 🔎 Tengas la cobertura adecuada (ni corta ni excesiva)
+- 🔎 Cumplas la normativa vigente
+- 🔎 Estés protegido ante cualquier imprevisto
+
+---
+
 
 - 📞 Teléfono: 828 661 940
 - 💬 WhatsApp: 665 288 269

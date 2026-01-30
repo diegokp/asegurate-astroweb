@@ -30,10 +30,10 @@ No es hablar de cosas tristes. Es hablar de realidad, de compromiso y de respons
 
 Un seguro de vida no es solo para quienes tienen hijos o grandes deudas. También es para:
 
-✅ Parejas jóvenes que empiezan a construir su vida
-✅ Familias con hipotecas o préstamos
-✅ Autónomos que dependen solo de sus ingresos
-✅ Personas que quieren dejar un respaldo económico a su pareja
+- ✅ Parejas jóvenes que empiezan a construir su vida
+- ✅ Familias con hipotecas o préstamos
+- ✅ Autónomos que dependen solo de sus ingresos
+- ✅ Personas que quieren dejar un respaldo económico a su pareja
 
 Además, hay opciones adaptadas a cada caso:
 Desde seguros de vida **con capital básico** hasta otros con **coberturas adicionales** por invalidez, enfermedades graves (cáncer, infarto, ictus…).
@@ -50,10 +50,10 @@ Tal vez tú o tu pareja ya tienen un seguro, pero… ¿sabéis exactamente lo qu
 
 ### 🤝 Un gesto de amor que dura mucho más que un regalo
 
-El seguro de vida **no se ve, pero se nota** en los momentos importantes.
-Es tranquilidad.
-Es protección real.
-Y es una forma silenciosa pero muy potente de demostrar que alguien te importa.
+- El seguro de vida **no se ve, pero se nota** en los momentos importantes.
+- Es tranquilidad.
+- Es protección real.
+- Y es una forma silenciosa pero muy potente de demostrar que alguien te importa.
 
 ---
 

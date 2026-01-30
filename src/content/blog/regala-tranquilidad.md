@@ -61,10 +61,10 @@ Un seguro es **protección, respaldo y tranquilidad real**, no solo una promesa.
 
 Además, al hacerlo con **ASEGURA-TE** puedes:
 
-✅ Personalizar el seguro según la persona
-✅ Contratarlo de forma rápida y 100% digital
-✅ Resolver todas las dudas antes de firmar
-✅ Y contar con nosotros también en caso de siniestro
+- ✅ Personalizar el seguro según la persona
+- ✅ Contratarlo de forma rápida y 100% digital
+- ✅ Resolver todas las dudas antes de firmar
+- ✅ Y contar con nosotros también en caso de siniestro
 
 ---
 
@@ -72,8 +72,8 @@ Además, al hacerlo con **ASEGURA-TE** puedes:
 
 Nos cuentas tu idea y a quién quieres proteger, y en **ASEGURA-TE** **nos encargamos de todo**.
 
-📞 Teléfono: 828 661 940
-💬 WhatsApp: 665 288 269
-📧 Email: info@aseguratte.es
-🌐 Web: www.aseguratte.es
-📱 Redes sociales: Instagram, Facebook, TikTok
+- 📞 Teléfono: 828 661 940
+- 💬 WhatsApp: 665 288 269
+- 📧 Email: info@aseguratte.es
+- 🌐 Web: www.aseguratte.es
+- 📱 Redes sociales: Instagram, Facebook, TikTok

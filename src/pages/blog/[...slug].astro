@@ -35,12 +35,19 @@ const { Content } = await render(post);
         date={post.data.excerpt}
 		href={post.data.link}
     >
-        <div slot="article">
+        <div slot="article" class="md-content">
             <Content/>
         </div>
     </BlogPage>
 	<Footer />
 </Layout>
 
+<style>
+  .md-content :global(ul) {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+</style>
 
 

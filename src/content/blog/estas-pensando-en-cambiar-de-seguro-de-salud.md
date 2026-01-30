@@ -68,10 +68,10 @@ Y todo esto con total claridad, sin compromiso y con la tranquilidad de que hay 
 Habla con nuestro equipo y deja que te ayudemos a decidir con seguridad.
 Podemos ayudarte a mantener tus coberturas, **sin carencias innecesarias ni pérdidas de derechos**.
 
-📞 **Teléfono:** 828 661 940
-💬 **WhatsApp:** 665 288 269
-📧 **Email:** info@aseguratte.es
-🌐 **Web:** www.aseguratte.es
-📱 **Redes sociales:** Instagram, Facebook, TikTok
+- 📞 **Teléfono:** 828 661 940
+- 💬 **WhatsApp:** 665 288 269
+- 📧 **Email:** info@aseguratte.es
+- 🌐 **Web:** www.aseguratte.es
+- 📱 **Redes sociales:** Instagram, Facebook, TikTok
 
 ---

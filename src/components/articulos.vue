@@ -77,7 +77,7 @@ const restoArticulos = computed(() => {
               	<div class="px-4 h-72 flex flex-col grow border-x-2 border-b-2 border-gray-100 overflow-hidden">
                   <div class="flex flex-col justify-center items-center h-full ">
                     <h4 class="text-2xl tracking-wide">{{articulo.title}}</h4>
-              		  <p class="mt-2 prose">{{articulo.excerpt}}</p>
+              		  <p class="mt-2 prose customText">{{articulo.excerpt}}</p>
                   </div>
               		<span
               			class="text-center px-4 py-2 -mx-4 text-white text-2xl bg-brand mt-auto block"

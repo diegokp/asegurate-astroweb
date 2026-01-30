@@ -15,7 +15,7 @@ En **ASEGURA-TE** te ayudamos a ver las diferencias con claridad, para que pague
 
 ---
 
-## 🧱 1. Coberturas básicas que sí o sí debes tener
+### 🧱 1. Coberturas básicas que sí o sí debes tener
 
 Estas coberturas son fundamentales y, en la mayoría de los casos, no deberían faltar en tu póliza:
 
