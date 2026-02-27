@@ -16,7 +16,7 @@ En **ASEGURA-TE** te explicamos qué es, qué cubre y en qué situaciones podrí
 
 ---
 
-## 🛡️ ¿Qué es la responsabilidad civil?
+### 🛡️ ¿Qué es la responsabilidad civil?
 
 La **responsabilidad civil (RC)** es la obligación que tiene una persona de **responder por los daños o perjuicios que cause a otra**, ya sea de forma involuntaria o accidental.
 
@@ -24,7 +24,7 @@ La **responsabilidad civil (RC)** es la obligación que tiene una persona de **r
 
 ---
 
-## 🏠 Ejemplos reales donde actúa la RC
+### 🏠 Ejemplos reales donde actúa la RC
 
 - En tu hogar: una fuga de agua moja el techo del vecino
 - En la calle: tu hijo rompe la pantalla del móvil de otra persona
@@ -36,7 +36,7 @@ En todos estos casos, si tienes **una RC contratada**, el seguro se hace cargo d
 
 ---
 
-## ❌ ¿Qué cosas NO cubre la responsabilidad civil?
+### ❌ ¿Qué cosas NO cubre la responsabilidad civil?
 
 Es muy importante saber que la RC:
 
@@ -48,7 +48,7 @@ Por eso es clave contar con un **asesor que te indique si tu RC es suficiente** 
 
 ---
 
-## 🧩 ¿Qué tipos de responsabilidad civil existen?
+### 🧩 ¿Qué tipos de responsabilidad civil existen?
 
 Según el tipo de seguro, la RC puede cubrir distintos ámbitos:
 
@@ -61,9 +61,26 @@ Según el tipo de seguro, la RC puede cubrir distintos ámbitos:
 
 ---
 
-## 📌 ¿Tengo suficiente responsabilidad civil contratada?
+### 📌 ¿Tengo suficiente responsabilidad civil contratada?
 
 Una cobertura básica de RC puede ser útil, pero en muchos casos no es suficiente.
 Ejemplo: si tu seguro de hogar cubre 150.000 €, pero el daño que causas supera los 200.000 €, podrías tener que pagar la diferencia.
 
 👉 En **ASEGURA-TE** revisamos gratis tus pólizas y te decimos si tienes lo necesario… o si necesitas ampliarlo.
+
+---
+
+### 🤝 Confía en una correduría que piensa en protegerte bien
+
+En **ASEGURA-TE** no nos limitamos a vender seguros.
+Te explicamos lo que firmas, te guiamos según tu situación personal o profesional, y te acompañamos en los momentos importantes.
+
+- 📞 Teléfono: 828 661 940
+- 💬 WhatsApp: 665 288 269
+- 📧 Email: info@aseguratte.es
+- 🌐 Web: www.aseguratte.es
+- 📱 Instagram | Facebook | TikTok
+
+**Solicita tu revisión sin compromiso. Porque proteger a los demás también es protegerte a ti.**
+
+---
