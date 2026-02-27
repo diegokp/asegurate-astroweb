@@ -106,5 +106,14 @@
         "imageAlt": "imagen de pareja con un seguro de vida",
         "excerpt": "Publicado el 15 febrero 2026",
         "publishDate": "2026-02-15"
+    },
+        {
+        "id": "13",
+        "title":" ⚖️ ¿Qué cubre (y qué no) la responsabilidad civil en tus seguros?",
+        "slug": "esponsabilidad-civil",
+        "image": "/images/blog/responsabilidad-civil.png",
+        "imageAlt": "imagen de seguros responsabilida civil",
+        "excerpt": "Publicado el 1 marzo 2026",
+        "publishDate": "2026-03-01"
     }
 ]
