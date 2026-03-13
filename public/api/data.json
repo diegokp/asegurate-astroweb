@@ -124,5 +124,14 @@
         "imageAlt": "imagen de seguros inquilino o propietario",
         "excerpt": "Publicado el 15 marzo 2026",
         "publishDate": "2026-03-15"
+    },
+    {
+        "id": "15",
+        "title":"❗¿Qué hacer si tu aseguradora rechaza un siniestro?",
+        "slug": "aseguradora-rechaza-siniestro",
+        "image": "/images/blog/aseguradora-rechaza-siniestro.png",
+        "imageAlt": "imagen de seguros aseguradora-rechaza-siniestro",
+        "excerpt": "Publicado el 01 abril 2026",
+        "publishDate": "2026-04-01"
     }
 ]

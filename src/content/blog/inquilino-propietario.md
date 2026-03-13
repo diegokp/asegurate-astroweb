@@ -5,7 +5,7 @@ image: /images/blog/inquilino-propietario.png
 imageAlt: imagen de seguros inquilino-propietario
 excerpt: Publicado el 15 marzo 2026
 publishDate: 2026-03-15
-link: /index.html
+link: /contacto.html
 last: true
 ---
 
@@ -40,10 +40,10 @@ Pero además, puede incluir un **capital para el continente** —es decir, la es
 
 Si eres dueño de la vivienda, ya sea para vivir tú o para alquilarla, necesitas una póliza que cubra:
 
--✅ **El continente**: estructura, techos, paredes, ventanas, instalaciones...
--✅ **El contenido** (si vives tú o si está amueblada): muebles, electrodomésticos, objetos personales
--✅ **La responsabilidad civil** por daños que tu vivienda pueda causar a terceros
--✅ Asistencia 24h y servicios adicionales: fontanería, cerrajería, bricolaje, etc.
+- ✅ **El continente**: estructura, techos, paredes, ventanas, instalaciones...
+- ✅ **El contenido** (si vives tú o si está amueblada): muebles, electrodomésticos, objetos personales
+- ✅ **La responsabilidad civil** por daños que tu vivienda pueda causar a terceros
+- ✅ Asistencia 24h y servicios adicionales: fontanería, cerrajería, bricolaje, etc.
 
 📌 *Si tienes una hipoteca, el seguro de hogar suele ser obligatorio, pero eso no significa que no puedas elegir la mejor opción del mercado.*
 
@@ -67,11 +67,11 @@ Además, el inquilino puede tener su propia póliza para cubrir el contenido y s
 
 Te asesoramos según tu situación, comparamos varias compañías y gestionamos todo de forma 100% telemática.
 
--📞 Teléfono: 828 661 940
--💬 WhatsApp: 665 288 269
--📧 Email: info@aseguratte.es
--🌐 Web: www.aseguratte.es
--📱 Instagram | Facebook | TikTok
+- 📞 Teléfono: 828 661 940
+- 💬 WhatsApp: 665 288 269
+- 📧 Email: info@aseguratte.es
+- 🌐 Web: www.aseguratte.es
+- 📱 Instagram | Facebook | TikTok
 
 **Solicita tu presupuesto sin compromiso y asegura tu hogar como corresponde.**
 
