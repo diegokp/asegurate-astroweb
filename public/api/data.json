@@ -115,5 +115,14 @@
         "imageAlt": "imagen de seguros responsabilida civil",
         "excerpt": "Publicado el 1 marzo 2026",
         "publishDate": "2026-03-01"
+    },
+    {
+        "id": "14",
+        "title":"🏠 Inquilino o propietario ¿qué seguro de hogar necesitas según tu situación?",
+        "slug": "inquilino-propietario",
+        "image": "/images/blog/inquilino-propietario.png",
+        "imageAlt": "imagen de seguros inquilino o propietario",
+        "excerpt": "Publicado el 15 marzo 2026",
+        "publishDate": "2026-03-15"
     }
 ]
