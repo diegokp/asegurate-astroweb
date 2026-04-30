@@ -16,7 +16,7 @@ En ASEGURA-TE te explicamos, de forma clara, **en qué situaciones tu seguro pue
 
 ---
 
-## ⚠️ 1. Conducir bajo los efectos del alcohol o drogas
+### ⚠️ 1. Conducir bajo los efectos del alcohol o drogas
 
 ❌ Si tienes un accidente bajo los efectos del alcohol o drogas:
 - La aseguradora puede **no cubrir tus daños propios**
@@ -24,7 +24,7 @@ En ASEGURA-TE te explicamos, de forma clara, **en qué situaciones tu seguro pue
 
 ---
 
-## 🚫 2. No declarar correctamente al conductor
+### 🚫 2. No declarar correctamente al conductor
 
 Este es uno de los errores más habituales… y más graves.
 
@@ -44,14 +44,14 @@ Este es uno de los errores más habituales… y más graves.
 
 ---
 
-## 🛠️ 3. Uso del vehículo distinto al declarado
+### 🛠️ 3. Uso del vehículo distinto al declarado
 
 ⚠️ Si usas el vehículo para algo distinto a lo contratado (por ejemplo, reparto o uso profesional),
 **puedes quedarte sin cobertura**.
 
 ---
 
-## 🚧 4. Participar en carreras o actividades no permitidas
+### 🚧 4. Participar en carreras o actividades no permitidas
 
 ❌ El seguro NO cubre:
 - Carreras o competiciones
@@ -60,19 +60,19 @@ Este es uno de los errores más habituales… y más graves.
 
 ---
 
-## 📄 5. No comunicar el siniestro a tiempo
+### 📄 5. No comunicar el siniestro a tiempo
 📌 Es obligatorio comunicarlo en plazo (normalmente 7 días).
 Si no lo haces, puede complicarse la cobertura.
 
 ---
 
-## 💡 La clave: entender lo que tienes contratado
+### 💡 La clave: entender lo que tienes contratado
 
 En ASEGURA-TE te ayudamos a revisar tu seguro y evitar sorpresas.
 
 ---
 
-## 📲 ¿Revisamos tu seguro de coche?
+### 📲 ¿Revisamos tu seguro de coche?
 
 - 📞 828 661 940
 - 💬 WhatsApp 665 288 269
