@@ -1,11 +1,9 @@
 {
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-    // Alias `src` to `~`
     "strictNullChecks": true,
-    "baseUrl": ".",
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": ["./src/*"]
     }
   }
 }

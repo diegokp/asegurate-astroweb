@@ -4,6 +4,8 @@ import LoadSpiner from "./LoadSpiner.vue";
 
 const articulos= ref([])
 const loading = ref(true)
+const currentPage = ref(1)
+const itemsPerPage = 6
 
 
 const fetchData = async () => {
@@ -37,7 +39,24 @@ const restoArticulos = computed(() => {
   return filteredArticulos.value.length - 3
 })
 
+const restoArticulosList = computed(() => {
+  return filteredArticulos.value.slice(0, restoArticulos.value).reverse()
+})
 
+const totalPages = computed(() => {
+  return Math.ceil(restoArticulosList.value.length / itemsPerPage)
+})
+
+const paginatedArticulos = computed(() => {
+  const start = (currentPage.value - 1) * itemsPerPage
+  return restoArticulosList.value.slice(start, start + itemsPerPage)
+})
+
+const goToPage = (page) => {
+  if (page >= 1 && page <= totalPages.value) {
+    currentPage.value = page
+  }
+}
 
 </script>
 
@@ -68,7 +87,7 @@ const restoArticulos = computed(() => {
     </div>
     <h2 class="mt-14 mb-6">Otros Artículos</h2>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 xl:gap-24">
-        <div  v-for="articulo in filteredArticulos.slice(0,`${restoArticulos}`).reverse()">
+        <div  v-for="articulo in paginatedArticulos">
             <article class=" hover:rotate-1 transition hover:scale-105 duration-500 bg-white shadow-md">
               <a :href="`/blog/${articulo.slug}`" class="h-full flex flex-col">
               	<div class="overflow-hidden h-56">
@@ -88,6 +107,36 @@ const restoArticulos = computed(() => {
               </a>
             </article>
         </div>
+    </div>
+
+    <div v-if="totalPages > 1" class="flex justify-center items-center gap-2 mt-12">
+      <button
+        @click="goToPage(currentPage - 1)"
+        :disabled="currentPage === 1"
+        class="px-4 py-2 bg-white border-2 border-gray-100 text-gray-600 hover:bg-brand hover:text-white hover:border-brand transition disabled:opacity-30 disabled:cursor-not-allowed"
+      >
+        ←
+      </button>
+      <button
+        v-for="page in totalPages"
+        :key="page"
+        @click="goToPage(page)"
+        :class="[
+          'px-4 py-2 border-2 transition',
+          currentPage === page
+            ? 'bg-brand text-white border-brand'
+            : 'bg-white border-gray-100 text-gray-600 hover:bg-brand hover:text-white hover:border-brand'
+        ]"
+      >
+        {{ page }}
+      </button>
+      <button
+        @click="goToPage(currentPage + 1)"
+        :disabled="currentPage === totalPages"
+        class="px-4 py-2 bg-white border-2 border-gray-100 text-gray-600 hover:bg-brand hover:text-white hover:border-brand transition disabled:opacity-30 disabled:cursor-not-allowed"
+      >
+        →
+      </button>
     </div>
    </div>
 </template>
