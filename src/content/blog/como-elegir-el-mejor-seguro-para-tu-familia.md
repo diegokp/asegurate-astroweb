@@ -4,8 +4,9 @@ slug: como-elegir-el-mejor-seguro-para-tu-familia
 image: /images/blog/imagenIA02.webp
 imageAlt: imagen de por que contratar un seguro
 excerpt: Publicado el 15 Septiembre 2025
+description: "Claves para elegir el seguro de vida que realmente necesita tu familia: capital asegurado, coberturas esenciales y cómo comparar opciones."
 publishDate: 2025-09-15
-link: /index.html
+link: /contacto.html
 last: false
 ---
 

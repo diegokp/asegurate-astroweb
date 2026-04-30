@@ -4,6 +4,7 @@ slug: seguros-para-autonomos
 image: /images/blog/seguros-para-autonomos.png
 imageAlt: imagen de seguros para autonomos
 excerpt: Publicado el 15 abril 2026
+description: "Seguros esenciales para autónomos: responsabilidad civil, baja laboral, salud y vida. Protege tu actividad profesional y dedúcelos en la declaración."
 publishDate: 2026-04-15
 link: /contacto.html
 last: true

@@ -9,17 +9,6 @@ import Articulos from '~/components/articulos.vue'
 
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from "astro:content";
-import { date } from 'astro:schema';
-// const posts = await getCollection("blog");
-
-// const posts = (
-//   await getCollection(
-//     'blog',
-//     ({ data }: CollectionEntry<'blog'>) => data.publishDate <= new Date()
-//   )
-// ).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
-
-
 
 const posts = (
   await getCollection(
@@ -35,13 +24,55 @@ const postsDraft = (
   )
 ).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 
+const siteURL = "https://www.aseguratte.es";
+const blogURL = `${siteURL}/blog`;
 
+const allPosts = [...postsDraft, ...posts];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${blogURL}/#breadcrumb`,
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": siteURL },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": blogURL }
+      ]
+    },
+    {
+      "@type": "Blog",
+      "@id": `${blogURL}/#blog`,
+      "name": "Blog de Seguros — Asegura-Te",
+      "description": "Consejos, artículos y novedades sobre seguros para particulares y empresas en Las Palmas de Gran Canaria.",
+      "url": blogURL,
+      "inLanguage": "es",
+      "publisher": {
+        "@type": "Organization",
+        "@id": `${siteURL}/#agency`,
+        "name": "Asegura-Te"
+      },
+      "blogPost": allPosts.map(post => ({
+        "@type": "BlogPosting",
+        "headline": post.data.title.replace(/^[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]+\s*/gu, '').trim(),
+        "url": `${siteURL}/blog/${post.id}`,
+        "datePublished": (post.data.publishDate instanceof Date
+          ? post.data.publishDate
+          : new Date(post.data.publishDate)).toISOString(),
+        "image": post.data.image.startsWith('http') ? post.data.image : `${siteURL}${post.data.image}`
+      }))
+    }
+  ]
+};
 ---
 
 <Layout
-	title=""
-	description=""
+	title="Blog de Seguros — Consejos y Artículos"
+	description="Artículos y consejos sobre seguros para particulares y empresas en Las Palmas. Aprende a proteger lo que más te importa con Asegura-Te."
+	canonicalURL={blogURL}
+	ogImage={`${siteURL}/images/asegurate_logoW.png`}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />
@@ -50,15 +81,8 @@ const postsDraft = (
 	<section>
       <main>
     	<h1>Últimos artículos</h1>
-			<!-- <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 xl:gap-24">
-				{postsDraft.map((post) => <CardBlog post={post} />)}
-			</div> -->
     	</main>
     	<main>
-    	    <!-- <h2>Otros artículos</h2>
-			<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 xl:gap-24">
-				{posts.map((post) => <CardBlog post={post} />)}
-			</div> -->
         <Articulos client:only="vue"></Articulos>
     	</main>
 	</section>
@@ -67,7 +91,6 @@ const postsDraft = (
 
 
 <style>
-
 
     main{
         width: 85%;

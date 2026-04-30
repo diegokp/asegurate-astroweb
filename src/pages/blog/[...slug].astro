@@ -17,12 +17,74 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+const siteURL = "https://www.aseguratte.es";
+const canonicalURL = `${siteURL}/blog/${post.id}`;
+const ogImage = post.data.image.startsWith('http') ? post.data.image : `${siteURL}${post.data.image}`;
+const publishDateISO = post.data.publishDate instanceof Date
+	? post.data.publishDate.toISOString()
+	: new Date(post.data.publishDate).toISOString();
+
+const metaTitle = post.data.title.replace(/^[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}✨🎯💡📌⚠️❌📄🛠️🚫🚗🚧]+\s*/gu, '').trim();
+const metaDescription = post.data.description
+	?? `${metaTitle} — Consejos y asesoramiento de seguros en Las Palmas de Gran Canaria. Asegura-Te, tu correduría de confianza.`;
+
+const jsonLd = {
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "BreadcrumbList",
+			"@id": `${canonicalURL}/#breadcrumb`,
+			"itemListElement": [
+				{ "@type": "ListItem", "position": 1, "name": "Inicio", "item": siteURL },
+				{ "@type": "ListItem", "position": 2, "name": "Blog", "item": `${siteURL}/blog` },
+				{ "@type": "ListItem", "position": 3, "name": metaTitle, "item": canonicalURL }
+			]
+		},
+		{
+			"@type": "BlogPosting",
+			"@id": `${canonicalURL}/#article`,
+			"headline": metaTitle,
+			"description": metaDescription,
+			"image": {
+				"@type": "ImageObject",
+				"url": ogImage
+			},
+			"datePublished": publishDateISO,
+			"url": canonicalURL,
+			"inLanguage": "es",
+			"author": {
+				"@type": "Organization",
+				"@id": `${siteURL}/#agency`,
+				"name": "Asegura-Te",
+				"url": siteURL
+			},
+			"publisher": {
+				"@type": "Organization",
+				"@id": `${siteURL}/#agency`,
+				"name": "Asegura-Te",
+				"logo": {
+					"@type": "ImageObject",
+					"url": `${siteURL}/images/asegurate_logoW.png`
+				}
+			},
+			"mainEntityOfPage": {
+				"@type": "WebPage",
+				"@id": canonicalURL
+			}
+		}
+	]
+};
 ---
 
 <Layout
-	title=""
-	description=""
+	title={metaTitle}
+	description={metaDescription}
+	canonicalURL={canonicalURL}
+	ogImage={ogImage}
+	ogType="article"
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />
@@ -49,5 +111,3 @@ const { Content } = await render(post);
     margin-left: 0;
   }
 </style>
-
-

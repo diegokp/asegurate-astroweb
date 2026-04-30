@@ -4,8 +4,9 @@ slug: cambiar-de-seguro
 image: /images/blog/cambiodeseguro.png
 imageAlt: imagen de mujer buscando seguro nuevo
 excerpt: Publicado el 15 enero 2026
+description: "¿Puedes cambiar de aseguradora con una póliza activa? Sí, y puede ahorrarte dinero. Te explicamos cuándo y cómo hacerlo sin errores."
 publishDate: 2026-01-15
-link: /index.html
+link: /contacto.html
 last: true
 ---
 

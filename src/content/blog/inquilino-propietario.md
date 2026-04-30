@@ -4,6 +4,7 @@ slug: inquilino-propietario
 image: /images/blog/inquilino-propietario.png
 imageAlt: imagen de seguros inquilino-propietario
 excerpt: Publicado el 15 marzo 2026
+description: "¿Inquilino o propietario? Cada uno necesita un seguro de hogar distinto. Te explicamos qué debe cubrir cada póliza para no pagar de más."
 publishDate: 2026-03-15
 link: /contacto.html
 last: true

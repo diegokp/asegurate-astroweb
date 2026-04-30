@@ -4,6 +4,7 @@ slug: estas-pensando-en-cambiar-de-seguro-de-salud
 image: /images/blog/imagenIA03.webp
 imageAlt: seguro de salud Asegurate
 excerpt: Publicado el 1 octubre 2025
+description: "Octubre a diciembre es el mejor momento para cambiar de seguro de salud. Descubre qué revisar antes de hacer el cambio y cómo hacerlo bien."
 publishDate: 2025-10-01
 link: /seguro-las-palmas/salud/
 last: false

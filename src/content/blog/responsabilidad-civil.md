@@ -4,8 +4,9 @@ slug: responsabilidad-civil
 image: /images/blog/responsabilidad-civil.png
 imageAlt: imagen de seguros responsabilida civil
 excerpt: Publicado el 1 marzo 2026
+description: "Entiende qué cubre la responsabilidad civil en tus seguros, en qué situaciones actúa y por qué es una de las coberturas más importantes."
 publishDate: 2026-03-01
-link: /index.html
+link: /contacto.html
 last: true
 ---
 
