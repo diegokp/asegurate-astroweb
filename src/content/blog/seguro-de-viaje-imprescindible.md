@@ -1,5 +1,5 @@
 ---
-title: ✈️ Seguro de viaje: por qué cada vez más personas lo consideran imprescindible
+title: ✈️ Seguro de viaje. Por qué cada vez más personas lo consideran imprescindible
 slug: seguro-de-viaje-imprescindible
 image: /images/blog/seguro-de-viaje-imprescindible.png
 imageAlt: imagen de seguro de viaje imprescindible
