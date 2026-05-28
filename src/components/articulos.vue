@@ -105,32 +105,34 @@ const goToPage = (page) => {
     </div>
 
     <!-- RESTO DE ARTICULOS -->
-    <div class="mt-14 mb-6 flex flex-wrap items-center gap-3">
-      <h2 class="mr-2">Otros Artículos</h2>
-      <button
-        @click="selectedTag = ''"
-        :class="[
-          'px-3 py-1 text-sm border-2 transition',
-          selectedTag === ''
-            ? 'bg-brand text-white border-brand'
-            : 'bg-white border-gray-200 text-gray-600 hover:border-brand hover:text-brand'
-        ]"
-      >
-        Todos
-      </button>
-      <button
-        v-for="tag in allTags"
-        :key="tag"
-        @click="selectedTag = selectedTag === tag ? '' : tag"
-        :class="[
-          'px-3 py-1 text-sm border-2 transition',
-          selectedTag === tag
-            ? 'bg-brand text-white border-brand'
-            : 'bg-white border-gray-200 text-gray-600 hover:border-brand hover:text-brand'
-        ]"
-      >
-        {{ tag }}
-      </button>
+    <div class="mt-14 mb-8">
+      <h2 class="mb-4">Otros Artículos</h2>
+      <div class="flex flex-wrap gap-2">
+        <button
+          @click="selectedTag = ''"
+          :class="[
+            'px-3 py-1.5 text-sm border-2 transition',
+            selectedTag === ''
+              ? 'bg-brand text-white border-brand'
+              : 'bg-white border-gray-200 text-gray-600 hover:border-brand hover:text-brand'
+          ]"
+        >
+          Todos
+        </button>
+        <button
+          v-for="tag in allTags"
+          :key="tag"
+          @click="selectedTag = selectedTag === tag ? '' : tag"
+          :class="[
+            'px-3 py-1.5 text-sm border-2 transition',
+            selectedTag === tag
+              ? 'bg-brand text-white border-brand'
+              : 'bg-white border-gray-200 text-gray-600 hover:border-brand hover:text-brand'
+          ]"
+        >
+          {{ tag }}
+        </button>
+      </div>
     </div>
 
     <p v-if="tagFilteredList.length === 0" class="text-center text-gray-500 py-10">

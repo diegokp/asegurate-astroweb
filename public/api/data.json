@@ -178,5 +178,25 @@
         "excerpt": "Publicado el 15 mayo 2026",
         "publishDate": "2026-05-15",
         "clasificacion": ["#SeguroDeCoche", "#Coberturas", "#Consejos"]
+    },
+    {
+        "id": "19",
+        "title": "✈️ Seguro de viaje: por qué cada vez más personas lo consideran imprescindible",
+        "slug": "seguro-de-viaje-imprescindible",
+        "image": "/images/blog/seguro-de-viaje-imprescindible.png",
+        "imageAlt": "imagen de seguro de viaje imprescindible",
+        "excerpt": "Publicado el 1 junio 2026",
+        "publishDate": "2026-06-01",
+        "clasificacion": ["#SeguroDeViaje", "#Coberturas", "#Consejos"]
+    },
+    {
+        "id": "20",
+        "title": "🐶 ¿Tu mascota está realmente protegida? Lo que muchos dueños aún no saben",
+        "slug": "seguro-mascota-protegida",
+        "image": "/images/blog/seguro-mascota-protegida.png",
+        "imageAlt": "imagen de seguro de mascota protegida",
+        "excerpt": "Publicado el 15 junio 2026",
+        "publishDate": "2026-06-15",
+        "clasificacion": ["#SeguroDeMascota", "#Coberturas", "#Consejos", "#BienestarAnimal"]
     }
 ]
