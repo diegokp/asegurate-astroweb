@@ -6,14 +6,24 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
-
+const pageURL = `${siteURL}/seguro-las-palmas/accidentes-individual/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros de Accidentes Individual en Las Palmas",
+  description: "Seguro de accidentes individual en Las Palmas de Gran Canaria. Protección personal ante fallecimiento, invalidez o incapacidad temporal causados por accidente.",
+  serviceType: "Individual accident insurance",
+  breadcrumbName: "Accidentes Individual"
+});
 ---
 
 <Layout
 	title="Seguros de Accidentes Individual en Las Palmas"
 	description='Protección personalizada ante los imprevistos con nuestros seguros de accidentes en Las Palmas para todas las personas, con la gestión de Asegura-Te.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

@@ -8,6 +8,7 @@ description: "¿Puedes cambiar de aseguradora con una póliza activa? Sí, y pue
 publishDate: 2026-01-15
 link: /contacto.html
 last: true
+clasificacion: ["#CambiarDeSeguro", "#GestiónDeSeguros", "#Consejos"]
 ---
 
 

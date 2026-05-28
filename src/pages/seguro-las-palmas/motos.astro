@@ -8,13 +8,29 @@ import SegurosPage from '~/components/segurosPage.astro';
 // import Tarificador from '~/components/tarificador.astro';
 import ContactForm from '~/components/contactForm.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/motos/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros de Motos en Las Palmas",
+  description: "Seguros de moto en Las Palmas de Gran Canaria. Coberturas a terceros, terceros ampliados y todo riesgo para motocicletas. Protección del conductor incluida.",
+  serviceType: "Motorcycle insurance",
+  breadcrumbName: "Seguro de Motos",
+  faqs: [
+    { question: "¿Es obligatorio el seguro de moto en España?", answer: "Sí, el seguro de responsabilidad civil es obligatorio para circular por vía pública, independientemente de la cilindrada de la moto." },
+    { question: "¿Qué diferencia hay entre terceros básicos, ampliados y todo riesgo?", answer: "Terceros básicos cubre solo los daños causados a terceros. Terceros ampliados añade robo, incendio y lunas. Todo riesgo cubre también los daños propios de tu moto aunque seas el culpable." },
+    { question: "¿Cubre el seguro de moto los daños al conductor?", answer: "Depende de la póliza. El seguro a terceros no cubre al conductor. Para ello se necesita contratar la cobertura de accidentes del conductor o una modalidad de todo riesgo." }
+  ]
+});
 ---
 
 <Layout
 	title="Seguros de Motos en Las Palmas"
 	description='Protege tu moto con nuestros seguros de motos en Las Palmas. Confía en Asegura-Te, tu correduría de seguros que está en Las Palmas.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

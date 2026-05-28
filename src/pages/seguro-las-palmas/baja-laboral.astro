@@ -6,13 +6,29 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/baja-laboral/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguro de Baja Laboral en Las Palmas",
+  description: "Seguro de baja laboral en Las Palmas. Complementa la prestación de la Seguridad Social durante la incapacidad temporal, para trabajadores por cuenta ajena y autónomos.",
+  serviceType: "Disability income insurance",
+  breadcrumbName: "Baja Laboral",
+  faqs: [
+    { question: "¿Qué es un seguro de baja laboral?", answer: "Complementa la prestación de la Seguridad Social en caso de incapacidad temporal (IT), cubriendo la diferencia entre la prestación pública y el salario habitual." },
+    { question: "¿Quién puede contratar el seguro de baja laboral?", answer: "Tanto trabajadores por cuenta ajena como autónomos. Es especialmente recomendable para autónomos, cuya prestación pública suele ser más limitada." },
+    { question: "¿Qué cantidad cubre el seguro de baja laboral?", answer: "Depende de la póliza, pero puede complementar hasta el 100% del salario neto desde el primer día de baja o tras un periodo de carencia corto (generalmente 3-7 días)." }
+  ]
+});
 ---
 
 <Layout
 	title="Seguro de Baja Laboral en Las Palmas"
 	description='Protege tus ingresos con nuestro seguro de baja laboral en Las Palmas. Asegura-Te: tu correduría de Seguros. Llámanos ahora.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

@@ -6,13 +6,24 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/defensa-juridica-empresa/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguro de Defensa Jurídica para Empresas en Las Palmas",
+  description: "Seguro de defensa jurídica empresarial en Las Palmas. Asesoramiento legal y defensa en litigios laborales, mercantiles y contractuales para autónomos, pymes y sociedades.",
+  serviceType: "Business legal protection insurance",
+  breadcrumbName: "Defensa Jurídica Empresa"
+});
 ---
 
 <Layout
 	title="Seguro de Defensa Jurídica para Empresas en Las Palmas"
-	description='Protege los intereses legales de tu empresa con nuestros Seguros en Las Palmas. Dejate asesorar por Asegura-Te, más de 20 años ayudando a empresas.'
+	description='Protege los intereses legales de tu empresa con nuestros Seguros en Las Palmas. Déjate asesorar por Asegura-Te, más de 20 años ayudando a empresas.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

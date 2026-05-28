@@ -6,14 +6,24 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
-
+const pageURL = `${siteURL}/seguro-las-palmas/vehiculos-clasicos/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros para Vehículos Clásicos en Las Palmas",
+  description: "Seguros de vehículos clásicos en Las Palmas de Gran Canaria. Pólizas específicas para coches de colección con más de 25 años. Valor acordado, cobertura en concentraciones y prima reducida.",
+  serviceType: "Classic car insurance",
+  breadcrumbName: "Vehículos Clásicos"
+});
 ---
 
 <Layout
 	title="Seguros para Vehículos Clásicos en Las Palmas"
-	description='Protege tu vehículo clásico con nuestros seguros especificos para coches clasicos en Las Palmas con Asegura-Te.'
+	description='Protege tu vehículo clásico con nuestros seguros específicos para coches clásicos en Las Palmas con Asegura-Te.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

@@ -12,6 +12,7 @@ export const GET: APIRoute = async () => {
       excerpt: entry.data.excerpt ?? '',
       coverImage: entry.data.image,
       publishedAt: entry.data.publishDate,
+      clasificacion: entry.data.clasificacion ?? [],
     }))
     // Ordenamos por fecha descendente (más reciente primero)
     .sort(

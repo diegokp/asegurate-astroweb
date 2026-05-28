@@ -6,13 +6,24 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/ciclomotores/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros para Ciclomotores en Las Palmas",
+  description: "Seguros de ciclomotor en Las Palmas de Gran Canaria. Responsabilidad civil obligatoria, terceros ampliados y todo riesgo para vehículos de hasta 50cc.",
+  serviceType: "Moped insurance",
+  breadcrumbName: "Seguro de Ciclomotores"
+});
 ---
 
 <Layout
 	title="Seguros para Ciclomotores en Las Palmas"
 	description='Seguros para ciclomotor en Las Palmas. Asegura-Te: tu correduría de seguros en Las Palmas de Gran Canaria. Contactanos ahora o visítanos.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

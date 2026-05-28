@@ -6,7 +6,8 @@
         "image": "/images/blog/imagenIA01.webp",
         "imageAlt": "imagen de por que contratar un seguro",
         "excerpt": "Publicado el 1 Septiembre 2025",
-        "publishDate": "2025-09-01"
+        "publishDate": "2025-09-01",
+        "clasificacion": ["#Consejos", "#Correduría", "#SeguroGeneral"]
     },
     {
         "id": "2",
@@ -15,7 +16,8 @@
         "image": "/images/blog/imagenIA02.webp",
         "imageAlt": "imagen de por que contratar un seguro",
         "excerpt": "Publicado el 15 Septiembre 2025",
-        "publishDate": "2025-09-15"
+        "publishDate": "2025-09-15",
+        "clasificacion": ["#SeguroDeVida", "#Familia", "#Consejos"]
     },
     {
         "id": "3",
@@ -24,7 +26,8 @@
         "image": "/images/blog/imagenIA03.webp",
         "imageAlt": "seguro de salud Asegurate",
         "excerpt": "Publicado el 1 octubre 2025",
-        "publishDate": "2025-10-01"
+        "publishDate": "2025-10-01",
+        "clasificacion": ["#SeguroDeSalud", "#CambiarDeSeguro", "#Consejos"]
     },
     {
         "id": "4",
@@ -33,7 +36,8 @@
         "image": "/images/blog/imagen04.webp",
         "imageAlt": "imagen de parte amistoso",
         "excerpt": "Publicado el 15 Octubre 2025",
-        "publishDate": "2025-10-15"
+        "publishDate": "2025-10-15",
+        "clasificacion": ["#SeguroDeCoche", "#Siniestros", "#Consejos"]
     },
     {
         "id": "5",
@@ -42,7 +46,8 @@
         "image": "/images/blog/imagen05.webp",
         "imageAlt": "imagen de siniestro",
         "excerpt": "Publicado el 1 noviembre 2025",
-        "publishDate": "2025-11-01"
+        "publishDate": "2025-11-01",
+        "clasificacion": ["#Siniestros", "#GestiónDeSeguros", "#Consejos"]
     },
     {
         "id": "6",
@@ -51,7 +56,8 @@
         "image": "/images/blog/cobertura.png",
         "imageAlt": "imagen de coberturas impresindibles",
         "excerpt": "Publicado el 15 noviembre 2025",
-        "publishDate": "2025-11-15"
+        "publishDate": "2025-11-15",
+        "clasificacion": ["#SeguroDeHogar", "#Coberturas", "#Consejos"]
     },
     {
         "id": "7",
@@ -60,7 +66,8 @@
         "image": "/images/blog/fiesta_navidenia.png",
         "imageAlt": "imagen de fiesta navidenia",
         "excerpt": "Publicado el 1 diciembre 2025",
-        "publishDate": "2025-12-01"
+        "publishDate": "2025-12-01",
+        "clasificacion": ["#SeguroDeVida", "#Familia", "#Consejos"]
     },
     {
         "id": "8",
@@ -69,7 +76,8 @@
         "image": "/images/blog/cierre-asegurado.png",
         "imageAlt": "imagen de mujer cierre de año",
         "excerpt": "Publicado el 15 diciembre 2025",
-        "publishDate": "2025-12-12"
+        "publishDate": "2025-12-12",
+        "clasificacion": ["#GestiónDeSeguros", "#RevisarPólizas", "#Consejos"]
     },
     {
         "id": "9",
@@ -78,87 +86,97 @@
         "image": "/images/blog/familia-seguros.jpeg",
         "imageAlt": "imagen de familia buscando seguro",
         "excerpt": "Publicado el 1 enero 2026",
-        "publishDate": "2026-01-01"
+        "publishDate": "2026-01-01",
+        "clasificacion": ["#Consejos", "#SeguroEsencial", "#Familia"]
     },
-        {
+    {
         "id": "10",
-        "title":"🔁 ¿Puedo cambiar de compañía si ya tengo un seguro activo?",
+        "title": "🔁 ¿Puedo cambiar de compañía si ya tengo un seguro activo?",
         "slug": "cambiar-de-seguro",
         "image": "/images/blog/cambiodeseguro.png",
         "imageAlt": "imagen de mujer buscando seguro nuevo",
         "excerpt": "Publicado el 15 enero 2026",
-        "publishDate": "2026-01-15"
+        "publishDate": "2026-01-15",
+        "clasificacion": ["#CambiarDeSeguro", "#GestiónDeSeguros", "#Consejos"]
     },
     {
         "id": "11",
-        "title":"📘 Ley 5/2025. Seguros y obligaciones para patinetes eléctricos",
+        "title": "📘 Ley 5/2025. Seguros y obligaciones para patinetes eléctricos",
         "slug": "seguros-patinetes-electricos",
         "image": "/images/blog/patinetes-electricos.png",
         "imageAlt": "imagen de accidente patinete electrico",
         "excerpt": "Publicado el 1 febrero 2026",
-        "publishDate": "2026-02-01"
+        "publishDate": "2026-02-01",
+        "clasificacion": ["#Movilidad", "#NuevaLey", "#Obligatorio"]
     },
     {
         "id": "12",
-        "title":"❤️ Tener un seguro de vida también es un acto de amor",
+        "title": "❤️ Tener un seguro de vida también es un acto de amor",
         "slug": "tener-un-seguro-de-vida",
         "image": "/images/blog/seguro-de-vida.png",
         "imageAlt": "imagen de pareja con un seguro de vida",
         "excerpt": "Publicado el 15 febrero 2026",
-        "publishDate": "2026-02-15"
+        "publishDate": "2026-02-15",
+        "clasificacion": ["#SeguroDeVida", "#Familia", "#ProtecciónFamiliar"]
     },
-        {
+    {
         "id": "13",
-        "title":" ⚖️ ¿Qué cubre (y qué no) la responsabilidad civil en tus seguros?",
+        "title": "⚖️ ¿Qué cubre (y qué no) la responsabilidad civil en tus seguros?",
         "slug": "responsabilidad-civil",
         "image": "/images/blog/responsabilidad-civil.png",
         "imageAlt": "imagen de seguros responsabilida civil",
         "excerpt": "Publicado el 1 marzo 2026",
-        "publishDate": "2026-03-01"
+        "publishDate": "2026-03-01",
+        "clasificacion": ["#ResponsabilidadCivil", "#Coberturas", "#Consejos"]
     },
     {
         "id": "14",
-        "title":"🏠 Inquilino o propietario ¿qué seguro de hogar necesitas según tu situación?",
+        "title": "🏠 Inquilino o propietario ¿qué seguro de hogar necesitas según tu situación?",
         "slug": "inquilino-propietario",
         "image": "/images/blog/inquilino-propietario.png",
         "imageAlt": "imagen de seguros inquilino o propietario",
         "excerpt": "Publicado el 15 marzo 2026",
-        "publishDate": "2026-03-15"
+        "publishDate": "2026-03-15",
+        "clasificacion": ["#SeguroDeHogar", "#Alquiler", "#Consejos"]
     },
     {
         "id": "15",
-        "title":"❗¿Qué hacer si tu aseguradora rechaza un siniestro?",
+        "title": "❗¿Qué hacer si tu aseguradora rechaza un siniestro?",
         "slug": "aseguradora-rechaza-siniestro",
         "image": "/images/blog/aseguradora-rechaza-siniestro.png",
         "imageAlt": "imagen de seguros aseguradora-rechaza-siniestro",
         "excerpt": "Publicado el 01 abril 2026",
-        "publishDate": "2026-04-01"
+        "publishDate": "2026-04-01",
+        "clasificacion": ["#Siniestros", "#DerechosAsegurado", "#Consejos"]
     },
     {
         "id": "16",
-        "title":"👨‍🔧👩‍💻 Seguros para autónomos ¿estás realmente cubierto?",
+        "title": "👨‍🔧👩‍💻 Seguros para autónomos ¿estás realmente cubierto?",
         "slug": "seguros-para-autonomos",
         "image": "/images/blog/seguros-para-autonomos.png",
         "imageAlt": "imagen de seguros para autonomos",
         "excerpt": "Publicado el 15 abril 2026",
-        "publishDate": "2026-04-15"
+        "publishDate": "2026-04-15",
+        "clasificacion": ["#Autónomos", "#ResponsabilidadCivil", "#Pymes"]
     },
     {
         "id": "17",
-        "title":"🔄 ¿Ha cambiado tu vida? Entonces también deberían cambiar tus seguros",
+        "title": "🔄 ¿Ha cambiado tu vida? Entonces también deberían cambiar tus seguros",
         "slug": "revisa-tu-seguro",
         "image": "/images/blog/revisa-tu-seguro.png",
         "imageAlt": "imagen de revisa tu seguro",
         "excerpt": "Publicado el 01 mayo 2026",
-        "publishDate": "2026-05-01"
+        "publishDate": "2026-05-01",
+        "clasificacion": ["#GestiónDeSeguros", "#RevisarPólizas", "#Consejos"]
     },
     {
         "id": "18",
-        "title":" 🚗 ¿Por qué tu seguro de coche puede no cubrirte en algunos casos?",
+        "title": "🚗 ¿Por qué tu seguro de coche puede no cubrirte en algunos casos?",
         "slug": "seguro-de-coche-no-cubre",
         "image": "/images/blog/seguro-de-coche-no-cubre.png",
         "imageAlt": "imagen de seguro de coche no cubre",
         "excerpt": "Publicado el 15 mayo 2026",
-        "publishDate": "2026-05-15"
+        "publishDate": "2026-05-15",
+        "clasificacion": ["#SeguroDeCoche", "#Coberturas", "#Consejos"]
     }
 ]

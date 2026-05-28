@@ -6,13 +6,24 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/oficinas/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros para Oficinas en Las Palmas",
+  description: "Seguros de oficinas en Las Palmas de Gran Canaria. Cobertura para despachos y oficinas profesionales: daños eléctricos, robo, responsabilidad civil y equipos informáticos.",
+  serviceType: "Office insurance",
+  breadcrumbName: "Seguro de Oficinas"
+});
 ---
 
 <Layout
 	title="Seguros para Oficinas en Las Palmas"
 	description='Asegura tu oficina con nuestros diferentes seguros para oficinas en Las Palmas. Asegura-Te: +20 años a tu servicio en Las Palmas.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

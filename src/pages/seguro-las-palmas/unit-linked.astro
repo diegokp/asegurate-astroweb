@@ -6,13 +6,24 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/unit-linked/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros Unit Linked en Las Palmas",
+  description: "Unit Linked en Las Palmas de Gran Canaria. Seguro de vida con ahorro vinculado a fondos de inversión. Flexibilidad para cambiar entre fondos y potencial de rentabilidad superior.",
+  serviceType: "Unit-linked insurance",
+  breadcrumbName: "Unit Linked"
+});
 ---
 
 <Layout
 	title="Seguros Unit Linked en Las Palmas"
-	description='Invierte con seguridad con nuestros Unit Linked en Las Palmas. Dejate guiar por Asegura-Te.'
+	description='Invierte con seguridad con nuestros Unit Linked en Las Palmas. Déjate guiar por Asegura-Te.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

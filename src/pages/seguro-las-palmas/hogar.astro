@@ -8,14 +8,31 @@ import SegurosPage from '~/components/segurosPage.astro';
 // import Tarificador from '~/components/tarificador.astro';
 import ContactForm from '~/components/contactForm.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
+
+const pageURL = `${siteURL}/seguro-las-palmas/hogar/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros de Hogar en Las Palmas",
+  description: "Asesoramiento y contratación de seguro de hogar para vivienda habitual, segunda residencia o alquiler en Las Palmas de Gran Canaria. Comparativa de coberturas y compañías.",
+  serviceType: "Home insurance",
+  breadcrumbName: "Seguro de Hogar",
+  faqs: [
+    { question: "¿Qué cubre normalmente un seguro de hogar?", answer: "Suele incluir daños en el continente (estructura) y/o contenido (mobiliario), responsabilidad civil del hogar, asistencia 24h y coberturas opcionales como daños por agua, incendio o robo, según póliza y compañía." },
+    { question: "¿Cuál es la diferencia entre continente y contenido?", answer: "El continente es la estructura de la vivienda (paredes, suelos, instalaciones fijas), y el contenido son los bienes dentro del hogar (muebles, electrodomésticos, objetos personales)." },
+    { question: "¿Necesito seguro de hogar si tengo hipoteca?", answer: "Por ley no es obligatorio, pero la entidad financiera suele exigir cobertura para el continente. Conviene revisar condiciones y comparar opciones fuera del banco." },
+    { question: "¿Se puede asegurar una vivienda en alquiler?", answer: "Sí. El propietario puede asegurar el continente y la responsabilidad civil; el inquilino puede asegurar su contenido y RC como arrendatario según sus necesidades." },
+    { question: "¿Cómo se calcula el capital asegurado del contenido?", answer: "Se estima según el valor de reposición de los bienes. Un inventario básico ayuda a evitar infraseguro o sobreseguro." }
+  ]
+});
 ---
-
-
 
 <Layout
 	title="Seguros de Hogar en Las Palmas"
-	description='Protege tu hogar en con Asegura-Te, tu correduría de Seguros en Las Palmas. Seguros para todo tipo de viviendas en Gran Canaria'
+	description='Protege tu hogar con Asegura-Te, tu correduría de Seguros en Las Palmas. Seguros para todo tipo de viviendas en Gran Canaria.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

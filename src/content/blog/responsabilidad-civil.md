@@ -8,6 +8,7 @@ description: "Entiende qué cubre la responsabilidad civil en tus seguros, en qu
 publishDate: 2026-03-01
 link: /contacto.html
 last: true
+clasificacion: ["#ResponsabilidadCivil", "#Coberturas", "#Consejos"]
 ---
 
 La mayoría de las personas tienen contratado algún seguro (hogar, coche, salud...), pero muy pocos entienden realmente qué significa eso de "estar cubierto por responsabilidad civil".

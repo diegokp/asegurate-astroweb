@@ -1,12 +1,12 @@
 <script setup>
-import { ref , computed} from "vue";
+import { ref, computed, watch } from "vue";
 import LoadSpiner from "./LoadSpiner.vue";
 
-const articulos= ref([])
+const articulos = ref([])
 const loading = ref(true)
 const currentPage = ref(1)
 const itemsPerPage = 6
-
+const selectedTag = ref('')
 
 const fetchData = async () => {
   try {
@@ -20,7 +20,6 @@ const fetchData = async () => {
   }
 }
 fetchData();
-
 
 const filteredArticulos = computed(() => {
   if (articulos.value) {
@@ -43,13 +42,32 @@ const restoArticulosList = computed(() => {
   return filteredArticulos.value.slice(0, restoArticulos.value).reverse()
 })
 
+const allTags = computed(() => {
+  const tags = new Set()
+  restoArticulosList.value.forEach(a => {
+    if (a.clasificacion) {
+      a.clasificacion.forEach(tag => tags.add(tag))
+    }
+  })
+  return Array.from(tags).sort()
+})
+
+watch(selectedTag, () => {
+  currentPage.value = 1
+})
+
+const tagFilteredList = computed(() => {
+  if (!selectedTag.value) return restoArticulosList.value
+  return restoArticulosList.value.filter(a => a.clasificacion?.includes(selectedTag.value))
+})
+
 const totalPages = computed(() => {
-  return Math.ceil(restoArticulosList.value.length / itemsPerPage)
+  return Math.ceil(tagFilteredList.value.length / itemsPerPage)
 })
 
 const paginatedArticulos = computed(() => {
   const start = (currentPage.value - 1) * itemsPerPage
-  return restoArticulosList.value.slice(start, start + itemsPerPage)
+  return tagFilteredList.value.slice(start, start + itemsPerPage)
 })
 
 const goToPage = (page) => {
@@ -85,7 +103,40 @@ const goToPage = (page) => {
             </article>
         </div>
     </div>
-    <h2 class="mt-14 mb-6">Otros Artículos</h2>
+
+    <!-- RESTO DE ARTICULOS -->
+    <div class="mt-14 mb-6 flex flex-wrap items-center gap-3">
+      <h2 class="mr-2">Otros Artículos</h2>
+      <button
+        @click="selectedTag = ''"
+        :class="[
+          'px-3 py-1 text-sm border-2 transition',
+          selectedTag === ''
+            ? 'bg-brand text-white border-brand'
+            : 'bg-white border-gray-200 text-gray-600 hover:border-brand hover:text-brand'
+        ]"
+      >
+        Todos
+      </button>
+      <button
+        v-for="tag in allTags"
+        :key="tag"
+        @click="selectedTag = selectedTag === tag ? '' : tag"
+        :class="[
+          'px-3 py-1 text-sm border-2 transition',
+          selectedTag === tag
+            ? 'bg-brand text-white border-brand'
+            : 'bg-white border-gray-200 text-gray-600 hover:border-brand hover:text-brand'
+        ]"
+      >
+        {{ tag }}
+      </button>
+    </div>
+
+    <p v-if="tagFilteredList.length === 0" class="text-center text-gray-500 py-10">
+      No hay artículos con esta clasificación.
+    </p>
+
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 xl:gap-24">
         <div  v-for="articulo in paginatedArticulos">
             <article class=" hover:rotate-1 transition hover:scale-105 duration-500 bg-white shadow-md">

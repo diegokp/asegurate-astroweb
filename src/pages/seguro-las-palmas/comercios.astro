@@ -8,13 +8,24 @@ import SegurosPage from '~/components/segurosPage.astro';
 // import Tarificador from '~/components/tarificador.astro';
 import ContactForm from '~/components/contactForm.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/comercios/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros para Comercios en Las Palmas",
+  description: "Seguros de comercios en Las Palmas. Protección integral para tu negocio: daños materiales, responsabilidad civil, robo, incendio, avería de maquinaria y pérdida de beneficios.",
+  serviceType: "Retail business insurance",
+  breadcrumbName: "Seguro de Comercios"
+});
 ---
 
 <Layout
 	title="Seguros para Comercios en Las Palmas"
-	description='Seguro para tu negocio con al confianza de Asegura-Te. Te ayudmos a elegir el mejor seguro de comercios en Las Palmas.'
+	description='Seguro para tu negocio con la confianza de Asegura-Te. Te ayudamos a elegir el mejor seguro de comercios en Las Palmas.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

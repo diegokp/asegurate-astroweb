@@ -8,6 +8,7 @@ description: "¿Inquilino o propietario? Cada uno necesita un seguro de hogar di
 publishDate: 2026-03-15
 link: /contacto.html
 last: true
+clasificacion: ["#SeguroDeHogar", "#Alquiler", "#Consejos"]
 ---
 
 

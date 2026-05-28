@@ -6,13 +6,24 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/sialp/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros Individuales de Ahorro a Largo Plazo (SIALP) en Las Palmas",
+  description: "SIALP en Las Palmas de Gran Canaria. Seguro de ahorro exento de tributación si se mantiene más de 5 años. Aportación máxima de 5.000€ anuales con rentabilidad garantizada.",
+  serviceType: "Long-term savings insurance",
+  breadcrumbName: "SIALP"
+});
 ---
 
 <Layout
 	title="Seguros Individuales de Ahorro a Largo Plazo"
-	description='Asegura tu futuro financiero con nuestros SIALP en Las Palmas. Asegura-Te te ayuda, llamanos o escribenos ahora. Te ayudaremos.'
+	description='Asegura tu futuro financiero con nuestros SIALP en Las Palmas. Asegura-Te te ayuda, llámanos o escríbenos ahora.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

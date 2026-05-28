@@ -6,14 +6,24 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
-
+const pageURL = `${siteURL}/seguro-las-palmas/planes-pensiones/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Planes de Pensiones en Las Palmas",
+  description: "Planes de pensiones en Las Palmas de Gran Canaria. Ahorro para la jubilación con deducción fiscal en el IRPF. Asesoramiento personalizado para complementar tu pensión pública.",
+  serviceType: "Pension plan",
+  breadcrumbName: "Planes de Pensiones"
+});
 ---
 
 <Layout
 	title="Planes de Pensiones en Las Palmas"
 	description='Planifica tu futuro financiero con nuestros planes de pensiones en Las Palmas. Asegura-Te: tu correduría de confianza.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

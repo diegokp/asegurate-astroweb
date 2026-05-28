@@ -8,13 +8,30 @@ import SegurosPage from '~/components/segurosPage.astro';
 // import Tarificador from '~/components/tarificador.astro';
 import ContactForm from '~/components/contactForm.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/decesos/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros de Decesos en Las Palmas",
+  description: "Seguros de decesos en Las Palmas de Gran Canaria. Cubre los gastos del sepelio y gestiones funerarias para que tu familia no tenga que preocuparse en los momentos más difíciles.",
+  serviceType: "Funeral insurance",
+  breadcrumbName: "Seguro de Decesos",
+  faqs: [
+    { question: "¿Qué cubre un seguro de decesos?", answer: "Los gastos derivados del sepelio: ataúd, servicio funerario, traslado del cuerpo, tanatorio, gestiones administrativas y, en muchas pólizas, lapida y nicho." },
+    { question: "¿Es lo mismo que un seguro de vida?", answer: "No. El seguro de decesos cubre exclusivamente los gastos del funeral. El seguro de vida paga un capital a los beneficiarios. Son productos complementarios." },
+    { question: "¿Se puede contratar para toda la familia?", answer: "Sí, existen modalidades familiares que cubren a todos los miembros del hogar bajo una misma póliza, lo que suele resultar más económico que contratos individuales." },
+    { question: "¿Qué pasa si fallezco fuera de España?", answer: "La mayoría de pólizas incluyen cobertura de repatriación desde cualquier país del mundo, incluyendo todos los trámites consulares y el traslado hasta el lugar designado." }
+  ]
+});
 ---
 
 <Layout
 	title="Seguros de Decesos en Las Palmas"
-	description='Protege a tu familia en momentos difíciles con nuestros seguros de decesos, somos tu mediador de segurso de decesos en Las Palmas.'
+	description='Protege a tu familia en momentos difíciles con nuestros seguros de decesos en Las Palmas. Asegura-Te: tu correduría de confianza en Gran Canaria.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

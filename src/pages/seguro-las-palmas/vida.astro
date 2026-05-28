@@ -8,13 +8,31 @@ import SegurosPage from '~/components/segurosPage.astro';
 // import Tarificador from '~/components/tarificador.astro';
 import ContactForm from '~/components/contactForm.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/vida/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros de Vida Riesgo en Las Palmas",
+  description: "Seguros de vida riesgo en Las Palmas de Gran Canaria. Protege el futuro financiero de tu familia en caso de fallecimiento, invalidez o enfermedad grave.",
+  serviceType: "Life insurance",
+  breadcrumbName: "Seguro de Vida",
+  faqs: [
+    { question: "¿Qué es un seguro de vida riesgo?", answer: "Es un seguro que abona un capital a los beneficiarios designados en caso de fallecimiento del asegurado, y puede incluir coberturas adicionales por invalidez o enfermedad grave." },
+    { question: "¿Quién puede ser beneficiario del seguro de vida?", answer: "Cualquier persona física o jurídica designada por el tomador: cónyuge, hijos, otros familiares o incluso una entidad bancaria en caso de préstamos hipotecarios." },
+    { question: "¿Es obligatorio el seguro de vida con una hipoteca?", answer: "No es legalmente obligatorio, pero muchas entidades lo recomiendan o vinculan a condiciones ventajosas. Puedes contratarlo con cualquier aseguradora, no necesariamente la del banco." },
+    { question: "¿Qué coberturas puede incluir un seguro de vida?", answer: "Fallecimiento por cualquier causa, invalidez permanente total o absoluta, incapacidad temporal, enfermedades graves y doble capital por accidente, entre otras opciones." },
+    { question: "¿Qué capital asegurado necesito?", answer: "Depende de tus cargas financieras (hipoteca, préstamos), ingresos familiares y el nivel de protección deseado. Lo habitual es cubrir entre 3 y 10 veces el salario anual." }
+  ]
+});
 ---
 
 <Layout
 	title="Seguros de Vida Riesgo en Las Palmas"
-	description='Asegura-Te: Correduría de Seguros de Salud en Las Palmas. Protege el futuro de tus seres queridos con nuestra gaa de seguros adaptados a tus necesidades.'
+	description='Protege el futuro de tus seres queridos con nuestros seguros de vida en Las Palmas. Asegura-Te: correduría de seguros con coberturas adaptadas a tus necesidades.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

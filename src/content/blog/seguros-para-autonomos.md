@@ -8,6 +8,7 @@ description: "Seguros esenciales para autónomos: responsabilidad civil, baja la
 publishDate: 2026-04-15
 link: /contacto.html
 last: true
+clasificacion: ["#Autónomos", "#ResponsabilidadCivil", "#Pymes"]
 ---
 
 

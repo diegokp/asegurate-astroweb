@@ -8,6 +8,7 @@ description: "Situaciones en las que tu seguro de coche puede no cubrirte: alcoh
 publishDate: 2026-05-15
 link: /contacto.html
 last: true
+clasificacion: ["#SeguroDeCoche", "#Coberturas", "#Consejos"]
 ---
 
 Cuando contratas un seguro de coche, lo haces pensando en estar protegido ante cualquier imprevisto.

@@ -8,6 +8,7 @@ description: "La Ley 5/2025 obliga a asegurar los patinetes eléctricos y otros 
 publishDate: 2026-02-01
 link: /contacto.html
 last: true
+clasificacion: ["#Movilidad", "#NuevaLey", "#Obligatorio"]
 ---
 
 

@@ -8,6 +8,7 @@ description: "Ventajas de contratar seguros con una correduría: asesoramiento i
 publishDate: 2025-09-01
 link: /contacto.html
 last: false
+clasificacion: ["#Consejos", "#Correduría", "#SeguroGeneral"]
 ---
 
 Contratar un seguro no debería ser una tarea complicada ni generar inseguridad. Tampoco debería obligarte a desplazarte ni hacer colas. En ASEGURA-TE lo tenemos claro: lo importante es que tú estés **protegido, informado y tranquilo…** desde cualquier lugar, con solo un clic. ✅

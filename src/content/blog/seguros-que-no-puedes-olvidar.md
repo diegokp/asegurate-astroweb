@@ -8,6 +8,7 @@ description: "Guía de seguros imprescindibles para empezar 2026 con protección
 publishDate: 2025-12-18
 link: /contacto.html
 last: true
+clasificacion: ["#Consejos", "#SeguroEsencial", "#Familia"]
 ---
 
 

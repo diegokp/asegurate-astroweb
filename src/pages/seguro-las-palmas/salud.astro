@@ -8,13 +8,31 @@ import SegurosPage from '~/components/segurosPage.astro';
 // import Tarificador from '~/components/tarificador.astro';
 import ContactForm from '~/components/contactForm.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/salud/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros de Salud en Las Palmas",
+  description: "Asesoramiento y comparativa de seguros de salud privados en Las Palmas de Gran Canaria. Acceso a los mejores hospitales y especialistas sin esperas.",
+  serviceType: "Health insurance",
+  breadcrumbName: "Seguro de Salud",
+  faqs: [
+    { question: "¿Qué diferencia hay entre el seguro de salud privado y la Seguridad Social?", answer: "El seguro privado ofrece acceso inmediato a especialistas sin listas de espera, elección de médico dentro de la red, habitación individual en hospitalizaciones y cobertura en clínicas privadas." },
+    { question: "¿Puedo elegir mi médico con el seguro de salud?", answer: "Sí, puedes elegir entre todos los médicos del cuadro médico de la compañía. Algunas pólizas ofrecen también libre elección fuera del cuadro con reembolso parcial." },
+    { question: "¿El seguro de salud cubre las urgencias?", answer: "Sí, las urgencias están cubiertas tanto en los centros propios de la aseguradora como, en muchas pólizas, en cualquier hospital público o privado de España." },
+    { question: "¿Tiene periodo de carencia el seguro de salud?", answer: "Sí, la mayoría de aseguradoras aplican carencias de 6 a 8 meses para partos, y algunas para intervenciones programadas. Las urgencias y accidentes nunca tienen carencia." },
+    { question: "¿Cubre el seguro de salud los tratamientos dentales?", answer: "Depende de la póliza. Algunas incluyen cobertura dental básica (revisiones, extracciones) y otras requieren un módulo adicional para tratamientos más completos." }
+  ]
+});
 ---
 
 <Layout
 	title="Seguros de Salud en Las Palmas"
 	description='Seguros de Salud en Las Palmas. Compara todas las opciones que manejamos en Asegura-Te, te ayudamos a elegir el seguro de salud adaptado a tus necesidades.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

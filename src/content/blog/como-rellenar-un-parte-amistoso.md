@@ -8,6 +8,7 @@ description: "Aprende a rellenar un parte amistoso paso a paso: qué datos inclu
 publishDate: 2025-10-15
 link: /contacto.html
 last: false
+clasificacion: ["#SeguroDeCoche", "#Siniestros", "#Consejos"]
 ---
 
 Tener un accidente de tráfico es un mal trago, pero saber **cómo rellenar bien un parte amistoso** puede hacer que todo se solucione más rápido y sin complicaciones.

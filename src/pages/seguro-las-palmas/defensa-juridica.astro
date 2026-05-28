@@ -6,13 +6,24 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/defensa-juridica/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguro de Defensa Jurídica en Las Palmas",
+  description: "Seguro de defensa jurídica en Las Palmas de Gran Canaria. Protección legal para particulares: honorarios de abogado, costas judiciales y asesoramiento en conflictos laborales, civiles, de tráfico y consumo.",
+  serviceType: "Legal protection insurance",
+  breadcrumbName: "Defensa Jurídica"
+});
 ---
 
 <Layout
 	title="Seguro de Defensa Jurídica en Las Palmas"
-	description='Asegura-Te: Protege tus derechos legales con nuestro seguro de defensa jurídica en Las Palmas. Llamanos, escríbenos o visitanos.'
+	description='Asegura-Te: Protege tus derechos legales con nuestro seguro de defensa jurídica en Las Palmas. Llámanos, escríbenos o visítanos.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

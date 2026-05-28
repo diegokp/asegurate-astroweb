@@ -8,6 +8,7 @@ description: "Descubre qué hacer si tu aseguradora rechaza un siniestro: causas
 publishDate: 2026-04-01
 link: /contacto.html
 last: true
+clasificacion: ["#Siniestros", "#DerechosAsegurado", "#Consejos"]
 ---
 
 

@@ -6,13 +6,29 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/mascotas/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros para Mascotas en Las Palmas",
+  description: "Seguros de mascotas en Las Palmas de Gran Canaria. Cobertura veterinaria, responsabilidad civil y asistencia para perros y gatos. Obligatorio para razas PPP.",
+  serviceType: "Pet insurance",
+  breadcrumbName: "Seguro de Mascotas",
+  faqs: [
+    { question: "¿Qué cubre el seguro de mascotas?", answer: "Generalmente cubre gastos veterinarios por accidente o enfermedad, responsabilidad civil si tu mascota causa daños a terceros, y en algunas pólizas, deceso y cirugías." },
+    { question: "¿Es obligatorio el seguro para perros potencialmente peligrosos (PPP)?", answer: "Sí, en España la Ley 50/1999 exige seguro de responsabilidad civil para tenedores de perros de razas consideradas potencialmente peligrosas." },
+    { question: "¿Cubre el seguro de mascotas la responsabilidad civil si mi animal muerde a alguien?", answer: "Sí, la cobertura de RC cubre los daños físicos o materiales que tu mascota pueda causar a terceras personas, incluyendo atenciones médicas." }
+  ]
+});
 ---
 
 <Layout
 	title="Seguros para Mascotas en Las Palmas"
-	description='En Asegura-Te te ayudamos y guiamos padra que tengas el seguro de mascotas adecuado en en Las Palmas. Cuida de lo que más quieres.'
+	description='En Asegura-Te te ayudamos a encontrar el seguro de mascotas adecuado en Las Palmas. Cuida de lo que más quieres.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

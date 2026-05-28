@@ -8,6 +8,7 @@ description: "Diciembre es el momento ideal para revisar tus pólizas. Muchas se
 publishDate: 2025-12-12
 link: /contacto.html
 last: true
+clasificacion: ["#GestiónDeSeguros", "#RevisarPólizas", "#Consejos"]
 ---
 
 Diciembre es el mes de los balances, de hacer listas y de poner orden antes de comenzar un nuevo año. Y entre tantas tareas, hay una que muchos olvidan: **revisar sus seguros**.

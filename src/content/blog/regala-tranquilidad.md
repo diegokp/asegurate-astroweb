@@ -8,6 +8,7 @@ description: "¿Sabías que puedes contratar un seguro para otra persona? Descub
 publishDate: 2025-12-01
 link: /contacto.html
 last: true
+clasificacion: ["#SeguroDeVida", "#Familia", "#Consejos"]
 ---
 
 En estas fechas en las que todos pensamos en regalar, en cuidar a quienes más queremos y en demostrarles lo importantes que son para nosotros, hay algo que **vale más que cualquier objeto**: su seguridad, su salud y su bienestar.

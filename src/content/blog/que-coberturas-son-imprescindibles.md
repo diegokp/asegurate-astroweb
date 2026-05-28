@@ -8,6 +8,7 @@ description: "Descubre qué coberturas del seguro de hogar son imprescindibles y
 publishDate: 2025-11-15
 link: /contacto.html
 last: true
+clasificacion: ["#SeguroDeHogar", "#Coberturas", "#Consejos"]
 ---
 
 Contratar un seguro de hogar es una decisión importante, pero muchas veces lo hacemos sin entender realmente **qué estamos asegurando y para qué**. Algunas coberturas son **esenciales** para protegerte ante los problemas más comunes, mientras que otras pueden **no ser necesarias** en todos los casos.

@@ -8,6 +8,7 @@ description: "Si tu vida ha cambiado, tus seguros también deberían hacerlo. De
 publishDate: 2026-05-01
 link: /contacto.html
 last: true
+clasificacion: ["#GestiónDeSeguros", "#RevisarPólizas", "#Consejos"]
 ---
 
 

@@ -8,6 +8,7 @@ description: "Guía paso a paso para comunicar un siniestro de forma rápida y e
 publishDate: 2025-11-1
 link: /contacto.html
 last: false
+clasificacion: ["#Siniestros", "#GestiónDeSeguros", "#Consejos"]
 ---
 
 Cuando ocurre un siniestro —ya sea un accidente de tráfico, un escape de agua en casa o un robo en tu negocio— es normal sentirse nervioso o no saber exactamente qué hacer.

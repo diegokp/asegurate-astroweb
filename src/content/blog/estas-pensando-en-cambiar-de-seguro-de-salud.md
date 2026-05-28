@@ -8,6 +8,7 @@ description: "Octubre a diciembre es el mejor momento para cambiar de seguro de 
 publishDate: 2025-10-01
 link: /seguro-las-palmas/salud/
 last: false
+clasificacion: ["#SeguroDeSalud", "#CambiarDeSeguro", "#Consejos"]
 ---
 
 

@@ -6,14 +6,24 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
-
+const pageURL = `${siteURL}/seguro-las-palmas/pias/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Planes Individuales de Ahorro Sistemático (PIAS) en Las Palmas",
+  description: "PIAS en Las Palmas de Gran Canaria. Ahorro sistemático a largo plazo con ventajas fiscales: los rendimientos tributan como renta del ahorro si se mantiene más de 5 años.",
+  serviceType: "Individual systematic savings plan",
+  breadcrumbName: "PIAS"
+});
 ---
 
 <Layout
 	title="Planes Individuales de Ahorro Sistemático en Las Palmas"
 	description='Asegura tu futuro financiero con nuestros PIAS en Las Palmas. Asegura-Te te ayuda, llámanos o ven a vernos en Las Palmas.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

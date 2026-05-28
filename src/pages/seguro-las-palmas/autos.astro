@@ -8,14 +8,31 @@ import SegurosPage from '~/components/segurosPage.astro';
 // import Tarificador from '~/components/tarificador.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import ContactForm from '~/components/contactForm.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
-
+const pageURL = `${siteURL}/seguro-las-palmas/autos/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros de Autos en Las Palmas",
+  description: "Seguros de coche en Las Palmas de Gran Canaria. Comparativa de coberturas a terceros, terceros ampliados y todo riesgo con las mejores compañías.",
+  serviceType: "Car insurance",
+  breadcrumbName: "Seguro de Autos",
+  faqs: [
+    { question: "¿Qué coberturas tiene un seguro de coche?", answer: "Desde la responsabilidad civil obligatoria hasta coberturas amplias como daños propios, robo, incendio, lunas, asistencia en carretera y seguro del conductor, según la modalidad." },
+    { question: "¿Cuál es la diferencia entre todo riesgo y terceros?", answer: "El seguro a terceros cubre los daños que causas a otros. Todo riesgo añade la cobertura de daños propios de tu vehículo, independientemente de quién sea el culpable del siniestro." },
+    { question: "¿Qué incluye la asistencia en carretera?", answer: "Generalmente cubre el remolque del vehículo, ayuda mecánica in situ, taxi de sustitución y, en algunos casos, vehículo de sustitución durante la reparación." },
+    { question: "¿Puedo asegurar un coche de segunda mano?", answer: "Sí, cualquier vehículo puede asegurarse independientemente de su antigüedad. La prima dependerá del valor venal, el perfil del conductor y las coberturas elegidas." },
+    { question: "¿Es obligatorio el seguro de coche en España?", answer: "Sí, el seguro de responsabilidad civil es obligatorio para circular por vías públicas. Circular sin seguro conlleva sanciones y la retirada del vehículo." }
+  ]
+});
 ---
 
 <Layout
 	title="Seguros de Autos en Las Palmas"
 	description='Seguros de coche en Las Palmas con las mejores garantías. Asegura-Te es tu correduría de seguros de confianza. Te asesoramos y estamos para ayudarte.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

@@ -6,13 +6,24 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/embarcaciones/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros para Embarcaciones en Las Palmas",
+  description: "Seguros de embarcaciones en Las Palmas de Gran Canaria. Responsabilidad civil obligatoria, daños propios, robo y asistencia marítima para barcos, veleros y motos de agua.",
+  serviceType: "Marine insurance",
+  breadcrumbName: "Seguro de Embarcaciones"
+});
 ---
 
 <Layout
 	title="Seguros para Embarcaciones en Las Palmas"
-	description='Seguros para barcos en Las Palmas. Protege tu embarcación con nuestros amplia gama seguros en Las Palmas con Asegura-Te.'
+	description='Seguros para barcos en Las Palmas. Protege tu embarcación con nuestra amplia gama de seguros en Las Palmas con Asegura-Te.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

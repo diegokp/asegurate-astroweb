@@ -6,14 +6,24 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
-
+const pageURL = `${siteURL}/seguro-las-palmas/pymes/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros para Pymes en Las Palmas",
+  description: "Seguros para pymes y autónomos en Las Palmas de Gran Canaria. Protección integral para pequeñas y medianas empresas: daños materiales, responsabilidad civil, pérdida de beneficios y cobertura para empleados.",
+  serviceType: "SME business insurance",
+  breadcrumbName: "Seguro de Pymes"
+});
 ---
 
 <Layout
 	title="Seguros para Pymes en Las Palmas"
-	description='Asegura tu empresa con nuestros seguros  para PYMES en Las Palmas. Despreocupate, Asegura-Te te ayuda a gestinarlo. '
+	description='Asegura tu empresa con nuestros seguros para PYMES en Las Palmas. Asegura-Te te ayuda a gestionarlo.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

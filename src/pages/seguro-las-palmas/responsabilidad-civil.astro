@@ -6,13 +6,29 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/responsabilidad-civil/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguro de Responsabilidad Civil en Las Palmas",
+  description: "Seguros de responsabilidad civil en Las Palmas. Protección ante reclamaciones por daños personales o materiales causados a terceros. RC general, profesional y de explotación.",
+  serviceType: "Liability insurance",
+  breadcrumbName: "Responsabilidad Civil",
+  faqs: [
+    { question: "¿Qué es un seguro de responsabilidad civil?", answer: "Cubre las indemnizaciones y costes legales derivados de los daños físicos o materiales que involuntariamente causes a terceras personas en tu vida cotidiana o actividad profesional." },
+    { question: "¿Es obligatoria la RC para autónomos?", answer: "Depende de la actividad. Es obligatoria para profesiones sanitarias, técnicas, jurídicas y otras reguladas. Para el resto, aunque no sea obligatoria, es muy recomendable." },
+    { question: "¿Qué diferencia hay entre RC general y RC profesional?", answer: "La RC general cubre los daños causados en la vida cotidiana o en la actividad empresarial. La RC profesional cubre específicamente los errores u omisiones cometidos en el ejercicio de una profesión." }
+  ]
+});
 ---
 
 <Layout
 	title="Seguro de Responsabilidad Civil en Las Palmas"
-	description='Contrata tu seguro de responsabilidad civil en Las Palmas con Asegura-Te. Mas de 20 años al servicio de nuestros clientes.'
+	description='Contrata tu seguro de responsabilidad civil en Las Palmas con Asegura-Te. Más de 20 años al servicio de nuestros clientes.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

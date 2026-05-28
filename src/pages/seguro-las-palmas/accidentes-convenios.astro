@@ -6,13 +6,24 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
+import { buildServiceSchema, siteURL } from '~/utils/schema';
 
+const pageURL = `${siteURL}/seguro-las-palmas/accidentes-convenios/`;
+const jsonLd = buildServiceSchema({
+  pageURL,
+  name: "Seguros para Accidentes de Convenios en Las Palmas",
+  description: "Seguros de accidentes obligatorios por convenio colectivo en Las Palmas. Cobertura para empresas con trabajadores exigida por convenio: fallecimiento, invalidez e incapacidad temporal por accidente.",
+  serviceType: "Accident insurance for collective agreements",
+  breadcrumbName: "Accidentes de Convenio"
+});
 ---
 
 <Layout
 	title="Seguros para Accidentes de Convenios en Las Palmas"
 	description='Protege a tus empleados con nuestros seguros para accidentes de convenios en Las Palmas. Te asesoramos y ayudamos de forma personalizada.'
+	canonicalURL={pageURL}
 	>
+	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

@@ -8,6 +8,7 @@ description: "Claves para elegir el seguro de vida que realmente necesita tu fam
 publishDate: 2025-09-15
 link: /contacto.html
 last: false
+clasificacion: ["#SeguroDeVida", "#Familia", "#Consejos"]
 ---
 
 Tomar la decisión de contratar un seguro de vida es un acto de responsabilidad y amor hacia los tuyos. No se trata solo de proteger económicamente a tu familia en caso de que tú faltes, sino de asegurar su estabilidad, su hogar, su educación y su futuro. Pero… ¿cómo saber cuál es el seguro de vida que realmente necesitas?

@@ -8,6 +8,7 @@ description: "Contratar un seguro de vida es proteger a quienes más quieres. De
 publishDate: 2026-02-01
 link: /contacto.html
 last: true
+clasificacion: ["#SeguroDeVida", "#Familia", "#ProtecciónFamiliar"]
 ---
 
 
