@@ -198,5 +198,25 @@
         "excerpt": "Publicado el 15 junio 2026",
         "publishDate": "2026-06-15",
         "clasificacion": ["#SeguroDeMascota", "#Coberturas", "#Consejos", "#BienestarAnimal"]
+    },
+    {
+        "id": "21",
+        "title": "👴 ¿Quién puede ayudarte cuando ocurre un siniestro y no sabes qué hacer?",
+        "slug": "quien-puede-ayudarte-siniestro",
+        "image": "/images/blog/quien-puede-ayudarte-siniestro.png",
+        "imageAlt": "imagen de quién puede ayudarte siniestro",
+        "excerpt": "Publicado el 1 julio 2026",
+        "publishDate": "2026-07-01",
+        "clasificacion": ["#Siniestros", "#SegurosConCercanía", "#CorreduríaDeSeguros"]
+    },
+    {
+        "id": "22",
+        "title": "⚡ Placas solares y seguros",
+        "slug": "placas-solares-seguros",
+        "image": "/images/blog/placas-solares-seguros.png",
+        "imageAlt": "imagen de placas solares y seguros",
+        "excerpt": "Publicado el 15 julio 2026",
+        "publishDate": "2026-07-15",
+        "clasificacion":  ["#PlacasSolares", "#SeguroHogar", "#EnergíaSolar", "#SegurosConCercanía"]
     }
 ]

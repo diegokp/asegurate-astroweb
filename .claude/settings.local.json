@@ -4,7 +4,8 @@
       "Bash(npm info *)",
       "Bash(npm install *)",
       "Bash(npm run *)",
-      "Bash(curl -s http://localhost:4325/blog/ -o /dev/null -w \"%{http_code}\")"
+      "Bash(curl -s http://localhost:4325/blog/ -o /dev/null -w \"%{http_code}\")",
+      "Bash(npm --version)"
     ]
   }
 }
