@@ -28,7 +28,7 @@ Te protege ante reclamaciones de terceros por daños causados durante tu activid
 Es **obligatorio** en profesiones sanitarias, jurídicas, técnicas y muchas otras.
 
 Ejemplo: si eres fisioterapeuta y lesionas a un paciente, este seguro se hace cargo
-# ✅ 2. Seguro de baja laboral (ILT)
+### ✅ 2. Seguro de baja laboral (ILT)
 Como autónomo, si no puedes trabajar por enfermedad o accidente, **tu ingreso se detiene**.
 Este seguro te proporciona una **renta diaria** mientras estés de baja.
 
