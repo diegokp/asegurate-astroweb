@@ -1,5 +1,5 @@
 ---
-title: 🌪️ Fenómenos atmosféricos: cuándo responde tu seguro y cuándo interviene el Consorcio
+title: 🌪️ Fenómenos atmosféricos. Cuándo responde tu seguro y cuándo interviene el Consorcio
 slug: fenomenos-atmosfericos-seguro-consorcio
 image: /images/blog/fenomenos-atmosfericos-seguro-consorcio.png
 imageAlt: imagen de fenómenos atmosféricos y seguro
