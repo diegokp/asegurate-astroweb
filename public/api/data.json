@@ -218,5 +218,45 @@
         "excerpt": "Publicado el 15 julio 2026",
         "publishDate": "2026-07-15",
         "clasificacion":  ["#PlacasSolares", "#SeguroHogar", "#EnergíaSolar", "#SegurosConCercanía"]
+    },
+        {
+        "id": "23",
+        "title": "🔑 ¿Qué ocurre si alquilas tu vivienda vacacional y sucede un siniestro?",
+        "slug": "alquiler-vivienda-vacacional-siniestro",
+        "image": "/images/blog/alquiler-vivienda-vacacional-siniestro.png",
+        "imageAlt": "imagen de alquiler de vivienda vacacional y siniestro",
+        "excerpt": "Publicado el 1 agosto 2026",
+        "publishDate": "2026-08-01",
+        "clasificacion":  ["#ViviendaVacacional", "#SeguroHogar", "#ResponsabilidadCivil", "#SegurosConCercanía", "#AlquilerVacacional", "#TuSeguroEnBuenasManos"]
+    },
+            {
+        "id": "24",
+        "title": "🌪️ Fenómenos atmosféricos: cuándo responde tu seguro y cuándo interviene el Consorcio",
+        "slug": "fenomenos-atmosfericos-seguro-consorcio",
+        "image": "/images/blog/fenomenos-atmosfericos-seguro-consorcio.png",
+        "imageAlt": "imagen de fenómenos atmosféricos y seguro",
+        "excerpt": "Publicado el 15 agosto 2026",
+        "publishDate": "2026-08-15",
+        "clasificacion":  ["#ConsorcioDeCompensación", "#FenómenosAtmosféricos", "#SeguroHogar", "#SeguroDeCoche"]
+    },
+                {
+        "id": "25",
+        "title": "🏢 ¿Trabajas desde casa? Tu seguro puede no cubrir todo lo que imaginas",
+        "slug": "trabajas-desde-casa-seguro",
+        "image": "/images/blog/trabajas-desde-casa-seguro.png",
+        "imageAlt": "imagen de trabaja desde casa y seguro",
+        "excerpt": "Publicado el 1 septiembre 2026",
+        "publishDate": "2026-09-01",
+        "clasificacion":  ["#SeguroHogar", "#Teletrabajo", "#Autónomos", "#ResponsabilidadCivil", "#ProtecciónDelHogar", "#SegurosConCercanía", "#TuSeguroEnBuenasManos"]
+    },
+                    {
+        "id": "26",
+        "title": "💍 Objetos de valor en casa: ¿están realmente asegurados?",
+        "slug": "objetos-valor-casa",
+        "image": "/images/blog/objetos-valor-casa.png",
+        "imageAlt": "imagen de objetos de valor en casa",
+        "excerpt": "Publicado el 15 septiembre 2026",
+        "publishDate": "2026-09-15",
+        "clasificacion":  ["#SeguroHogar", "#ObjetosDeValor", "#Joyas", "#Infraseguro", "#ProtecciónDelHogar", "#SegurosConCercanía", "#AseguraTuFuturo", "#TuSeguroEnBuenasManos"]
     }
 ]
