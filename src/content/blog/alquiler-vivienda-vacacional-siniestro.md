@@ -1,5 +1,5 @@
 ---
-title: ❗¿Qué hacer si tu aseguradora rechaza un siniestro?
+title: 🔑 ¿Qué ocurre si alquilas tu vivienda vacacional y sucede un siniestro?
 slug: alquiler-vivienda-vacacional-siniestro
 image: /images/blog/alquiler-vivienda-vacacional-siniestro.png
 imageAlt: imagen de alquiler de vivienda vacacional y siniestro

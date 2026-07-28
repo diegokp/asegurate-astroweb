@@ -1,5 +1,5 @@
 ---
-title: 💍 Objetos de valor en casa: ¿están realmente asegurados?
+title: 💍 Objetos de valor en casa. ¿están realmente asegurados?
 slug: objetos-valor-casa
 image: /images/blog/objetos-valor-casa.png
 imageAlt: imagen de objetos de valor en casa
