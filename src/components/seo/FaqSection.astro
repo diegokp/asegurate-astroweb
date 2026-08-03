@@ -1,0 +1,57 @@
+---
+import type { FAQ } from '~/utils/schema';
+
+interface Props {
+  faqs: FAQ[];
+  title?: string;
+}
+
+const { faqs, title = "Preguntas frecuentes" } = Astro.props;
+---
+
+{faqs.length > 0 && (
+  <section class="faq-section">
+    <main>
+      <h2>{title}</h2>
+      <div class="faq-list">
+        {faqs.map((faq) => (
+          <details>
+            <summary>{faq.question}</summary>
+            <p>{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </main>
+  </section>
+)}
+
+<style>
+  .faq-section main {
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  details {
+    border: 1px solid var(--grey, #d9d9d9);
+    border-radius: 8px;
+    padding: 16px 20px;
+  }
+
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-family: nunito semi;
+  }
+
+  details p {
+    margin-top: 12px;
+  }
+</style>

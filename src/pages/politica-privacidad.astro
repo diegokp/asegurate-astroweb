@@ -3,14 +3,23 @@ import Layout from '~/layouts/Layout.astro';
 import HeaderTop from '~/components/headerTop.astro';
 import Header from '~/components/header.astro';
 import Footer from '~/components/footer.astro'
+import JsonLd from '~/components/seo/JsonLd.astro';
+import { buildWebPageSchema, siteURL } from '~/utils/schema';
 
-
+const pageURL = `${siteURL}/politica-privacidad/`;
+const jsonLd = buildWebPageSchema({
+	pageURL,
+	name: "Política de Privacidad",
+	breadcrumb: [{ name: "Política de Privacidad", item: pageURL }]
+});
 ---
 
 <Layout
-	title=""
-	description=""
+	title="Política de Privacidad"
+	description="Política de privacidad y protección de datos personales de Asegura-Te Correduría de Seguros SL, conforme al RGPD y la normativa española."
+	canonicalURL={pageURL}
 	>
+	<JsonLd data={jsonLd} slot="head" />
 	<section id="inicio">
 		<HeaderTop />
 		<Header />

@@ -1,7 +1,7 @@
 ---
 title: ⚖️ ¿Qué cubre (y qué no) la responsabilidad civil en tus seguros?
 slug: responsabilidad-civil
-image: /images/blog/responsabilidad-civil.png
+image: /images/blog/responsabilidad-civil.webp
 imageAlt: imagen de seguros responsabilida civil
 excerpt: Publicado el 1 marzo 2026
 description: "Entiende qué cubre la responsabilidad civil en tus seguros, en qué situaciones actúa y por qué es una de las coberturas más importantes."

@@ -1,0 +1,41 @@
+# Asegura-Te — Correduría de Seguros en Las Palmas
+# https://www.aseguratte.es
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /datacard/
+
+# Crawlers de IA — permitidos explícitamente para visibilidad en
+# buscadores generativos y asistentes conversacionales.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://www.aseguratte.es/sitemap-index.xml

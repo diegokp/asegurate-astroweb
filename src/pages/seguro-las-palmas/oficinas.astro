@@ -7,6 +7,7 @@ import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
+import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/oficinas/`;
 const jsonLd = buildServiceSchema({
@@ -23,7 +24,7 @@ const jsonLd = buildServiceSchema({
 	description='Asegura tu oficina con nuestros diferentes seguros para oficinas en Las Palmas. Asegura-Te: +20 años a tu servicio en Las Palmas.'
 	canonicalURL={pageURL}
 	>
-	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
+	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />
@@ -32,6 +33,8 @@ const jsonLd = buildServiceSchema({
     <SegurosPage
         title='Seguros para Oficinas en Las Palmas'
         url="/images/oficinas.webp"
+        width={900}
+        height={531}
         alt="Seguros para Oficinas en Las Palmas"
         href="/contacto/"
         subtitle='Protección para el espacio de trabajo'

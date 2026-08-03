@@ -1,7 +1,7 @@
 ---
 title: 📘 Ley 5/2025. Seguros y obligaciones para patinetes eléctricos
 slug: seguros-patinetes-electricos
-image: /images/blog/patinetes-electricos.png
+image: /images/blog/patinetes-electricos.webp
 imageAlt: imagen de accidente patinete electrico
 excerpt: Publicado el 1 febrero 2026
 description: "La Ley 5/2025 obliga a asegurar los patinetes eléctricos y otros VMP. Descubre qué necesitas, cómo contratarlo y a quién afecta en 2026."

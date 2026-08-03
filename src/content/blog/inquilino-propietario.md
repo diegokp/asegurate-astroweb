@@ -1,7 +1,7 @@
 ---
 title: 🏠 Inquilino o propietario ¿qué seguro de hogar necesitas según tu situación?
 slug: inquilino-propietario
-image: /images/blog/inquilino-propietario.png
+image: /images/blog/inquilino-propietario.webp
 imageAlt: imagen de seguros inquilino-propietario
 excerpt: Publicado el 15 marzo 2026
 description: "¿Inquilino o propietario? Cada uno necesita un seguro de hogar distinto. Te explicamos qué debe cubrir cada póliza para no pagar de más."

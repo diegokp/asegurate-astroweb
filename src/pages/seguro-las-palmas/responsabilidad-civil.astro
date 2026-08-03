@@ -7,6 +7,7 @@ import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
+import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/responsabilidad-civil/`;
 const jsonLd = buildServiceSchema({
@@ -14,12 +15,7 @@ const jsonLd = buildServiceSchema({
   name: "Seguro de Responsabilidad Civil en Las Palmas",
   description: "Seguros de responsabilidad civil en Las Palmas. Protección ante reclamaciones por daños personales o materiales causados a terceros. RC general, profesional y de explotación.",
   serviceType: "Liability insurance",
-  breadcrumbName: "Responsabilidad Civil",
-  faqs: [
-    { question: "¿Qué es un seguro de responsabilidad civil?", answer: "Cubre las indemnizaciones y costes legales derivados de los daños físicos o materiales que involuntariamente causes a terceras personas en tu vida cotidiana o actividad profesional." },
-    { question: "¿Es obligatoria la RC para autónomos?", answer: "Depende de la actividad. Es obligatoria para profesiones sanitarias, técnicas, jurídicas y otras reguladas. Para el resto, aunque no sea obligatoria, es muy recomendable." },
-    { question: "¿Qué diferencia hay entre RC general y RC profesional?", answer: "La RC general cubre los daños causados en la vida cotidiana o en la actividad empresarial. La RC profesional cubre específicamente los errores u omisiones cometidos en el ejercicio de una profesión." }
-  ]
+  breadcrumbName: "Responsabilidad Civil"
 });
 ---
 
@@ -28,7 +24,7 @@ const jsonLd = buildServiceSchema({
 	description='Contrata tu seguro de responsabilidad civil en Las Palmas con Asegura-Te. Más de 20 años al servicio de nuestros clientes.'
 	canonicalURL={pageURL}
 	>
-	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
+	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />
@@ -37,6 +33,8 @@ const jsonLd = buildServiceSchema({
     <SegurosPage
         title='Seguro de Responsabilidad Civil en Las Palmas'
         url="/images/responsabilidad-civil.webp"
+        width={900}
+        height={600}
         alt="Seguro de Responsabilidad Civil en Las Palmas"
         href="/contacto/"
         subtitle='Cobertura completa para tus responsabilidades'
@@ -52,7 +50,7 @@ const jsonLd = buildServiceSchema({
             Nuestro seguro de responsabilidad civil te ofrece protección y tranquilidad en situaciones imprevistas. Confía en nosotros para cuidar de tus responsabilidades.
         </p>
     </SegurosPage>
-    <SegurosLink 
+    <SegurosLink
     hrefFrom='/seguro-las-palmas/pymes/'
     titleFrom='Pymes'
     hrefTo='/seguro-las-palmas/salud/'

@@ -1,7 +1,7 @@
 ---
 title: 💍 Objetos de valor en casa. ¿están realmente asegurados?
 slug: objetos-valor-casa
-image: /images/blog/objetos-valor-casa.png
+image: /images/blog/objetos-valor-casa.webp
 imageAlt: imagen de objetos de valor en casa
 excerpt: Publicado el 15 septiembre 2026
 description: "Joyas, bicicletas, cámaras o arte: ¿están realmente cubiertos por tu seguro de hogar? Descubre límites, declaraciones y el riesgo del infraseguro. ASEGURA-TE."

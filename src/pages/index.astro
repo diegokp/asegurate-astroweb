@@ -9,28 +9,19 @@ import Footer from '~/components/footer.astro'
 import Carrousel from '~/components/carrousel.astro';
 import Productos from '~/components/productos.vue';
 import Preguntas from '~/components/preguntas.vue'
-
-const siteURL = "https://www.aseguratte.es";
+import JsonLd from '~/components/seo/JsonLd.astro';
+import { siteURL, WEBSITE_ID, AGENCY_ID } from '~/utils/schema';
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebSite",
-      "@id": `${siteURL}/#website`,
-      "url": siteURL,
-      "name": "Asegura-Te",
-      "description": "Correduría de Seguros en Las Palmas de Gran Canaria. Seguros de hogar, coche, salud, vida y más para particulares y empresas.",
-      "inLanguage": "es",
-      "publisher": { "@id": `${siteURL}/#agency` }
-    },
-    {
       "@type": "WebPage",
       "@id": `${siteURL}/#webpage`,
       "url": siteURL,
       "name": "Correduría de Seguros en Las Palmas | Asegura-Te",
-      "isPartOf": { "@id": `${siteURL}/#website` },
-      "about": { "@id": `${siteURL}/#agency` },
+      "isPartOf": { "@id": WEBSITE_ID },
+      "about": { "@id": AGENCY_ID },
       "inLanguage": "es"
     }
   ]
@@ -38,20 +29,22 @@ const jsonLd = {
 ---
 
 <Layout
-	title=""
-	description=""
+	title="Correduría de Seguros en Las Palmas"
+	description="Correduría de seguros en Las Palmas. Comparamos seguros de hogar, auto, salud, vida y empresas con las mejores compañías. +20 años de experiencia."
 	canonicalURL={siteURL}
 	>
-	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
+	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />
 		<Header />
 		<Carrousel />
 	</section>
-	<AboutUs />
-	<Productos client:only="vue"/>
-	<Companies />
-	<Preguntas client:only="vue" />
+	<main>
+		<AboutUs />
+		<Productos client:only="vue"/>
+		<Companies />
+		<Preguntas client:only="vue" />
+	</main>
 	<Footer />
 </Layout>

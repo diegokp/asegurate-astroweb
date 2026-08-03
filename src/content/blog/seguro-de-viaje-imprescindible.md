@@ -1,7 +1,7 @@
 ---
 title: ✈️ Seguro de viaje. Por qué cada vez más personas lo consideran imprescindible
 slug: seguro-de-viaje-imprescindible
-image: /images/blog/seguro-de-viaje-imprescindible.png
+image: /images/blog/seguro-de-viaje-imprescindible.webp
 imageAlt: imagen de seguro de viaje imprescindible
 excerpt: Publicado el 1 junio 2026
 description: "Viajar es disfrutar, desconectar y crear recuerdos. Pero también pueden surgir imprevistos cuando menos lo esperas."

@@ -1,7 +1,7 @@
 ---
 title: 🎁 Regala tranquilidad ¿Sabías que puedes contratar un seguro para otra persona?
 slug: regala-tranquilidad
-image: /images/blog/fiesta_navidenia.png
+image: /images/blog/fiesta_navidenia.webp
 imageAlt: imagen de fiesta navidenia
 excerpt: Publicado el 1 diciembre 2025
 description: "¿Sabías que puedes contratar un seguro para otra persona? Descubre qué tipos de seguros puedes regalar y cómo dar tranquilidad a quien más quieres."

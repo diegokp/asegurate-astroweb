@@ -5,12 +5,23 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro'
 import ContactForm from '~/components/contactForm.astro';
+import JsonLd from '~/components/seo/JsonLd.astro';
+import { buildWebPageSchema, siteURL } from '~/utils/schema';
+
+const pageURL = `${siteURL}/contacto/`;
+const jsonLd = buildWebPageSchema({
+	pageURL,
+	name: "Contacto",
+	breadcrumb: [{ name: "Contacto", item: pageURL }]
+});
 ---
 
 <Layout
 	title="Contacto"
-	description=""
+	description="Contacta con Asegura-Te, tu correduría de seguros en Las Palmas de Gran Canaria. Llámanos, escríbenos o visítanos para asesorarte sin compromiso."
+	canonicalURL={pageURL}
 	>
+	<JsonLd data={jsonLd} slot="head" />
     <section id="inicio">
 		<HeaderTop />
 		<Header />

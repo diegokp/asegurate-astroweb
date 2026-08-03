@@ -1,7 +1,7 @@
 ---
 title:  🔁 ¿Puedo cambiar de compañía si ya tengo un seguro activo?
 slug: cambiar-de-seguro
-image: /images/blog/cambiodeseguro.png
+image: /images/blog/cambiodeseguro.webp
 imageAlt: imagen de mujer buscando seguro nuevo
 excerpt: Publicado el 15 enero 2026
 description: "¿Puedes cambiar de aseguradora con una póliza activa? Sí, y puede ahorrarte dinero. Te explicamos cuándo y cómo hacerlo sin errores."

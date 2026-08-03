@@ -3,14 +3,23 @@ import Layout from '~/layouts/Layout.astro';
 import HeaderTop from '~/components/headerTop.astro';
 import Header from '~/components/header.astro';
 import Footer from '~/components/footer.astro'
+import JsonLd from '~/components/seo/JsonLd.astro';
+import { buildWebPageSchema, siteURL } from '~/utils/schema';
 
-
+const pageURL = `${siteURL}/aviso-legal/`;
+const jsonLd = buildWebPageSchema({
+	pageURL,
+	name: "Aviso Legal",
+	breadcrumb: [{ name: "Aviso Legal", item: pageURL }]
+});
 ---
 
 <Layout
-	title=""
-	description=""
+	title="Aviso Legal"
+	description="Aviso legal de Asegura-Te Correduría de Seguros SL: datos identificativos, condiciones de uso y propiedad intelectual del sitio web aseguratte.es."
+	canonicalURL={pageURL}
 	>
+	<JsonLd data={jsonLd} slot="head" />
 	<section id="inicio">
 		<HeaderTop />
 		<Header />

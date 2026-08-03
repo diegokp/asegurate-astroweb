@@ -1,7 +1,7 @@
 ---
 title: 👴 ¿Quién puede ayudarte cuando ocurre un siniestro y no sabes qué hacer?
 slug: quien-puede-ayudarte-siniestro
-image: /images/blog/quien-puede-ayudarte-siniestro.png
+image: /images/blog/quien-puede-ayudarte-siniestro.webp
 imageAlt: imagen de seguros quien puede ayudarte
 excerpt: Publicado el 01 julio 2026
 description: "Descubre qué hacer si tu aseguradora rechaza un siniestro: causas más comunes, pasos a seguir y cómo Asegura-Te te ayuda a defenderte."

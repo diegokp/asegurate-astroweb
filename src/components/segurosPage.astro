@@ -7,15 +7,17 @@ interface Props {
     subsubtitle:string;
     url:string;
     alt:string;
-    href:string
+    href:string;
+    width?:number;
+    height?:number;
 }
 
-const { title, subtitle, subsubtitle, url, alt, href } = Astro.props
+const { title, subtitle, subsubtitle, url, alt, href, width = 900, height = 600 } = Astro.props
 
 ---
 <section>
     <main>
-        <img src={url} alt={alt} draggable="false">
+        <img src={url} alt={alt} width={width} height={height} loading="eager" draggable="false">
         <h1>{title}</h1>
         <div class="prose max-w-none">
             <slot name="after-title" />

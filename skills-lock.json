@@ -13,6 +13,18 @@
       "skillPath": "plugins/frontend-design/skills/frontend-design/SKILL.md",
       "computedHash": "e8118284a6365753790d44bb2758a6032b3af27fa84696428d9233f2be0f4e78"
     },
+    "geo-llmstxt": {
+      "source": "zubair-trabzada/geo-seo-claude",
+      "sourceType": "github",
+      "skillPath": "skills/geo-llmstxt/SKILL.md",
+      "computedHash": "65395ae15cea6236e9800f60f5fc7a5083451d825f4640d457750c7480b38871"
+    },
+    "seo-audit": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "skillPath": "skills/seo-audit/SKILL.md",
+      "computedHash": "f2dc52130189068981f21e1c0bdc4471ac7cd9b08d8a1320604411aa0f950385"
+    },
     "seo-content-writer": {
       "source": "aaron-he-zhu/seo-geo-claude-skills",
       "sourceType": "github",

@@ -6,6 +6,7 @@ import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro'
 import CardBlog from '~/components/cardBlog.astro';
 import Articulos from '~/components/articulos.vue'
+import JsonLd from '~/components/seo/JsonLd.astro';
 
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from "astro:content";
@@ -72,7 +73,7 @@ const jsonLd = {
 	canonicalURL={blogURL}
 	ogImage={`${siteURL}/images/asegurate_logoW.png`}
 	>
-	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
+	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />
@@ -81,8 +82,6 @@ const jsonLd = {
 	<section>
       <main>
     	<h1>Últimos artículos</h1>
-    	</main>
-    	<main>
         <Articulos client:only="vue"></Articulos>
     	</main>
 	</section>

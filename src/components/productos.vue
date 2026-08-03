@@ -28,8 +28,9 @@ function showProduct(id) {
             <div>
                 <img
                 :src="products[selected].image"
-                alt="Seguros Las Palmas"
+                :alt="products[selected].title"
                 id="productoImg"
+                loading="lazy"
                 draggable="false">
             </div>
             <div>

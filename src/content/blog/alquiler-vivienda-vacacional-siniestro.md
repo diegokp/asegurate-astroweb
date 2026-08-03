@@ -1,7 +1,7 @@
 ---
 title: 🔑 ¿Qué ocurre si alquilas tu vivienda vacacional y sucede un siniestro?
 slug: alquiler-vivienda-vacacional-siniestro
-image: /images/blog/alquiler-vivienda-vacacional-siniestro.png
+image: /images/blog/alquiler-vivienda-vacacional-siniestro.webp
 imageAlt: imagen de alquiler de vivienda vacacional y siniestro
 excerpt: Publicado el 01 agosto 2026
 description: "¿Alquilas tu vivienda a turistas? Descubre si tu seguro de hogar te cubre y qué coberturas necesitas para evitar problemas. Te asesoramos en ASEGURA-TE."

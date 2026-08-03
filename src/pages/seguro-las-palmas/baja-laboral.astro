@@ -7,6 +7,7 @@ import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
+import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/baja-laboral/`;
 const jsonLd = buildServiceSchema({
@@ -14,12 +15,7 @@ const jsonLd = buildServiceSchema({
   name: "Seguro de Baja Laboral en Las Palmas",
   description: "Seguro de baja laboral en Las Palmas. Complementa la prestación de la Seguridad Social durante la incapacidad temporal, para trabajadores por cuenta ajena y autónomos.",
   serviceType: "Disability income insurance",
-  breadcrumbName: "Baja Laboral",
-  faqs: [
-    { question: "¿Qué es un seguro de baja laboral?", answer: "Complementa la prestación de la Seguridad Social en caso de incapacidad temporal (IT), cubriendo la diferencia entre la prestación pública y el salario habitual." },
-    { question: "¿Quién puede contratar el seguro de baja laboral?", answer: "Tanto trabajadores por cuenta ajena como autónomos. Es especialmente recomendable para autónomos, cuya prestación pública suele ser más limitada." },
-    { question: "¿Qué cantidad cubre el seguro de baja laboral?", answer: "Depende de la póliza, pero puede complementar hasta el 100% del salario neto desde el primer día de baja o tras un periodo de carencia corto (generalmente 3-7 días)." }
-  ]
+  breadcrumbName: "Baja Laboral"
 });
 ---
 
@@ -28,7 +24,7 @@ const jsonLd = buildServiceSchema({
 	description='Protege tus ingresos con nuestro seguro de baja laboral en Las Palmas. Asegura-Te: tu correduría de Seguros. Llámanos ahora.'
 	canonicalURL={pageURL}
 	>
-	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
+	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />
@@ -37,6 +33,8 @@ const jsonLd = buildServiceSchema({
     <SegurosPage
         title='Seguro de Baja Laboral en Las Palmas'
         url="/images/seguro-baja-laboral.webp"
+        width={900}
+        height={600}
         alt="Seguro de Baja Laboral en Las Palmas"
         href="/contacto/"
         subtitle='Tranquilidad financiera en caso de baja laboral'
@@ -52,7 +50,7 @@ const jsonLd = buildServiceSchema({
             Nuestro seguro de baja laboral te ofrece protección y seguridad financiera en momentos difíciles. Confía en nosotros para cuidar de ti.
         </p>
     </SegurosPage>
-    <SegurosLink 
+    <SegurosLink
     hrefFrom='/seguro-las-palmas/autos/'
     titleFrom='Autos'
     hrefTo='/seguro-las-palmas/ciclomotores/'

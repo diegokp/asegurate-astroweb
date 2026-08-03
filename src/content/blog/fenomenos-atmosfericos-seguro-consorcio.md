@@ -1,7 +1,7 @@
 ---
 title: 🌪️ Fenómenos atmosféricos. Cuándo responde tu seguro y cuándo interviene el Consorcio
 slug: fenomenos-atmosfericos-seguro-consorcio
-image: /images/blog/fenomenos-atmosfericos-seguro-consorcio.png
+image: /images/blog/fenomenos-atmosfericos-seguro-consorcio.webp
 imageAlt: imagen de fenómenos atmosféricos y seguro
 excerpt: Publicado el 15 agosto 2026
 description: "Tormentas, inundaciones o granizo: ¿paga tu seguro o el Consorcio de Compensación? Te explicamos las diferencias y qué hacer si sufres daños. ASEGURA-TE."

@@ -1,7 +1,7 @@
 ---
 title: ⚡ Placas solares y seguros
 slug: placas-solares-seguros
-image: /images/blog/placa-solares-seguros.png
+image: /images/blog/placa-solares-seguros.webp
 imageAlt: imagen de seguros de placas solares
 excerpt: Publicado el 15 julio 2026
 description: "Placa solares seguros, lo que debes saber para cuidar tu inversión"

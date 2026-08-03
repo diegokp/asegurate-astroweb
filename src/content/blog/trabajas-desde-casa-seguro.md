@@ -1,7 +1,7 @@
 ---
 title: 🏢 ¿Trabajas desde casa? Tu seguro puede no cubrir todo lo que imaginas
 slug: trabajas-desde-casa-seguro
-image: /images/blog/trabajas-desde-casa-seguro.png
+image: /images/blog/trabajas-desde-casa-seguro.webp
 imageAlt: imagen de trabaja desde casa y seguro
 excerpt: Publicado el 01 septiembre 2026
 description: "¿Teletrabajas o tienes un negocio en casa? Descubre si tu seguro de hogar cubre tu actividad profesional, equipos y mercancías. Te asesoramos en ASEGURA-TE."

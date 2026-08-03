@@ -3,14 +3,23 @@ import Layout from '~/layouts/Layout.astro';
 import HeaderTop from '~/components/headerTop.astro';
 import Header from '~/components/header.astro';
 import Footer from '~/components/footer.astro'
+import JsonLd from '~/components/seo/JsonLd.astro';
+import { buildWebPageSchema, siteURL } from '~/utils/schema';
 
-
+const pageURL = `${siteURL}/politica-privacidad-redes/`;
+const jsonLd = buildWebPageSchema({
+	pageURL,
+	name: "Política de Privacidad en Redes Sociales",
+	breadcrumb: [{ name: "Política de Privacidad RRSS", item: pageURL }]
+});
 ---
 
 <Layout
-	title=""
-	description=""
+	title="Política de Privacidad en Redes Sociales"
+	description="Política de privacidad aplicable a los perfiles de Asegura-Te en redes sociales como Facebook, Instagram, LinkedIn y TikTok."
+	canonicalURL={pageURL}
 	>
+	<JsonLd data={jsonLd} slot="head" />
 	<section id="inicio">
 		<HeaderTop />
 		<Header />

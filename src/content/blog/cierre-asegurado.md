@@ -1,7 +1,7 @@
 ---
 title: 📆 Cierre de año asegurado, "revisa tus pólizas"
 slug: cierre-asegurado
-image: /images/blog/cierre-asegurado.png
+image: /images/blog/cierre-asegurado.webp
 imageAlt: imagen de mujer cierre de anyo
 excerpt: Publicado el 15 diciembre 2025
 description: "Diciembre es el momento ideal para revisar tus pólizas. Muchas se renuevan en enero: descubre cómo terminar el año con tus seguros bajo control."

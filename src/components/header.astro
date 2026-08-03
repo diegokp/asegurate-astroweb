@@ -80,13 +80,13 @@ import 'animate.css';
 <!-- DESKTOP MENU -->
 <header>
     <div>
-        <a href="/"><img src="/images/asegurate_logo.webp" alt="Asegurate logo" id="logo" height="88px" width="250px"></a>
+        <a href="/"><img src="/images/asegurate_logo.webp" alt="Asegurate logo" id="logo" width="250" height="88"></a>
     </div>
     <div id="line" onclick="clickin()">
         <div class="rotate"></div>
         <div class="rotate"></div>
     </div>
-    <nav>
+    <nav aria-label="Principal">
         <a  href="/" class="boton_menu" onclick="clickproClose()">Inicio</a>
         <a href="/#nosotros" class="GoTo"><div class="boton_menu" onclick="clickproClose()">Nosotros</div></a>
         <div class="boton_menu" onclick="clickproOpen()">Productos</div>
@@ -95,7 +95,7 @@ import 'animate.css';
         <a href="/contacto/" class="GoTo"><div class="boton_menu" onclick="clickproClose()">Contacto</div></a>
     </nav>
 </header>
-<main>
+<nav aria-label="Productos">
     <div id="productsNav" class="overlayProducts">
         <span onclick="clickpar()">PARTICULARES <i class="fa-solid fa-angle-down angle"></i></span>
         <span onclick="clickemp()">EMPRESAS <i class="fa-solid fa-angle-down angle"></i></span>
@@ -135,7 +135,7 @@ import 'animate.css';
             </div>
         </div>
     </div>
-</main>
+</nav>
 
 <script is:inline>
 const navbar = document.getElementById("navbar");

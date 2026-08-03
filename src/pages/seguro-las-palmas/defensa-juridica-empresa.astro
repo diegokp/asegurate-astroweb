@@ -7,6 +7,7 @@ import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
+import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/defensa-juridica-empresa/`;
 const jsonLd = buildServiceSchema({
@@ -23,7 +24,7 @@ const jsonLd = buildServiceSchema({
 	description='Protege los intereses legales de tu empresa con nuestros Seguros en Las Palmas. Déjate asesorar por Asegura-Te, más de 20 años ayudando a empresas.'
 	canonicalURL={pageURL}
 	>
-	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
+	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />
@@ -32,6 +33,8 @@ const jsonLd = buildServiceSchema({
     <SegurosPage
         title='Seguro de Defensa Jurídica de la Empresa en Las Palmas'
         url="/images/defensa-juridica-empresa.webp"
+        width={900}
+        height={600}
         alt="Seguros para Pymes en Las Palmas"
         href="/contacto/"
         subtitle='Asesoramiento legal especializado para empresas'

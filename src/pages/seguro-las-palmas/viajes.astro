@@ -7,6 +7,7 @@ import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
+import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/viajes/`;
 const jsonLd = buildServiceSchema({
@@ -14,12 +15,7 @@ const jsonLd = buildServiceSchema({
   name: "Seguros de Viaje en Las Palmas",
   description: "Seguros de viaje en Las Palmas de Gran Canaria. Cobertura de asistencia médica en el extranjero, cancelación de viaje, pérdida de equipaje y responsabilidad civil.",
   serviceType: "Travel insurance",
-  breadcrumbName: "Seguro de Viajes",
-  faqs: [
-    { question: "¿Qué cubre el seguro de viaje?", answer: "Asistencia médica y hospitalaria en el extranjero, repatriación, cancelación del viaje por causas justificadas, pérdida o robo de equipaje y responsabilidad civil." },
-    { question: "¿Es necesario el seguro de viaje si tengo tarjeta de crédito?", answer: "Las coberturas de las tarjetas suelen ser limitadas (bajos capitales, muchas exclusiones). Un seguro de viaje específico ofrece protección mucho más amplia, especialmente en gastos médicos." },
-    { question: "¿Qué es la cobertura de cancelación?", answer: "Reembolsa el coste del viaje si debes cancelarlo antes de salir por causas justificadas como enfermedad, fallecimiento de familiar, despido laboral u otras contempladas en la póliza." }
-  ]
+  breadcrumbName: "Seguro de Viajes"
 });
 ---
 
@@ -28,7 +24,7 @@ const jsonLd = buildServiceSchema({
 	description='Seguros de Viaje en Las Palmas. Disfruta de tus viajes con seguridad con nuestra oferta de seguros de viaje personalizados y adaptados a lo que necesitas.'
 	canonicalURL={pageURL}
 	>
-	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
+	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />
@@ -37,6 +33,8 @@ const jsonLd = buildServiceSchema({
     <SegurosPage
         title='Seguros de Viaje en Las Palmas'
         url="/images/viajes_dest.webp"
+        width={724}
+        height={482}
         alt="Seguros de Viaje en Las Palmas"
         href="/contacto/"
         subtitle='Disfruta de tus aventuras con seguridad gracias a nuestros seguros de viaje'
@@ -52,7 +50,7 @@ const jsonLd = buildServiceSchema({
             Nuestros seguros de viaje están diseñados para ofrecerte tranquilidad y protección en cada viaje. Confía en nosotros para cuidar de ti.
         </p>
     </SegurosPage>
-    <SegurosLink 
+    <SegurosLink
     hrefFrom='/seguro-las-palmas/vehiculos-clasicos/'
     titleFrom='Vehículos clásicos'
     hrefTo='/seguro-las-palmas/vida/'

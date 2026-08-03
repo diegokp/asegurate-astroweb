@@ -1,7 +1,7 @@
 ---
 title: 🐶 ¿Tu mascota está realmente protegida? Lo que muchos dueños aún no saben
 slug: seguro-mascota-protegida
-image: /images/blog/seguro-mascota-protegida.png
+image: /images/blog/seguro-mascota-protegida.webp
 imageAlt: imagen de seguro de mascota protegida
 excerpt: Publicado el 15 junio 2026
 description: "En ASEGURA-TE te explicamos todo de forma clara y sencilla para que sepas cómo proteger correctamente a tu mascota… y también a tu tranquilidad."

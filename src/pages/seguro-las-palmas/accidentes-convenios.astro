@@ -7,6 +7,7 @@ import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
+import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/accidentes-convenios/`;
 const jsonLd = buildServiceSchema({
@@ -23,7 +24,7 @@ const jsonLd = buildServiceSchema({
 	description='Protege a tus empleados con nuestros seguros para accidentes de convenios en Las Palmas. Te asesoramos y ayudamos de forma personalizada.'
 	canonicalURL={pageURL}
 	>
-	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
+	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />
@@ -32,6 +33,8 @@ const jsonLd = buildServiceSchema({
     <SegurosPage
         title='Seguros para Accidentes de Convenios en Las Palmas'
         url="/images/accidentes-convenios.webp"
+        width={900}
+        height={600}
         alt="Seguros para Accidentes de Convenios en Las Palmas"
         href="/contacto/"
         subtitle='Seguridad en el entorno laboral con nuestros seguros'

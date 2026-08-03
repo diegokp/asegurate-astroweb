@@ -7,6 +7,7 @@ import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
+import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/mascotas/`;
 const jsonLd = buildServiceSchema({
@@ -14,12 +15,7 @@ const jsonLd = buildServiceSchema({
   name: "Seguros para Mascotas en Las Palmas",
   description: "Seguros de mascotas en Las Palmas de Gran Canaria. Cobertura veterinaria, responsabilidad civil y asistencia para perros y gatos. Obligatorio para razas PPP.",
   serviceType: "Pet insurance",
-  breadcrumbName: "Seguro de Mascotas",
-  faqs: [
-    { question: "¿Qué cubre el seguro de mascotas?", answer: "Generalmente cubre gastos veterinarios por accidente o enfermedad, responsabilidad civil si tu mascota causa daños a terceros, y en algunas pólizas, deceso y cirugías." },
-    { question: "¿Es obligatorio el seguro para perros potencialmente peligrosos (PPP)?", answer: "Sí, en España la Ley 50/1999 exige seguro de responsabilidad civil para tenedores de perros de razas consideradas potencialmente peligrosas." },
-    { question: "¿Cubre el seguro de mascotas la responsabilidad civil si mi animal muerde a alguien?", answer: "Sí, la cobertura de RC cubre los daños físicos o materiales que tu mascota pueda causar a terceras personas, incluyendo atenciones médicas." }
-  ]
+  breadcrumbName: "Seguro de Mascotas"
 });
 ---
 
@@ -28,7 +24,7 @@ const jsonLd = buildServiceSchema({
 	description='En Asegura-Te te ayudamos a encontrar el seguro de mascotas adecuado en Las Palmas. Cuida de lo que más quieres.'
 	canonicalURL={pageURL}
 	>
-	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
+	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />
@@ -37,6 +33,8 @@ const jsonLd = buildServiceSchema({
     <SegurosPage
         title='Seguros para Mascotas en Las Palmas'
         url="/images/mascotas.webp"
+        width={1400}
+        height={933}
         alt="Seguros para Mascotas en Las Palmas"
         href="/contacto/"
         subtitle='Cuida a tus mascotas con nuestros seguros'
@@ -52,7 +50,7 @@ const jsonLd = buildServiceSchema({
             Nuestros seguros para mascotas están diseñados pensando en su salud y bienestar. Confía en nosotros para cuidar de tus compañeros peludos.
         </p>
     </SegurosPage>
-    <SegurosLink 
+    <SegurosLink
     hrefFrom='/seguro-las-palmas/hogar/'
     titleFrom='Hogar'
     hrefTo='/seguro-las-palmas/motos/'

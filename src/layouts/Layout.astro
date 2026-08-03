@@ -1,5 +1,7 @@
 ---
 import "~/styles/index.css"
+import JsonLd from '~/components/seo/JsonLd.astro';
+import { siteURL, buildAgencySchema, buildWebsiteSchema } from '~/utils/schema';
 
 interface Props {
 	title: string;
@@ -11,7 +13,10 @@ interface Props {
 
 const { title, description, canonicalURL, ogImage, ogType = "website" } = Astro.props;
 
-const siteURL = "https://www.aseguratte.es";
+const globalJsonLd = {
+	"@context": "https://schema.org",
+	"@graph": [buildAgencySchema(), buildWebsiteSchema()]
+};
 
 const makeTitle = title
   ? title + " | Asegura-Te"
@@ -64,39 +69,8 @@ const makeImage = ogImage ?? `${siteURL}/images/asegurate_logoW.png`;
 
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-		<!-- JSON-LD global: InsuranceAgency -->
-		<script type="application/ld+json">
-			{
-			  "@context":"https://schema.org",
-			  "@type":"InsuranceAgency",
-			  "@id":"https://aseguratte.es/#agency",
-			  "name":"Aseguratte",
-			  "url":"https://aseguratte.es/",
-			  "logo":"https://www.aseguratte.es/images/asegurate_logoW.png",
-			  "image":"https://www.aseguratte.es/images/asegurate_logoW.png",
-			  "telephone":"+34828661940",
-			  "email":"info@aseguratte.es",
-			  "address":{
-			    "@type":"PostalAddress",
-			    "streetAddress":"Calle Domingo Monteverde 144 Bajo A",
-			    "postalCode":"35118",
-			    "addressLocality":"Las Palmas de Gran Canaria",
-			    "addressRegion":"Canarias",
-			    "addressCountry":"ES"
-			  },
-			  "geo":{
-			    "@type":"GeoCoordinates",
-			    "latitude":27.8609851,
-			    "longitude":-15.4011986
-			  },
-			  "areaServed":[
-			    "Las Palmas de Gran Canaria",
-			    "Gran Canaria",
-			    "Islas Canarias"
-			  ],
-			  "sameAs":[]
-			}
-		</script>
+		<!-- JSON-LD global: InsuranceAgency + WebSite -->
+		<JsonLd data={globalJsonLd} />
 
 		<!-- JSON-LD específico por página -->
 		<slot name="head" />

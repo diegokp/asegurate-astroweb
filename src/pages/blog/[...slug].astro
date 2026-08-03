@@ -5,6 +5,7 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro'
 import BlogPage from '~/components/blogPage.astro';
+import JsonLd from '~/components/seo/JsonLd.astro';
 import { getCollection, render} from "astro:content";
 
 export async function getStaticPaths() {
@@ -84,7 +85,7 @@ const jsonLd = {
 	ogImage={ogImage}
 	ogType="article"
 	>
-	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
+	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

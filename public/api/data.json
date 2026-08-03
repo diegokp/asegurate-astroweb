@@ -1,262 +1,381 @@
 [
-    {
-        "id": "1",
-        "title": "¿Por qué contratar un seguro con una correduría como ASEGURA-TE? 🛡️",
-        "slug": "por-que-contratar-un-seguro",
-        "image": "/images/blog/imagenIA01.webp",
-        "imageAlt": "imagen de por que contratar un seguro",
-        "excerpt": "Publicado el 1 Septiembre 2025",
-        "publishDate": "2025-09-01",
-        "clasificacion": ["#Consejos", "#Correduría", "#SeguroGeneral"]
-    },
-    {
-        "id": "2",
-        "title": "👨‍👩‍👧‍👦 ¿Cómo elegir el mejor seguro de vida para tu familia?",
-        "slug": "como-elegir-el-mejor-seguro-para-tu-familia",
-        "image": "/images/blog/imagenIA02.webp",
-        "imageAlt": "imagen de por que contratar un seguro",
-        "excerpt": "Publicado el 15 Septiembre 2025",
-        "publishDate": "2025-09-15",
-        "clasificacion": ["#SeguroDeVida", "#Familia", "#Consejos"]
-    },
-    {
-        "id": "3",
-        "title": " 🩺 ¿Estás pensando en cambiar de seguro de salud? Lo que debes saber antes de hacerlo",
-        "slug": "estas-pensando-en-cambiar-de-seguro-de-salud",
-        "image": "/images/blog/imagenIA03.webp",
-        "imageAlt": "seguro de salud Asegurate",
-        "excerpt": "Publicado el 1 octubre 2025",
-        "publishDate": "2025-10-01",
-        "clasificacion": ["#SeguroDeSalud", "#CambiarDeSeguro", "#Consejos"]
-    },
-    {
-        "id": "4",
-        "title": "📋 Cómo rellenar correctamente un parte amistoso de accidente (paso a paso)",
-        "slug": "como-rellenar-un-parte-amistoso",
-        "image": "/images/blog/imagen04.webp",
-        "imageAlt": "imagen de parte amistoso",
-        "excerpt": "Publicado el 15 Octubre 2025",
-        "publishDate": "2025-10-15",
-        "clasificacion": ["#SeguroDeCoche", "#Siniestros", "#Consejos"]
-    },
-    {
-        "id": "5",
-        "title": "📞 ¿Cómo comunicar un siniestro de forma rápida y eficaz con tu correduría?",
-        "slug": "como-comunicar-un-siniestro",
-        "image": "/images/blog/imagen05.webp",
-        "imageAlt": "imagen de siniestro",
-        "excerpt": "Publicado el 1 noviembre 2025",
-        "publishDate": "2025-11-01",
-        "clasificacion": ["#Siniestros", "#GestiónDeSeguros", "#Consejos"]
-    },
-    {
-        "id": "6",
-        "title": "🏡 Seguro de hogar ¿qué coberturas son imprescindibles y cuáles puedes evitar?",
-        "slug": "que-coberturas-son-imprescindibles",
-        "image": "/images/blog/cobertura.png",
-        "imageAlt": "imagen de coberturas impresindibles",
-        "excerpt": "Publicado el 15 noviembre 2025",
-        "publishDate": "2025-11-15",
-        "clasificacion": ["#SeguroDeHogar", "#Coberturas", "#Consejos"]
-    },
-    {
-        "id": "7",
-        "title": "🎁 Regala tranquilidad ¿Sabías que puedes contratar un seguro para otra persona?",
-        "slug": "regala-tranquilidad",
-        "image": "/images/blog/fiesta_navidenia.png",
-        "imageAlt": "imagen de fiesta navidenia",
-        "excerpt": "Publicado el 1 diciembre 2025",
-        "publishDate": "2025-12-01",
-        "clasificacion": ["#SeguroDeVida", "#Familia", "#Consejos"]
-    },
-    {
-        "id": "8",
-        "title": "📆 Cierre de año asegurado, ¡revisa tus pólizas!",
-        "slug": "cierre-asegurado",
-        "image": "/images/blog/cierre-asegurado.png",
-        "imageAlt": "imagen de mujer cierre de año",
-        "excerpt": "Publicado el 15 diciembre 2025",
-        "publishDate": "2025-12-12",
-        "clasificacion": ["#GestiónDeSeguros", "#RevisarPólizas", "#Consejos"]
-    },
-    {
-        "id": "9",
-        "title": "🎉 ¡Feliz 2026! Empieza el año asegurado, los seguros que no puedes olvidar",
-        "slug": "seguros-que-no-puedes-olvidar",
-        "image": "/images/blog/familia-seguros.jpeg",
-        "imageAlt": "imagen de familia buscando seguro",
-        "excerpt": "Publicado el 1 enero 2026",
-        "publishDate": "2026-01-01",
-        "clasificacion": ["#Consejos", "#SeguroEsencial", "#Familia"]
-    },
-    {
-        "id": "10",
-        "title": "🔁 ¿Puedo cambiar de compañía si ya tengo un seguro activo?",
-        "slug": "cambiar-de-seguro",
-        "image": "/images/blog/cambiodeseguro.png",
-        "imageAlt": "imagen de mujer buscando seguro nuevo",
-        "excerpt": "Publicado el 15 enero 2026",
-        "publishDate": "2026-01-15",
-        "clasificacion": ["#CambiarDeSeguro", "#GestiónDeSeguros", "#Consejos"]
-    },
-    {
-        "id": "11",
-        "title": "📘 Ley 5/2025. Seguros y obligaciones para patinetes eléctricos",
-        "slug": "seguros-patinetes-electricos",
-        "image": "/images/blog/patinetes-electricos.png",
-        "imageAlt": "imagen de accidente patinete electrico",
-        "excerpt": "Publicado el 1 febrero 2026",
-        "publishDate": "2026-02-01",
-        "clasificacion": ["#Movilidad", "#NuevaLey", "#Obligatorio"]
-    },
-    {
-        "id": "12",
-        "title": "❤️ Tener un seguro de vida también es un acto de amor",
-        "slug": "tener-un-seguro-de-vida",
-        "image": "/images/blog/seguro-de-vida.png",
-        "imageAlt": "imagen de pareja con un seguro de vida",
-        "excerpt": "Publicado el 15 febrero 2026",
-        "publishDate": "2026-02-15",
-        "clasificacion": ["#SeguroDeVida", "#Familia", "#ProtecciónFamiliar"]
-    },
-    {
-        "id": "13",
-        "title": "⚖️ ¿Qué cubre (y qué no) la responsabilidad civil en tus seguros?",
-        "slug": "responsabilidad-civil",
-        "image": "/images/blog/responsabilidad-civil.png",
-        "imageAlt": "imagen de seguros responsabilida civil",
-        "excerpt": "Publicado el 1 marzo 2026",
-        "publishDate": "2026-03-01",
-        "clasificacion": ["#ResponsabilidadCivil", "#Coberturas", "#Consejos"]
-    },
-    {
-        "id": "14",
-        "title": "🏠 Inquilino o propietario ¿qué seguro de hogar necesitas según tu situación?",
-        "slug": "inquilino-propietario",
-        "image": "/images/blog/inquilino-propietario.png",
-        "imageAlt": "imagen de seguros inquilino o propietario",
-        "excerpt": "Publicado el 15 marzo 2026",
-        "publishDate": "2026-03-15",
-        "clasificacion": ["#SeguroDeHogar", "#Alquiler", "#Consejos"]
-    },
-    {
-        "id": "15",
-        "title": "❗¿Qué hacer si tu aseguradora rechaza un siniestro?",
-        "slug": "aseguradora-rechaza-siniestro",
-        "image": "/images/blog/aseguradora-rechaza-siniestro.png",
-        "imageAlt": "imagen de seguros aseguradora-rechaza-siniestro",
-        "excerpt": "Publicado el 01 abril 2026",
-        "publishDate": "2026-04-01",
-        "clasificacion": ["#Siniestros", "#DerechosAsegurado", "#Consejos"]
-    },
-    {
-        "id": "16",
-        "title": "👨‍🔧👩‍💻 Seguros para autónomos ¿estás realmente cubierto?",
-        "slug": "seguros-para-autonomos",
-        "image": "/images/blog/seguros-para-autonomos.png",
-        "imageAlt": "imagen de seguros para autonomos",
-        "excerpt": "Publicado el 15 abril 2026",
-        "publishDate": "2026-04-15",
-        "clasificacion": ["#Autónomos", "#ResponsabilidadCivil", "#Pymes"]
-    },
-    {
-        "id": "17",
-        "title": "🔄 ¿Ha cambiado tu vida? Entonces también deberían cambiar tus seguros",
-        "slug": "revisa-tu-seguro",
-        "image": "/images/blog/revisa-tu-seguro.png",
-        "imageAlt": "imagen de revisa tu seguro",
-        "excerpt": "Publicado el 01 mayo 2026",
-        "publishDate": "2026-05-01",
-        "clasificacion": ["#GestiónDeSeguros", "#RevisarPólizas", "#Consejos"]
-    },
-    {
-        "id": "18",
-        "title": "🚗 ¿Por qué tu seguro de coche puede no cubrirte en algunos casos?",
-        "slug": "seguro-de-coche-no-cubre",
-        "image": "/images/blog/seguro-de-coche-no-cubre.png",
-        "imageAlt": "imagen de seguro de coche no cubre",
-        "excerpt": "Publicado el 15 mayo 2026",
-        "publishDate": "2026-05-15",
-        "clasificacion": ["#SeguroDeCoche", "#Coberturas", "#Consejos"]
-    },
-    {
-        "id": "19",
-        "title": "✈️ Seguro de viaje: por qué cada vez más personas lo consideran imprescindible",
-        "slug": "seguro-de-viaje-imprescindible",
-        "image": "/images/blog/seguro-de-viaje-imprescindible.png",
-        "imageAlt": "imagen de seguro de viaje imprescindible",
-        "excerpt": "Publicado el 1 junio 2026",
-        "publishDate": "2026-06-01",
-        "clasificacion": ["#SeguroDeViaje", "#Coberturas", "#Consejos"]
-    },
-    {
-        "id": "20",
-        "title": "🐶 ¿Tu mascota está realmente protegida? Lo que muchos dueños aún no saben",
-        "slug": "seguro-mascota-protegida",
-        "image": "/images/blog/seguro-mascota-protegida.png",
-        "imageAlt": "imagen de seguro de mascota protegida",
-        "excerpt": "Publicado el 15 junio 2026",
-        "publishDate": "2026-06-15",
-        "clasificacion": ["#SeguroDeMascota", "#Coberturas", "#Consejos", "#BienestarAnimal"]
-    },
-    {
-        "id": "21",
-        "title": "👴 ¿Quién puede ayudarte cuando ocurre un siniestro y no sabes qué hacer?",
-        "slug": "quien-puede-ayudarte-siniestro",
-        "image": "/images/blog/quien-puede-ayudarte-siniestro.png",
-        "imageAlt": "imagen de quién puede ayudarte siniestro",
-        "excerpt": "Publicado el 1 julio 2026",
-        "publishDate": "2026-07-01",
-        "clasificacion": ["#Siniestros", "#SegurosConCercanía", "#CorreduríaDeSeguros"]
-    },
-    {
-        "id": "22",
-        "title": "⚡ Placas solares y seguros",
-        "slug": "placas-solares-seguros",
-        "image": "/images/blog/placa-solares-seguros.png",
-        "imageAlt": "imagen de placas solares y seguros",
-        "excerpt": "Publicado el 15 julio 2026",
-        "publishDate": "2026-07-15",
-        "clasificacion":  ["#PlacasSolares", "#SeguroHogar", "#EnergíaSolar", "#SegurosConCercanía"]
-    },
-        {
-        "id": "23",
-        "title": "🔑 ¿Qué ocurre si alquilas tu vivienda vacacional y sucede un siniestro?",
-        "slug": "alquiler-vivienda-vacacional-siniestro",
-        "image": "/images/blog/alquiler-vivienda-vacacional-siniestro.png",
-        "imageAlt": "imagen de alquiler de vivienda vacacional y siniestro",
-        "excerpt": "Publicado el 1 agosto 2026",
-        "publishDate": "2026-08-01",
-        "clasificacion":  ["#ViviendaVacacional", "#SeguroHogar", "#ResponsabilidadCivil", "#SegurosConCercanía", "#AlquilerVacacional", "#TuSeguroEnBuenasManos"]
-    },
-            {
-        "id": "24",
-        "title": "🌪️ Fenómenos atmosféricos: cuándo responde tu seguro y cuándo interviene el Consorcio",
-        "slug": "fenomenos-atmosfericos-seguro-consorcio",
-        "image": "/images/blog/fenomenos-atmosfericos-seguro-consorcio.png",
-        "imageAlt": "imagen de fenómenos atmosféricos y seguro",
-        "excerpt": "Publicado el 15 agosto 2026",
-        "publishDate": "2026-08-15",
-        "clasificacion":  ["#ConsorcioDeCompensación", "#FenómenosAtmosféricos", "#SeguroHogar", "#SeguroDeCoche"]
-    },
-                {
-        "id": "25",
-        "title": "🏢 ¿Trabajas desde casa? Tu seguro puede no cubrir todo lo que imaginas",
-        "slug": "trabajas-desde-casa-seguro",
-        "image": "/images/blog/trabajas-desde-casa-seguro.png",
-        "imageAlt": "imagen de trabaja desde casa y seguro",
-        "excerpt": "Publicado el 1 septiembre 2026",
-        "publishDate": "2026-09-01",
-        "clasificacion":  ["#SeguroHogar", "#Teletrabajo", "#Autónomos", "#ResponsabilidadCivil", "#ProtecciónDelHogar", "#SegurosConCercanía", "#TuSeguroEnBuenasManos"]
-    },
-                    {
-        "id": "26",
-        "title": "💍 Objetos de valor en casa: ¿están realmente asegurados?",
-        "slug": "objetos-valor-casa",
-        "image": "/images/blog/objetos-valor-casa.png",
-        "imageAlt": "imagen de objetos de valor en casa",
-        "excerpt": "Publicado el 15 septiembre 2026",
-        "publishDate": "2026-09-15",
-        "clasificacion":  ["#SeguroHogar", "#ObjetosDeValor", "#Joyas", "#Infraseguro", "#ProtecciónDelHogar", "#SegurosConCercanía", "#AseguraTuFuturo", "#TuSeguroEnBuenasManos"]
-    }
+  {
+    "id": "1",
+    "title": "¿Por qué contratar un seguro con una correduría como ASEGURA-TE? 🛡️",
+    "slug": "por-que-contratar-un-seguro",
+    "image": "/images/blog/imagenIA01.webp",
+    "imageAlt": "imagen de por que contratar un seguro",
+    "excerpt": "Publicado el 1 Septiembre 2025",
+    "publishDate": "2025-09-01",
+    "clasificacion": [
+      "#Consejos",
+      "#Correduría",
+      "#SeguroGeneral"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "👨‍👩‍👧‍👦 ¿Cómo elegir el mejor seguro de vida para tu familia?",
+    "slug": "como-elegir-el-mejor-seguro-para-tu-familia",
+    "image": "/images/blog/imagenIA02.webp",
+    "imageAlt": "imagen de por que contratar un seguro",
+    "excerpt": "Publicado el 15 Septiembre 2025",
+    "publishDate": "2025-09-15",
+    "clasificacion": [
+      "#SeguroDeVida",
+      "#Familia",
+      "#Consejos"
+    ]
+  },
+  {
+    "id": "3",
+    "title": " 🩺 ¿Estás pensando en cambiar de seguro de salud? Lo que debes saber antes de hacerlo",
+    "slug": "estas-pensando-en-cambiar-de-seguro-de-salud",
+    "image": "/images/blog/imagenIA03.webp",
+    "imageAlt": "seguro de salud Asegurate",
+    "excerpt": "Publicado el 1 octubre 2025",
+    "publishDate": "2025-10-01",
+    "clasificacion": [
+      "#SeguroDeSalud",
+      "#CambiarDeSeguro",
+      "#Consejos"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "📋 Cómo rellenar correctamente un parte amistoso de accidente (paso a paso)",
+    "slug": "como-rellenar-un-parte-amistoso",
+    "image": "/images/blog/imagen04.webp",
+    "imageAlt": "imagen de parte amistoso",
+    "excerpt": "Publicado el 15 Octubre 2025",
+    "publishDate": "2025-10-15",
+    "clasificacion": [
+      "#SeguroDeCoche",
+      "#Siniestros",
+      "#Consejos"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "📞 ¿Cómo comunicar un siniestro de forma rápida y eficaz con tu correduría?",
+    "slug": "como-comunicar-un-siniestro",
+    "image": "/images/blog/imagen05.webp",
+    "imageAlt": "imagen de siniestro",
+    "excerpt": "Publicado el 1 noviembre 2025",
+    "publishDate": "2025-11-01",
+    "clasificacion": [
+      "#Siniestros",
+      "#GestiónDeSeguros",
+      "#Consejos"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "🏡 Seguro de hogar ¿qué coberturas son imprescindibles y cuáles puedes evitar?",
+    "slug": "que-coberturas-son-imprescindibles",
+    "image": "/images/blog/cobertura.webp",
+    "imageAlt": "imagen de coberturas impresindibles",
+    "excerpt": "Publicado el 15 noviembre 2025",
+    "publishDate": "2025-11-15",
+    "clasificacion": [
+      "#SeguroDeHogar",
+      "#Coberturas",
+      "#Consejos"
+    ]
+  },
+  {
+    "id": "7",
+    "title": "🎁 Regala tranquilidad ¿Sabías que puedes contratar un seguro para otra persona?",
+    "slug": "regala-tranquilidad",
+    "image": "/images/blog/fiesta_navidenia.webp",
+    "imageAlt": "imagen de fiesta navidenia",
+    "excerpt": "Publicado el 1 diciembre 2025",
+    "publishDate": "2025-12-01",
+    "clasificacion": [
+      "#SeguroDeVida",
+      "#Familia",
+      "#Consejos"
+    ]
+  },
+  {
+    "id": "8",
+    "title": "📆 Cierre de año asegurado, ¡revisa tus pólizas!",
+    "slug": "cierre-asegurado",
+    "image": "/images/blog/cierre-asegurado.webp",
+    "imageAlt": "imagen de mujer cierre de año",
+    "excerpt": "Publicado el 15 diciembre 2025",
+    "publishDate": "2025-12-12",
+    "clasificacion": [
+      "#GestiónDeSeguros",
+      "#RevisarPólizas",
+      "#Consejos"
+    ]
+  },
+  {
+    "id": "9",
+    "title": "🎉 ¡Feliz 2026! Empieza el año asegurado, los seguros que no puedes olvidar",
+    "slug": "seguros-que-no-puedes-olvidar",
+    "image": "/images/blog/familia-seguros.jpeg",
+    "imageAlt": "imagen de familia buscando seguro",
+    "excerpt": "Publicado el 1 enero 2026",
+    "publishDate": "2026-01-01",
+    "clasificacion": [
+      "#Consejos",
+      "#SeguroEsencial",
+      "#Familia"
+    ]
+  },
+  {
+    "id": "10",
+    "title": "🔁 ¿Puedo cambiar de compañía si ya tengo un seguro activo?",
+    "slug": "cambiar-de-seguro",
+    "image": "/images/blog/cambiodeseguro.webp",
+    "imageAlt": "imagen de mujer buscando seguro nuevo",
+    "excerpt": "Publicado el 15 enero 2026",
+    "publishDate": "2026-01-15",
+    "clasificacion": [
+      "#CambiarDeSeguro",
+      "#GestiónDeSeguros",
+      "#Consejos"
+    ]
+  },
+  {
+    "id": "11",
+    "title": "📘 Ley 5/2025. Seguros y obligaciones para patinetes eléctricos",
+    "slug": "seguros-patinetes-electricos",
+    "image": "/images/blog/patinetes-electricos.webp",
+    "imageAlt": "imagen de accidente patinete electrico",
+    "excerpt": "Publicado el 1 febrero 2026",
+    "publishDate": "2026-02-01",
+    "clasificacion": [
+      "#Movilidad",
+      "#NuevaLey",
+      "#Obligatorio"
+    ]
+  },
+  {
+    "id": "12",
+    "title": "❤️ Tener un seguro de vida también es un acto de amor",
+    "slug": "tener-un-seguro-de-vida",
+    "image": "/images/blog/seguro-de-vida.webp",
+    "imageAlt": "imagen de pareja con un seguro de vida",
+    "excerpt": "Publicado el 15 febrero 2026",
+    "publishDate": "2026-02-15",
+    "clasificacion": [
+      "#SeguroDeVida",
+      "#Familia",
+      "#ProtecciónFamiliar"
+    ]
+  },
+  {
+    "id": "13",
+    "title": "⚖️ ¿Qué cubre (y qué no) la responsabilidad civil en tus seguros?",
+    "slug": "responsabilidad-civil",
+    "image": "/images/blog/responsabilidad-civil.webp",
+    "imageAlt": "imagen de seguros responsabilida civil",
+    "excerpt": "Publicado el 1 marzo 2026",
+    "publishDate": "2026-03-01",
+    "clasificacion": [
+      "#ResponsabilidadCivil",
+      "#Coberturas",
+      "#Consejos"
+    ]
+  },
+  {
+    "id": "14",
+    "title": "🏠 Inquilino o propietario ¿qué seguro de hogar necesitas según tu situación?",
+    "slug": "inquilino-propietario",
+    "image": "/images/blog/inquilino-propietario.webp",
+    "imageAlt": "imagen de seguros inquilino o propietario",
+    "excerpt": "Publicado el 15 marzo 2026",
+    "publishDate": "2026-03-15",
+    "clasificacion": [
+      "#SeguroDeHogar",
+      "#Alquiler",
+      "#Consejos"
+    ]
+  },
+  {
+    "id": "15",
+    "title": "❗¿Qué hacer si tu aseguradora rechaza un siniestro?",
+    "slug": "aseguradora-rechaza-siniestro",
+    "image": "/images/blog/aseguradora-rechaza-siniestro.webp",
+    "imageAlt": "imagen de seguros aseguradora-rechaza-siniestro",
+    "excerpt": "Publicado el 01 abril 2026",
+    "publishDate": "2026-04-01",
+    "clasificacion": [
+      "#Siniestros",
+      "#DerechosAsegurado",
+      "#Consejos"
+    ]
+  },
+  {
+    "id": "16",
+    "title": "👨‍🔧👩‍💻 Seguros para autónomos ¿estás realmente cubierto?",
+    "slug": "seguros-para-autonomos",
+    "image": "/images/blog/seguros-para-autonomos.webp",
+    "imageAlt": "imagen de seguros para autonomos",
+    "excerpt": "Publicado el 15 abril 2026",
+    "publishDate": "2026-04-15",
+    "clasificacion": [
+      "#Autónomos",
+      "#ResponsabilidadCivil",
+      "#Pymes"
+    ]
+  },
+  {
+    "id": "17",
+    "title": "🔄 ¿Ha cambiado tu vida? Entonces también deberían cambiar tus seguros",
+    "slug": "revisa-tu-seguro",
+    "image": "/images/blog/revisa-tu-seguro.webp",
+    "imageAlt": "imagen de revisa tu seguro",
+    "excerpt": "Publicado el 01 mayo 2026",
+    "publishDate": "2026-05-01",
+    "clasificacion": [
+      "#GestiónDeSeguros",
+      "#RevisarPólizas",
+      "#Consejos"
+    ]
+  },
+  {
+    "id": "18",
+    "title": "🚗 ¿Por qué tu seguro de coche puede no cubrirte en algunos casos?",
+    "slug": "seguro-de-coche-no-cubre",
+    "image": "/images/blog/seguro-de-coche-no-cubre.webp",
+    "imageAlt": "imagen de seguro de coche no cubre",
+    "excerpt": "Publicado el 15 mayo 2026",
+    "publishDate": "2026-05-15",
+    "clasificacion": [
+      "#SeguroDeCoche",
+      "#Coberturas",
+      "#Consejos"
+    ]
+  },
+  {
+    "id": "19",
+    "title": "✈️ Seguro de viaje: por qué cada vez más personas lo consideran imprescindible",
+    "slug": "seguro-de-viaje-imprescindible",
+    "image": "/images/blog/seguro-de-viaje-imprescindible.webp",
+    "imageAlt": "imagen de seguro de viaje imprescindible",
+    "excerpt": "Publicado el 1 junio 2026",
+    "publishDate": "2026-06-01",
+    "clasificacion": [
+      "#SeguroDeViaje",
+      "#Coberturas",
+      "#Consejos"
+    ]
+  },
+  {
+    "id": "20",
+    "title": "🐶 ¿Tu mascota está realmente protegida? Lo que muchos dueños aún no saben",
+    "slug": "seguro-mascota-protegida",
+    "image": "/images/blog/seguro-mascota-protegida.webp",
+    "imageAlt": "imagen de seguro de mascota protegida",
+    "excerpt": "Publicado el 15 junio 2026",
+    "publishDate": "2026-06-15",
+    "clasificacion": [
+      "#SeguroDeMascota",
+      "#Coberturas",
+      "#Consejos",
+      "#BienestarAnimal"
+    ]
+  },
+  {
+    "id": "21",
+    "title": "👴 ¿Quién puede ayudarte cuando ocurre un siniestro y no sabes qué hacer?",
+    "slug": "quien-puede-ayudarte-siniestro",
+    "image": "/images/blog/quien-puede-ayudarte-siniestro.webp",
+    "imageAlt": "imagen de quién puede ayudarte siniestro",
+    "excerpt": "Publicado el 1 julio 2026",
+    "publishDate": "2026-07-01",
+    "clasificacion": [
+      "#Siniestros",
+      "#SegurosConCercanía",
+      "#CorreduríaDeSeguros"
+    ]
+  },
+  {
+    "id": "22",
+    "title": "⚡ Placas solares y seguros",
+    "slug": "placas-solares-seguros",
+    "image": "/images/blog/placa-solares-seguros.webp",
+    "imageAlt": "imagen de placas solares y seguros",
+    "excerpt": "Publicado el 15 julio 2026",
+    "publishDate": "2026-07-15",
+    "clasificacion": [
+      "#PlacasSolares",
+      "#SeguroHogar",
+      "#EnergíaSolar",
+      "#SegurosConCercanía"
+    ]
+  },
+  {
+    "id": "23",
+    "title": "🔑 ¿Qué ocurre si alquilas tu vivienda vacacional y sucede un siniestro?",
+    "slug": "alquiler-vivienda-vacacional-siniestro",
+    "image": "/images/blog/alquiler-vivienda-vacacional-siniestro.webp",
+    "imageAlt": "imagen de alquiler de vivienda vacacional y siniestro",
+    "excerpt": "Publicado el 1 agosto 2026",
+    "publishDate": "2026-08-01",
+    "clasificacion": [
+      "#ViviendaVacacional",
+      "#SeguroHogar",
+      "#ResponsabilidadCivil",
+      "#SegurosConCercanía",
+      "#AlquilerVacacional",
+      "#TuSeguroEnBuenasManos"
+    ]
+  },
+  {
+    "id": "24",
+    "title": "🌪️ Fenómenos atmosféricos: cuándo responde tu seguro y cuándo interviene el Consorcio",
+    "slug": "fenomenos-atmosfericos-seguro-consorcio",
+    "image": "/images/blog/fenomenos-atmosfericos-seguro-consorcio.webp",
+    "imageAlt": "imagen de fenómenos atmosféricos y seguro",
+    "excerpt": "Publicado el 15 agosto 2026",
+    "publishDate": "2026-08-15",
+    "clasificacion": [
+      "#ConsorcioDeCompensación",
+      "#FenómenosAtmosféricos",
+      "#SeguroHogar",
+      "#SeguroDeCoche"
+    ]
+  },
+  {
+    "id": "25",
+    "title": "🏢 ¿Trabajas desde casa? Tu seguro puede no cubrir todo lo que imaginas",
+    "slug": "trabajas-desde-casa-seguro",
+    "image": "/images/blog/trabajas-desde-casa-seguro.webp",
+    "imageAlt": "imagen de trabaja desde casa y seguro",
+    "excerpt": "Publicado el 1 septiembre 2026",
+    "publishDate": "2026-09-01",
+    "clasificacion": [
+      "#SeguroHogar",
+      "#Teletrabajo",
+      "#Autónomos",
+      "#ResponsabilidadCivil",
+      "#ProtecciónDelHogar",
+      "#SegurosConCercanía",
+      "#TuSeguroEnBuenasManos"
+    ]
+  },
+  {
+    "id": "26",
+    "title": "💍 Objetos de valor en casa: ¿están realmente asegurados?",
+    "slug": "objetos-valor-casa",
+    "image": "/images/blog/objetos-valor-casa.webp",
+    "imageAlt": "imagen de objetos de valor en casa",
+    "excerpt": "Publicado el 15 septiembre 2026",
+    "publishDate": "2026-09-15",
+    "clasificacion": [
+      "#SeguroHogar",
+      "#ObjetosDeValor",
+      "#Joyas",
+      "#Infraseguro",
+      "#ProtecciónDelHogar",
+      "#SegurosConCercanía",
+      "#AseguraTuFuturo",
+      "#TuSeguroEnBuenasManos"
+    ]
+  }
 ]

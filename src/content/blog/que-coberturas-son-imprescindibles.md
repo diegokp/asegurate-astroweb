@@ -1,7 +1,7 @@
 ---
 title: 🏡 Seguro de hogar ¿qué coberturas son imprescindibles y cuáles puedes evitar?
 slug: que-coberturas-son-imprescindibles
-image: /images/blog/cobertura.png
+image: /images/blog/cobertura.webp
 imageAlt: imagen de coberturas impresindibles
 excerpt: Publicado el 15 noviembre 2025
 description: "Descubre qué coberturas del seguro de hogar son imprescindibles y cuáles puedes evitar. Paga lo justo y protégete de los riesgos reales."

@@ -9,6 +9,7 @@ import SegurosPage from '~/components/segurosPage.astro';
 import ContactForm from '~/components/contactForm.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
+import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/comercios/`;
 const jsonLd = buildServiceSchema({
@@ -25,7 +26,7 @@ const jsonLd = buildServiceSchema({
 	description='Seguro para tu negocio con la confianza de Asegura-Te. Te ayudamos a elegir el mejor seguro de comercios en Las Palmas.'
 	canonicalURL={pageURL}
 	>
-	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
+	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />
@@ -34,6 +35,8 @@ const jsonLd = buildServiceSchema({
 	<SegurosPage
         title='Seguros para Comercios en Las Palmas'
         url="/images/comercios.webp"
+        width={900}
+        height={600}
         alt="Seguros para Comercios en Las Palmas"
         href="#avantContainer"
         subtitle='Disfruta de la carretera con nuestros seguros para motocicletas en Las Palmas'

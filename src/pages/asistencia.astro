@@ -5,14 +5,23 @@ import Header from '~/components/header.astro';
 import Whatsapp from '~/components/whatsapp.astro';
 import Footer from '~/components/footer.astro'
 import Asistencia24 from '~/components/asistencia.astro';
+import JsonLd from '~/components/seo/JsonLd.astro';
+import { buildWebPageSchema, siteURL } from '~/utils/schema';
 
-
+const pageURL = `${siteURL}/asistencia/`;
+const jsonLd = buildWebPageSchema({
+	pageURL,
+	name: "Asistencia 24hs",
+	breadcrumb: [{ name: "Asistencia 24hs", item: pageURL }]
+});
 ---
 
 <Layout
 	title="Asistencia 24hs"
-	description=""
+	description="Asistencia 24 horas para clientes de Asegura-Te en Las Palmas de Gran Canaria. Contacta con nosotros ante cualquier incidencia, día o noche."
+	canonicalURL={pageURL}
 	>
+	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

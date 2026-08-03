@@ -7,6 +7,7 @@ import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
+import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/embarcaciones/`;
 const jsonLd = buildServiceSchema({
@@ -23,7 +24,7 @@ const jsonLd = buildServiceSchema({
 	description='Seguros para barcos en Las Palmas. Protege tu embarcación con nuestra amplia gama de seguros en Las Palmas con Asegura-Te.'
 	canonicalURL={pageURL}
 	>
-	<script type="application/ld+json" is:inline slot="head" set:html={JSON.stringify(jsonLd)} />
+	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />
@@ -32,6 +33,8 @@ const jsonLd = buildServiceSchema({
     <SegurosPage
         title='Seguros para Embarcaciones en Las Palmas'
         url="/images/barcos_dest.webp"
+        width={1254}
+        height={836}
         alt="Seguros para Embarcaciones en Las Palmas"
         href="/contacto/"
         subtitle='Seguros para navegar con total seguridad'
