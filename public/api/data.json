@@ -450,5 +450,42 @@
       "#AseguraTuFuturo",
       "#TuSeguroEnBuenasManos"
     ]
+  },
+  {
+    "id": "31",
+    "title": "🌧️ ¿Una tormenta ha dañado tu coche? Descubre quién responde según el tipo de siniestro",
+    "slug": "tormenta-coche-seguro-consorcio",
+    "image": "/images/blog/tormenta-coche-seguro-consorcio.webp",
+    "imageAlt": "imagen de un coche dañado por la caída de un árbol tras una tormenta",
+    "excerpt": "Publicado el 01 diciembre 2026",
+    "publishDate": "2026-12-01",
+    "clasificacion": [
+      "#SeguroDeCoche",
+      "#Consorcio",
+      "#FenómenosAtmosféricos",
+      "#Temporal",
+      "#SeguroDelAutomóvil",
+      "#SegurosConCercanía",
+      "#AseguraTuFuturo",
+      "#TuSeguroEnBuenasManos"
+    ]
+  },
+  {
+    "id": "32",
+    "title": "⚖️ ¿Puede una aseguradora negarse a renovar tu póliza? Lo que debes saber sobre tus derechos como asegurado",
+    "slug": "aseguradora-no-renueva-poliza",
+    "image": "/images/blog/aseguradora-no-renueva-poliza.webp",
+    "imageAlt": "imagen de un hombre leyendo una carta de su aseguradora frente al ordenador",
+    "excerpt": "Publicado el 15 diciembre 2026",
+    "publishDate": "2026-12-15",
+    "clasificacion": [
+      "#SegurosConCercanía",
+      "#AseguraTuFuturo",
+      "#CorreduríaDeSeguros",
+      "#TuSeguroEnBuenasManos",
+      "#ProtegeLoQueImporta",
+      "#RenovaciónDeSeguros",
+      "#LeyContratoDeSeguro"
+    ]
   }
 ]
