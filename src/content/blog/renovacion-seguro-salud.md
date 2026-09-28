@@ -7,7 +7,7 @@ excerpt: Publicado el 01 noviembre 2026
 description: "Los seguros de salud suelen renovarse en enero y los plazos para dar de baja están regulados por ley. Descubre cuándo y cómo revisarlo. ASEGURA-TE."
 publishDate: 2026-11-01
 link: /contacto.html
-last: true
+last: false
 clasificacion: ["#SeguroDeSalud", "#Renovación", "#LeyDeContratoDeSeguro", "#Salud", "#SegurosConCercanía", "#CorreduríaDeSeguros", "#ProtegeLoQueImporta"]
 ---
 

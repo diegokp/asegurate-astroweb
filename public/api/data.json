@@ -432,5 +432,23 @@
       "#CorreduríaDeSeguros",
       "#ProtegeLoQueImporta"
     ]
+  },
+  {
+    "id": "30",
+    "title": "🏡 ¿Has hecho una reforma en casa? Quizá también debas actualizar tu seguro",
+    "slug": "reforma-vivienda-seguro-hogar",
+    "image": "/images/blog/reforma-vivienda-seguro-hogar.webp",
+    "imageAlt": "imagen de una vivienda en obras con planos y muestras de materiales",
+    "excerpt": "Publicado el 15 noviembre 2026",
+    "publishDate": "2026-11-15",
+    "clasificacion": [
+      "#SeguroDeHogar",
+      "#Reformas",
+      "#Infraseguro",
+      "#ProtecciónDelHogar",
+      "#SegurosConCercanía",
+      "#AseguraTuFuturo",
+      "#TuSeguroEnBuenasManos"
+    ]
   }
 ]
