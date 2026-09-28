@@ -414,5 +414,23 @@
       "#AseguraTuFuturo",
       "#TuSeguroEnBuenasManos"
     ]
+  },
+  {
+    "id": "29",
+    "title": "🩺 ¿Quieres cambiar de seguro de salud para el próximo año? No esperes al último momento",
+    "slug": "renovacion-seguro-salud",
+    "image": "/images/blog/renovacion-seguro-salud.webp",
+    "imageAlt": "imagen de una pareja revisando su seguro de salud con una asesora",
+    "excerpt": "Publicado el 01 noviembre 2026",
+    "publishDate": "2026-11-01",
+    "clasificacion": [
+      "#SeguroDeSalud",
+      "#Renovación",
+      "#LeyDeContratoDeSeguro",
+      "#Salud",
+      "#SegurosConCercanía",
+      "#CorreduríaDeSeguros",
+      "#ProtegeLoQueImporta"
+    ]
   }
 ]
