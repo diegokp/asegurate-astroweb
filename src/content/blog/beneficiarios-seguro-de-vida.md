@@ -7,7 +7,7 @@ excerpt: Publicado el 01 octubre 2026
 description: "¿Sabes quién cobra tu seguro de vida si falleces? Descubre cómo funciona la designación de beneficiarios y evita errores frecuentes. ASEGURA-TE te asesora."
 publishDate: 2026-10-01
 link: /contacto.html
-last: true
+last: false
 clasificacion: ["#SeguroDeVida", "#Beneficiarios", "#ProtecciónFamiliar", "#Planificación", "#SegurosConCercanía", "#AseguraTuFuturo", "#TuSeguroEnBuenasManos"]
 ---
 

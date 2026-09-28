@@ -395,5 +395,24 @@
       "#AseguraTuFuturo",
       "#TuSeguroEnBuenasManos"
     ]
+  },
+  {
+    "id": "28",
+    "title": "🚗 ¿Vas a vender tu coche? Estos son los seguros y trámites que no debes olvidar",
+    "slug": "vender-coche-seguro-tramites",
+    "image": "/images/blog/vender-coche-seguro-tramites.webp",
+    "imageAlt": "imagen de comprador y vendedor dándose la mano tras la venta de un coche",
+    "excerpt": "Publicado el 15 octubre 2026",
+    "publishDate": "2026-10-15",
+    "clasificacion": [
+      "#SeguroDeCoche",
+      "#VentaDeVehículos",
+      "#CambioDeTitularidad",
+      "#SeguroDeAuto",
+      "#Movilidad",
+      "#SegurosConCercanía",
+      "#AseguraTuFuturo",
+      "#TuSeguroEnBuenasManos"
+    ]
   }
 ]
