@@ -7,13 +7,12 @@ import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
-import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/flotas/`;
 const jsonLd = buildServiceSchema({
   pageURL,
   name: "Seguros para Flotas en Las Palmas",
-  description: "Seguros de flotas de vehículos en Las Palmas de Gran Canaria. Póliza única para turismos, furgonetas y camiones de empresa. Gestión centralizada y tarifas por volumen.",
+  description: "Seguros de flotas de vehículos en Las Palmas de Gran Canaria. Póliza única para turismos, furgonetas y camiones de empresa. Gestión centralizada.",
   serviceType: "Fleet insurance",
   breadcrumbName: "Seguro de Flotas"
 });
@@ -23,8 +22,8 @@ const jsonLd = buildServiceSchema({
 	title="Seguros para Flotas en Las Palmas"
 	description='Asegura tu flota de vehículos con nuestros seguros para flotas en Las Palmas. Asegura-Te tiene el seguro indicado para tu empresa.'
 	canonicalURL={pageURL}
+	schema={jsonLd}
 	>
-	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

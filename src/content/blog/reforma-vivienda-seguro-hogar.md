@@ -6,7 +6,7 @@ imageAlt: imagen de una vivienda en obras con planos y muestras de materiales
 excerpt: Publicado el 15 noviembre 2026
 description: "¿Has reformado tu vivienda? Descubre por qué debes revisar el capital asegurado y las coberturas de tu seguro de hogar tras la obra. ASEGURA-TE."
 publishDate: 2026-11-15
-link: /contacto.html
+link: /contacto/
 last: false
 clasificacion: ["#SeguroDeHogar", "#Reformas", "#Infraseguro", "#ProtecciónDelHogar", "#SegurosConCercanía", "#AseguraTuFuturo", "#TuSeguroEnBuenasManos"]
 ---

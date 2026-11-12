@@ -5,6 +5,8 @@ import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 
 import markdoc from '@astrojs/markdoc';
+import { sitemapFilter, sitemapSerialize } from './src/config/sitemap.ts';
+import llmsTxt from './src/integrations/llms-txt.ts';
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,9 +15,11 @@ export default defineConfig({
     vue(),
     tailwind(),
     sitemap({
-      filter: (page) => !page.includes('/datacard/'),
+      filter: sitemapFilter,
+      serialize: sitemapSerialize,
     }),
     markdoc(),
+    llmsTxt(),
   ],
   // experimental: {
   //   liveContentCollections: true,

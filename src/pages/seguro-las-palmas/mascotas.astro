@@ -7,7 +7,6 @@ import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
-import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/mascotas/`;
 const jsonLd = buildServiceSchema({
@@ -23,8 +22,8 @@ const jsonLd = buildServiceSchema({
 	title="Seguros para Mascotas en Las Palmas"
 	description='En Asegura-Te te ayudamos a encontrar el seguro de mascotas adecuado en Las Palmas. Cuida de lo que más quieres.'
 	canonicalURL={pageURL}
+	schema={jsonLd}
 	>
-	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

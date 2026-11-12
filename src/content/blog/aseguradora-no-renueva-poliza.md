@@ -6,7 +6,7 @@ imageAlt: imagen de un hombre leyendo una carta de su aseguradora frente al orde
 excerpt: Publicado el 15 diciembre 2026
 description: "¿Puede tu aseguradora negarse a renovar la póliza? Descubre qué plazos marca la ley y qué derechos tienes como asegurado. Te asesora ASEGURA-TE."
 publishDate: 2026-12-15
-link: /contacto.html
+link: /contacto/
 last: true
 clasificacion: ["#SegurosConCercanía", "#AseguraTuFuturo", "#CorreduríaDeSeguros", "#TuSeguroEnBuenasManos", "#ProtegeLoQueImporta", "#RenovaciónDeSeguros", "#LeyContratoDeSeguro"]
 ---

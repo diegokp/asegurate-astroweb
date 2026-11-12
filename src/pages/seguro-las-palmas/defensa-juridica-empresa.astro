@@ -7,7 +7,6 @@ import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
-import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/defensa-juridica-empresa/`;
 const jsonLd = buildServiceSchema({
@@ -23,8 +22,8 @@ const jsonLd = buildServiceSchema({
 	title="Seguro de Defensa Jurídica para Empresas en Las Palmas"
 	description='Protege los intereses legales de tu empresa con nuestros Seguros en Las Palmas. Déjate asesorar por Asegura-Te, más de 20 años ayudando a empresas.'
 	canonicalURL={pageURL}
+	schema={jsonLd}
 	>
-	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

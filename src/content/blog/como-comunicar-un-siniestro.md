@@ -6,7 +6,7 @@ imageAlt: imagen de siniestro
 excerpt: Publicado el 1 noviembre 2025
 description: "Guía paso a paso para comunicar un siniestro de forma rápida y eficaz con tu correduría, sin errores y sin perder coberturas."
 publishDate: 2025-11-1
-link: /contacto.html
+link: /contacto/
 last: false
 clasificacion: ["#Siniestros", "#GestiónDeSeguros", "#Consejos"]
 ---

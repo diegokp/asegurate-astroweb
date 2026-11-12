@@ -6,7 +6,7 @@ imageAlt: imagen de parte amistoso
 excerpt: Publicado el 15 Octubre 2025
 description: "Aprende a rellenar un parte amistoso paso a paso: qué datos incluir, cómo describir el accidente y los errores más comunes que debes evitar."
 publishDate: 2025-10-15
-link: /contacto.html
+link: /contacto/
 last: false
 clasificacion: ["#SeguroDeCoche", "#Siniestros", "#Consejos"]
 ---

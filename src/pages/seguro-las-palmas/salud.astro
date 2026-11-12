@@ -9,13 +9,12 @@ import SegurosPage from '~/components/segurosPage.astro';
 import ContactForm from '~/components/contactForm.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
-import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/salud/`;
 const jsonLd = buildServiceSchema({
   pageURL,
   name: "Seguros de Salud en Las Palmas",
-  description: "Asesoramiento y comparativa de seguros de salud privados en Las Palmas de Gran Canaria. Acceso a los mejores hospitales y especialistas sin esperas.",
+  description: "Asesoramiento y comparativa de seguros de salud privados en Las Palmas de Gran Canaria.",
   serviceType: "Health insurance",
   breadcrumbName: "Seguro de Salud"
 });
@@ -25,8 +24,8 @@ const jsonLd = buildServiceSchema({
 	title="Seguros de Salud en Las Palmas"
 	description='Seguros de Salud en Las Palmas. Compara todas las opciones que manejamos en Asegura-Te, te ayudamos a elegir el seguro de salud adaptado a tus necesidades.'
 	canonicalURL={pageURL}
+	schema={jsonLd}
 	>
-	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

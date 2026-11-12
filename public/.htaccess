@@ -1,0 +1,38 @@
+# Asegura-Te — aseguratte.es (LiteSpeed/Apache)
+# Política de URL: https + www + barra final. Cada redirección es UN solo salto (301) al destino final.
+# Documentado en docs/SEO-REDIRECCIONES.md. Si algo falla, borrar este archivo del servidor lo desactiva.
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# 1) /index.html y /algo/index.html -> /  y  /algo/   (duplicados del mismo contenido)
+#    Va primero y apunta ya a https://www, así que http://aseguratte.es/index.html también es un solo salto.
+RewriteCond %{HTTP_HOST} ^(www\.)?aseguratte\.es(:\d+)?$ [NC]
+RewriteCond %{THE_REQUEST} \s/(.*)index\.html[\s?] [NC]
+RewriteRule ^(.*)index\.html$ https://www.aseguratte.es/$1 [R=301,L,QSA]
+
+# 1b) URLs antiguas con página equivalente -> 301 directo al destino final (un solo salto, ya con https://www).
+#     Las que no tienen equivalente (/contactotrabajo.php, /sitemap-xml, /blog2/) se dejan en 404 a propósito.
+RewriteCond %{HTTP_HOST} ^(www\.)?aseguratte\.es(:\d+)?$ [NC]
+RewriteRule ^datacard/oficina\.html$ https://www.aseguratte.es/datacard/oficina/ [R=301,L,NC]
+RewriteCond %{HTTP_HOST} ^(www\.)?aseguratte\.es(:\d+)?$ [NC]
+RewriteRule ^datacard/lidia\.html$ https://www.aseguratte.es/datacard/lidia/ [R=301,L,NC]
+RewriteCond %{HTTP_HOST} ^(www\.)?aseguratte\.es(:\d+)?$ [NC]
+RewriteRule ^contacto\.html$ https://www.aseguratte.es/contacto/ [R=301,L,NC]
+RewriteCond %{HTTP_HOST} ^(www\.)?aseguratte\.es(:\d+)?$ [NC]
+RewriteRule ^politicadeprivacidad\.html$ https://www.aseguratte.es/politica-privacidad/ [R=301,L,NC]
+RewriteCond %{HTTP_HOST} ^(www\.)?aseguratte\.es(:\d+)?$ [NC]
+RewriteRule ^landings/asistencia\.html$ https://www.aseguratte.es/asistencia/ [R=301,L,NC]
+
+# 2) Sin www -> con www (y a HTTPS)
+RewriteCond %{HTTP_HOST} ^aseguratte\.es(:\d+)?$ [NC]
+RewriteRule ^ https://www.aseguratte.es%{REQUEST_URI} [R=301,L]
+
+# 3) HTTP -> HTTPS (solo el dominio de producción)
+RewriteCond %{HTTP_HOST} ^www\.aseguratte\.es(:\d+)?$ [NC]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://www.aseguratte.es%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# Página 404 propia (el código de estado sigue siendo 404 y la página lleva noindex)
+ErrorDocument 404 /404.html

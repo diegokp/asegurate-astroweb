@@ -6,7 +6,7 @@ imageAlt: imagen de revisa tu seguro
 excerpt: Publicado el 01 mayo 2026
 description: "Si tu vida ha cambiado, tus seguros también deberían hacerlo. Descubre cuándo y cómo revisar tus pólizas para estar siempre bien cubierto."
 publishDate: 2026-05-01
-link: /contacto.html
+link: /contacto/
 last: true
 clasificacion: ["#GestiónDeSeguros", "#RevisarPólizas", "#Consejos"]
 ---

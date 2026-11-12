@@ -7,7 +7,6 @@ import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
-import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/vehiculos-clasicos/`;
 const jsonLd = buildServiceSchema({
@@ -23,8 +22,8 @@ const jsonLd = buildServiceSchema({
 	title="Seguros para Vehículos Clásicos en Las Palmas"
 	description='Protege tu vehículo clásico con nuestros seguros específicos para coches clásicos en Las Palmas con Asegura-Te.'
 	canonicalURL={pageURL}
+	schema={jsonLd}
 	>
-	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

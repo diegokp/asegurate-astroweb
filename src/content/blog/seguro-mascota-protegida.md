@@ -6,7 +6,7 @@ imageAlt: imagen de seguro de mascota protegida
 excerpt: Publicado el 15 junio 2026
 description: "En ASEGURA-TE te explicamos todo de forma clara y sencilla para que sepas cómo proteger correctamente a tu mascota… y también a tu tranquilidad."
 publishDate: 2026-06-15
-link: /contacto.html
+link: /contacto/
 last: true
 clasificacion: ["#SeguroDeMascota", "#Coberturas", "#Consejos", "#BienestarAnimal"]
 ---

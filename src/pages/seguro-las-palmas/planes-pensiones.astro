@@ -7,7 +7,6 @@ import Footer from '~/components/footer.astro';
 import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
-import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/planes-pensiones/`;
 const jsonLd = buildServiceSchema({
@@ -23,8 +22,8 @@ const jsonLd = buildServiceSchema({
 	title="Planes de Pensiones en Las Palmas"
 	description='Planifica tu futuro financiero con nuestros planes de pensiones en Las Palmas. Asegura-Te: tu correduría de confianza.'
 	canonicalURL={pageURL}
+	schema={jsonLd}
 	>
-	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

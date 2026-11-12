@@ -6,7 +6,7 @@ imageAlt: imagen de fenómenos atmosféricos y seguro
 excerpt: Publicado el 15 agosto 2026
 description: "Tormentas, inundaciones o granizo: ¿paga tu seguro o el Consorcio de Compensación? Te explicamos las diferencias y qué hacer si sufres daños. ASEGURA-TE."
 publishDate: 2026-08-15
-link: /contacto.html
+link: /contacto/
 last: true
 clasificacion: ["#ConsorcioDeCompensación", "#FenómenosAtmosféricos", "#SeguroHogar", "#SeguroDeCoche"]
 ---

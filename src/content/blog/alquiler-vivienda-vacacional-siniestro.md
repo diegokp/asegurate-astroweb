@@ -6,7 +6,7 @@ imageAlt: imagen de alquiler de vivienda vacacional y siniestro
 excerpt: Publicado el 01 agosto 2026
 description: "¿Alquilas tu vivienda a turistas? Descubre si tu seguro de hogar te cubre y qué coberturas necesitas para evitar problemas. Te asesoramos en ASEGURA-TE."
 publishDate: 2026-08-01
-link: /contacto.html
+link: /contacto/
 last: true
 clasificacion: ["#ViviendaVacacional", "#SeguroHogar", "#ResponsabilidadCivil", "#SegurosConCercanía", "#AlquilerVacacional", "#TuSeguroEnBuenasManos"]
 ---

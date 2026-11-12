@@ -6,7 +6,7 @@ imageAlt: imagen de seguros de placas solares
 excerpt: Publicado el 15 julio 2026
 description: "Placa solares seguros, lo que debes saber para cuidar tu inversión"
 publishDate: 2026-07-15
-link: /contacto.html
+link: /contacto/
 last: true
 clasificacion: ["#PlacasSolares", "#SeguroHogar", "#EnergíaSolar", "#SegurosConCercanía"]
 ---

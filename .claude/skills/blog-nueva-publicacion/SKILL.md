@@ -33,10 +33,16 @@ imageAlt: "imagen de {resumen breve en minúsculas}"
 excerpt: "Publicado el {DD} {mes en minúsculas} {YYYY}"   # día siempre a 2 dígitos
 description: "string de 150-160 caracteres, SEO, menciona ASEGURA-TE"
 publishDate: YYYY-MM-DD
-link: /contacto.html
+link: /contacto/
 last: true             # ver paso 3 antes de fijar esto
 clasificacion: ["#Hashtag1", "#Hashtag2", "..."]  # PascalCase, 3-7 etiquetas
 ```
+
+**Regla del campo `link`** (corregida el 2026-11-12): siempre una ruta interna **con barra final**
+y que exista en `dist/` — por defecto `/contacto/`. Nunca `/contacto.html`, `.php` ni otra URL
+antigua: esas rutas devuelven 404 en producción y el botón de contacto del artículo queda roto.
+Antes de dar la publicación por terminada, comprueba que la ruta existe
+(`ls dist/contacto/index.html` tras el build, o una página de `src/pages/`).
 
 Cuerpo: mismo tono y estructura que las publicaciones anteriores — títulos `###` con
 emoji, párrafos cortos, listas con `✔️`, separadores `---`, bloque final de contacto

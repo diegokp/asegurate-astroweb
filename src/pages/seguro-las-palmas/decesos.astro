@@ -9,7 +9,6 @@ import SegurosPage from '~/components/segurosPage.astro';
 import ContactForm from '~/components/contactForm.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
-import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/decesos/`;
 const jsonLd = buildServiceSchema({
@@ -25,8 +24,8 @@ const jsonLd = buildServiceSchema({
 	title="Seguros de Decesos en Las Palmas"
 	description='Protege a tu familia en momentos difíciles con nuestros seguros de decesos en Las Palmas. Asegura-Te: tu correduría de confianza en Gran Canaria.'
 	canonicalURL={pageURL}
+	schema={jsonLd}
 	>
-	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

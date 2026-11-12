@@ -4,9 +4,9 @@ slug: quien-puede-ayudarte-siniestro
 image: /images/blog/quien-puede-ayudarte-siniestro.webp
 imageAlt: imagen de seguros quien puede ayudarte
 excerpt: Publicado el 01 julio 2026
-description: "Descubre qué hacer si tu aseguradora rechaza un siniestro: causas más comunes, pasos a seguir y cómo Asegura-Te te ayuda a defenderte."
+description: "¿Quién puede ayudarte si tienes un siniestro? Qué hace una correduría, ejemplos habituales en el hogar y en accidentes de coche. Te acompaña Asegura-Te."
 publishDate: 2026-07-01
-link: /contacto.html
+link: /contacto/
 last: true
 clasificacion: ["#Siniestros", "#SegurosConCercanía", "#CorreduríaDeSeguros"]
 ---

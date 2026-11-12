@@ -6,7 +6,7 @@ imageAlt: imagen de trabaja desde casa y seguro
 excerpt: Publicado el 01 septiembre 2026
 description: "¿Teletrabajas o tienes un negocio en casa? Descubre si tu seguro de hogar cubre tu actividad profesional, equipos y mercancías. Te asesoramos en ASEGURA-TE."
 publishDate: 2026-09-01
-link: /contacto.html
+link: /contacto/
 last: true
 clasificacion: ["#SeguroHogar", "#Teletrabajo", "#Autónomos", "#ResponsabilidadCivil", "#ProtecciónDelHogar", "#SegurosConCercanía", "#TuSeguroEnBuenasManos"]
 ---

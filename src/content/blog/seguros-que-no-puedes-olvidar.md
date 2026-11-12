@@ -6,7 +6,7 @@ imageAlt: imagen de familia buscando seguro
 excerpt: Publicado el 1 enero 2026
 description: "Guía de seguros imprescindibles para empezar 2026 con protección real: patinetes, hogar, salud, vida y responsabilidad civil. ¿Los tienes todos?"
 publishDate: 2025-12-18
-link: /contacto.html
+link: /contacto/
 last: true
 clasificacion: ["#Consejos", "#SeguroEsencial", "#Familia"]
 ---

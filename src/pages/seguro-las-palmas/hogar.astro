@@ -9,7 +9,6 @@ import SegurosPage from '~/components/segurosPage.astro';
 import ContactForm from '~/components/contactForm.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
-import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/hogar/`;
 const jsonLd = buildServiceSchema({
@@ -25,8 +24,8 @@ const jsonLd = buildServiceSchema({
 	title="Seguros de Hogar en Las Palmas"
 	description='Protege tu hogar con Asegura-Te, tu correduría de Seguros en Las Palmas. Seguros para todo tipo de viviendas en Gran Canaria.'
 	canonicalURL={pageURL}
+	schema={jsonLd}
 	>
-	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

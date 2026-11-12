@@ -6,7 +6,7 @@ imageAlt: imagen de seguros aseguradora-rechaza-siniestro
 excerpt: Publicado el 01 abril 2026
 description: "Descubre qué hacer si tu aseguradora rechaza un siniestro: causas más comunes, pasos a seguir y cómo Asegura-Te te ayuda a defenderte."
 publishDate: 2026-04-01
-link: /contacto.html
+link: /contacto/
 last: true
 clasificacion: ["#Siniestros", "#DerechosAsegurado", "#Consejos"]
 ---

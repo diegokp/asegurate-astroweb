@@ -6,7 +6,7 @@ imageAlt: imagen de pareja con un seguro de vida
 excerpt: Publicado el 1 febrero 2026
 description: "Contratar un seguro de vida es proteger a quienes más quieres. Descubre qué cubre, cuánto cuesta y por qué es una de las mejores decisiones que puedes tomar."
 publishDate: 2026-02-01
-link: /contacto.html
+link: /contacto/
 last: true
 clasificacion: ["#SeguroDeVida", "#Familia", "#ProtecciónFamiliar"]
 ---

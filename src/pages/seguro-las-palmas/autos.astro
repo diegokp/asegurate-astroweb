@@ -9,13 +9,12 @@ import SegurosPage from '~/components/segurosPage.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import ContactForm from '~/components/contactForm.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
-import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/autos/`;
 const jsonLd = buildServiceSchema({
   pageURL,
   name: "Seguros de Autos en Las Palmas",
-  description: "Seguros de coche en Las Palmas de Gran Canaria. Comparativa de coberturas a terceros, terceros ampliados y todo riesgo con las mejores compañías.",
+  description: "Seguros de coche en Las Palmas de Gran Canaria. Comparativa de coberturas a terceros, terceros ampliados y todo riesgo.",
   serviceType: "Car insurance",
   breadcrumbName: "Seguro de Autos"
 });
@@ -25,8 +24,8 @@ const jsonLd = buildServiceSchema({
 	title="Seguros de Autos en Las Palmas"
 	description='Seguros de coche en Las Palmas con las mejores garantías. Asegura-Te es tu correduría de seguros de confianza. Te asesoramos y estamos para ayudarte.'
 	canonicalURL={pageURL}
+	schema={jsonLd}
 	>
-	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />

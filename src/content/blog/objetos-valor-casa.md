@@ -6,7 +6,7 @@ imageAlt: imagen de objetos de valor en casa
 excerpt: Publicado el 15 septiembre 2026
 description: "Joyas, bicicletas, cámaras o arte: ¿están realmente cubiertos por tu seguro de hogar? Descubre límites, declaraciones y el riesgo del infraseguro. ASEGURA-TE."
 publishDate: 2026-09-15
-link: /contacto.html
+link: /contacto/
 last: false
 clasificacion: ["#SeguroHogar", "#ObjetosDeValor", "#Joyas", "#Infraseguro", "#ProtecciónDelHogar", "#SegurosConCercanía", "#AseguraTuFuturo", "#TuSeguroEnBuenasManos"]
 ---

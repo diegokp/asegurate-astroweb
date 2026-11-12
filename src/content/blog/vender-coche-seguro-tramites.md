@@ -6,7 +6,7 @@ imageAlt: imagen de comprador y vendedor dándose la mano tras la venta de un co
 excerpt: Publicado el 15 octubre 2026
 description: "¿Qué pasa con el seguro al vender tu coche? Descubre qué trámites, documentación y comunicaciones a la aseguradora no debes olvidar. ASEGURA-TE."
 publishDate: 2026-10-15
-link: /contacto.html
+link: /contacto/
 last: false
 clasificacion: ["#SeguroDeCoche", "#VentaDeVehículos", "#CambioDeTitularidad", "#SeguroDeAuto", "#Movilidad", "#SegurosConCercanía", "#AseguraTuFuturo", "#TuSeguroEnBuenasManos"]
 ---

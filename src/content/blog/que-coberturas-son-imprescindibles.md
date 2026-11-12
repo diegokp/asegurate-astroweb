@@ -6,7 +6,7 @@ imageAlt: imagen de coberturas impresindibles
 excerpt: Publicado el 15 noviembre 2025
 description: "Descubre qué coberturas del seguro de hogar son imprescindibles y cuáles puedes evitar. Paga lo justo y protégete de los riesgos reales."
 publishDate: 2025-11-15
-link: /contacto.html
+link: /contacto/
 last: true
 clasificacion: ["#SeguroDeHogar", "#Coberturas", "#Consejos"]
 ---

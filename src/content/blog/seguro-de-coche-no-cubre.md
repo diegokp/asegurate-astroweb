@@ -6,7 +6,7 @@ imageAlt: imagen de seguro de coche no cubre
 excerpt: Publicado el 15 mayo 2026
 description: "Situaciones en las que tu seguro de coche puede no cubrirte: alcohol al volante, datos incorrectos, uso indebido o no comunicar el siniestro a tiempo."
 publishDate: 2026-05-15
-link: /contacto.html
+link: /contacto/
 last: true
 clasificacion: ["#SeguroDeCoche", "#Coberturas", "#Consejos"]
 ---

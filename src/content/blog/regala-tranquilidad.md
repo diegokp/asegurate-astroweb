@@ -6,7 +6,7 @@ imageAlt: imagen de fiesta navidenia
 excerpt: Publicado el 1 diciembre 2025
 description: "¿Sabías que puedes contratar un seguro para otra persona? Descubre qué tipos de seguros puedes regalar y cómo dar tranquilidad a quien más quieres."
 publishDate: 2025-12-01
-link: /contacto.html
+link: /contacto/
 last: true
 clasificacion: ["#SeguroDeVida", "#Familia", "#Consejos"]
 ---

@@ -6,7 +6,7 @@ imageAlt: imagen de por que contratar un seguro
 excerpt: Publicado el 1 Septiembre 2025
 description: "Ventajas de contratar seguros con una correduría: asesoramiento independiente, comparativa de compañías y gestión 100% telemática sin complicaciones."
 publishDate: 2025-09-01
-link: /contacto.html
+link: /contacto/
 last: false
 clasificacion: ["#Consejos", "#Correduría", "#SeguroGeneral"]
 ---

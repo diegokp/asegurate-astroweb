@@ -6,7 +6,7 @@ imageAlt: imagen de mujer cierre de anyo
 excerpt: Publicado el 15 diciembre 2025
 description: "Diciembre es el momento ideal para revisar tus pólizas. Muchas se renuevan en enero: descubre cómo terminar el año con tus seguros bajo control."
 publishDate: 2025-12-12
-link: /contacto.html
+link: /contacto/
 last: true
 clasificacion: ["#GestiónDeSeguros", "#RevisarPólizas", "#Consejos"]
 ---

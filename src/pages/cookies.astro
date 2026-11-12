@@ -1,9 +1,9 @@
 ---
 import Layout from '~/layouts/Layout.astro';
+import { NOINDEX_ROBOTS } from '~/config/indexing';
 import HeaderTop from '~/components/headerTop.astro';
 import Header from '~/components/header.astro';
 import Footer from '~/components/footer.astro'
-import JsonLd from '~/components/seo/JsonLd.astro';
 import { buildWebPageSchema, siteURL } from '~/utils/schema';
 
 const pageURL = `${siteURL}/cookies/`;
@@ -18,8 +18,9 @@ const jsonLd = buildWebPageSchema({
 	title="Política de Cookies"
 	description="Información sobre el uso de cookies en el sitio web de Asegura-Te, correduría de seguros en Las Palmas de Gran Canaria."
 	canonicalURL={pageURL}
+	robots={NOINDEX_ROBOTS}
+	schema={jsonLd}
 	>
-	<JsonLd data={jsonLd} slot="head" />
 	<section id="inicio">
 		<HeaderTop />
 		<Header />

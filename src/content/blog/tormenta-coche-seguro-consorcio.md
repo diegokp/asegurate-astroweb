@@ -6,7 +6,7 @@ imageAlt: imagen de un coche dañado por la caída de un árbol tras una torment
 excerpt: Publicado el 01 diciembre 2026
 description: "¿Quién responde si una tormenta daña tu coche, tu seguro o el Consorcio? Descubre cómo funciona la cobertura frente a fenómenos atmosféricos. ASEGURA-TE."
 publishDate: 2026-12-01
-link: /contacto.html
+link: /contacto/
 last: false
 clasificacion: ["#SeguroDeCoche", "#Consorcio", "#FenómenosAtmosféricos", "#Temporal", "#SeguroDelAutomóvil", "#SegurosConCercanía", "#AseguraTuFuturo", "#TuSeguroEnBuenasManos"]
 ---

@@ -9,7 +9,6 @@ import SegurosPage from '~/components/segurosPage.astro';
 import ContactForm from '~/components/contactForm.astro';
 import SegurosLink from '~/components/segurosLink.astro';
 import { buildServiceSchema, siteURL } from '~/utils/schema';
-import JsonLd from '~/components/seo/JsonLd.astro';
 
 const pageURL = `${siteURL}/seguro-las-palmas/motos/`;
 const jsonLd = buildServiceSchema({
@@ -25,8 +24,8 @@ const jsonLd = buildServiceSchema({
 	title="Seguros de Motos en Las Palmas"
 	description='Protege tu moto con nuestros seguros de motos en Las Palmas. Confía en Asegura-Te, tu correduría de seguros que está en Las Palmas.'
 	canonicalURL={pageURL}
+	schema={jsonLd}
 	>
-	<JsonLd data={jsonLd} slot="head" />
 	<Whatsapp />
 	<section id="inicio">
 		<HeaderTop />
